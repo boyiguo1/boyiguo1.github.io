@@ -3,6 +3,8 @@ title: "Multiple ways to simulate Bernoulli trials"
 output: html_document
 ---
 
+TODO: Change the name and stuff.
+
 ```{r method.1}
 med.1 <- rbinom(n = 500, size = 1, prob = 0.5)
 ```
@@ -18,4 +20,7 @@ med.3 <- runif(500)>0.5
 ```{r method.4}
 med.3 <- c(rep(0, 500*0.5), rep(1, 500*0.5))
 ```
+
+# Evalation
+Evaluate the mean, median, probability and N for the methods.
 
