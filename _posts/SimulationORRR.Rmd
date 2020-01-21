@@ -1,0 +1,70 @@
+---
+title: "Simulation about POR and PR"
+author: "Boyi Guo"
+date: "1/15/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(broom)
+```
+
+# POR vs PR
+POR stands for prevalence odds ratio, while PR stands for Prevalence ratio. 
+
+# Why not OR and RR
+
+# Population POR,PR vs Sample POR,PR
+
+
+# Empirical evaluation of OR, RR approximation
+
+The objective of this simulation is to see, when the prevalence is how small, the odds ratio is not a good approximation of risk ratio.
+
+The factor we control is
+* Confonder: No confonder, i.e. no covariates to adjust for
+* Risk ratio: we control the magnitude of risk ratio
+* Study design: Two arms, balanced i.e. case to control ratio is 1
+* sample size (per group): 50
+* Prevalence of the oucome of interest
+*
+
+
+```{r}
+n.it <- 1000
+
+# per-group sample size
+n <- 50
+
+# Prevalence of the outcome, i.e. how rare is the disease
+prev <- (1:99)/100
+
+# Population POR
+or <- 2
+
+p.control <- prev[20]
+
+
+c <- or * p.control/(1-p.control)
+
+p.case <- c/(1+c)
+
+tmp <- map_dbl(1:n.it, .f = function(x){
+  set.seed(x)
+  treat <- rep(c("control", "case"), each=n) %>% 
+    factor(levels = c("control","case"))
+  control.dis <- rbinom(n, size = 1, prob = p.control)
+  case.dis <- rbinom(n, size=1, prob = p.case)
+  outcome <- factor(c(control.dis, case.dis))
+  
+  log.mdl <- glm(outcome~treat, family = binomial)
+  coef(log.mdl)[2] %>% exp
+})
+
+mean(tmp)
+
+```
+
+# Defining Rare
