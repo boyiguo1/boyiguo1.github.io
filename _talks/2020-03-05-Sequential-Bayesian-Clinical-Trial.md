@@ -7,5 +7,3 @@ venue: "University of Alabama at Birmingham, Department of Biostatistics"
 date: 2020-03-05
 location: "Birmingham, Alalbama"
 ---
-
-This is a description of your talk, which is a markdown files that can be all markdown-ified like any other post. Yay markdown!
