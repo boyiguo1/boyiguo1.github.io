@@ -1,0 +1,34 @@
+---
+title: "EMVS Notes"
+author: "Boyi Guo"
+date: "2/3/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The authors trying to use EM algorithm with certain mixture prior to quickly find posterior modes.
+
+I am not quiet sure if the EMVS appraoch is bayesian for now. But it is a deterministic algorith, which supplies an alternative to the stochastic search algorithms.
+
+The paper started with describing the MCMC stochastic search for high-deminensional setting. Then talked about the problem that EMVS and its advantage (being fast). The EMVS is based on Spike and slab piror, and how EMVS works.
+
+# Formulation
+$Y \sim N_n(\beta X, \sigma^2 I_n)$
+
+$\beta_i|\gamma_i, \sigma, v_0, v_1 \sim \gamma_i*c + (1-\gamma_i)N(0, \sigma^2_i)$
+or
+$\beta_i|\gamma_i, \sigma, v_0, v_1 \sim N(0, \sigma^2[(1-\gamma_i)v_0 + \gamma_i v_1]$, where $0 \leq v_0 < v_1$
+
+$\gamma_i \sim binomial(\theta, \sum \gamma_i)$
+or
+$\gamma_i \sim beta(\alpha, \beta)$
+
+$\sigma^2|\gamma, v = IG(v/2, v\lambda/2)$
+
+# Algorithm
+## E-step
+Calculate the expectation of log likelihood of 
+## M-step
