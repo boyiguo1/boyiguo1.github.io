@@ -10,8 +10,8 @@ location: "Birmingham, AL"
 
 Curated Statistical Review Materials
 
-* [Basic Terminology](https://boyiguo1.github.io/files/Stat Corner - 1 - Basic Terminology.pdf)
-* [Frequency Analysis](https://boyiguo1.github.io/files/Stat Corner - 2 - Frequency Analysis.pdf)
-* [Mean or Median Comparisons](https://boyiguo1.github.io/files/Stat Corner - 3 - Mean or Median Comparisons.pdf)
-* [Linear Regression](https://boyiguo1.github.io/files/Stat Corner - 4 - Linear Regression.pdf)
-* [Logistic Regression](https://boyiguo1.github.io/files/Stat Corner - 5 - Logistic Regression.pdf)
+* [Basic Terminology](https://boyiguo1.github.io/files/Stat Corner - 1 - Basic Terminology.pdf){:target="_blank"}
+* [Frequency Analysis](https://boyiguo1.github.io/files/Stat Corner - 2 - Frequency Analysis.pdf){:target="_blank"}
+* [Mean or Median Comparisons](https://boyiguo1.github.io/files/Stat Corner - 3 - Mean or Median Comparisons.pdf){:target="_blank"}
+* [Linear Regression](https://boyiguo1.github.io/files/Stat Corner - 4 - Linear Regression.pdf){:target="_blank"}
+* [Logistic Regression](https://boyiguo1.github.io/files/Stat Corner - 5 - Logistic Regression.pdf){:target="_blank"}
