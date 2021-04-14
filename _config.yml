@@ -83,7 +83,7 @@ author:
   name             : "Boyi Guo"
   avatar           : "Boyi_Guo_20190924.jpg"
   bio              : "A Biostatistics Ph.D. Student Struggling with Dissertation"
-  location         : "Location"
+  location         : "Birmingham, Alabama"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=guo+boyi"
   googlescholar    : "https://scholar.google.com/citations?user=gzkXHEIAAAAJ&hl=en"
@@ -181,9 +181,9 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
+  # portfolio:
+  #   output: true
+  #   permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
