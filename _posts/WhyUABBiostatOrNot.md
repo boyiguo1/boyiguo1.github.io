@@ -1,7 +1,7 @@
 ---
 title: 'Why UAB Biostat or not?'
 date: 2021-04-20
-permalink: /posts/2021/004/Why UAB Biostat or not?/
+permalink: /posts/2021/04/Why-UAB-Biostat-or-not/
 tags:
   - Grad School
 ---

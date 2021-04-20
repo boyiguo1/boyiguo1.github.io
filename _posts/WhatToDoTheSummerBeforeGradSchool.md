@@ -1,7 +1,7 @@
 ---
 title: 'What To Do The Summer Before Grad School'
 date: 2021-04-20
-permalink: /posts/2021/004/What-To-Do-The-Summer-Before-Grad-School/
+permalink: /posts/2021/04/What-To-Do-The-Summer-Before-Grad-School/
 tags:
   - Grad School
 ---
