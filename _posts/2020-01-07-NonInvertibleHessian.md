@@ -1,5 +1,5 @@
 ---
-title: 'Non-invertibel Hessian Matrix'
+title: 'Non-invertible Hessian Matrix'
 date: 2020-01-07
 permalink: /posts/2020/01/Non-invertible-Hessian-Matrix/
 tags:
