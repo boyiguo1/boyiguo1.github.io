@@ -11,30 +11,19 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Statistics, [University of Illinois at Urbana-Champaign](http://illinois.edu/), 2014
+* B.S. in Computer Science, [University of Illinois at Urbana-Champaign](http://illinois.edu/), 2014
+* M.S. in Statistics, [University of Illinois at Urbana-Champaign](http://illinois.edu/), 2017
+* Ph.D in Biostatistics, [University of Alabama at Birmingham](http://www.uab.edu/), 2022 (expected)
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* [Dow AgroSciences](http://www.dowagro.com/en-US)
+  + Intern in Computational Biology    
+  + August 2016 to May 2017
+  + Performed statistics analysis on proteomics data; Developed an R Shiny program for data analysis and interactive visualization
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+
 
 Publications
 ======
@@ -56,4 +45,11 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* University of Alabama at Birmingham
+  + Chair, Professional Development and Leadership Committee (2019 - 2021)
+  + Student Senator, Graduate Student Government (2018 - Present)
+  + Student Representative, Graduate Program Committee (2018 - 2019)
+  + Biostatistics Senator, Public Health Student Association (2017 - 2019)
+
+* University of Illinois at Urbana-Champaign
+  +  Illinois International Advisory Committee (2016 - 2017)
