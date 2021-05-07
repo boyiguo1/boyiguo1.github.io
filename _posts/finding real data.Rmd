@@ -1,0 +1,38 @@
+---
+title: "Untitled"
+author: "Boyi Guo"
+date: "5/7/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+As I am working on my dissertation, one of the difficulties of mine is to find real world dataset. I recently came across a collection of R packages that are publicly available on [`Bioconductor`](https://bioconductor.org/).
+
+
+The Bioconductor have a section which is called [experiment packages](https://bioconductor.org/packages/release/BiocViews.html#___ExperimentData) that collects many R packages that design for real datasets. As my dissertation work focuses on high-dimensional data analysis, my person interest to the data set pivots to Sequencing data analysis. As there are many datasets, some contianing the whole dataset, others containing toy data for other r methodology packages. Hence, it needs some effort to navigate through the all 398 datasets (as of on the date of May 7th 2021). The trick that I use here to isolate is to search the packages whose names contain the key work "curated". To my personal experience, I found the series of _curated_ r data packages have a well organized documentation. They always include many published datasets sets so that the sample size would not be small, or at least to the degree that you can control. As the datasets that I am interested are majorily sequencing that, and sequencing data requires more funding to cover the cost. Hence, sample size of a single study could be extremely small, and hence combining datasets could be a good idea for analysis.
+
+Primarily the datasets that I currently have interests in are
+
+* curatedCRCData
+* curatedBladderData
+* curatedBreastData
+* curatedOvarianData
+
+
+Another great package that I am not planning to use now is 
+* curatedTCGAData
+
+
+Some questions you have to remind youself when searching for real data analysis is
+* What is your hypothesis for the data analysis
+  
+  I ran into this problem when wanting to use (NHANES)[https://www.cdc.gov/nchs/nhanes/index.htm] data. There is a R packages that makes pulll the datasets every easy. However, due to lack of background in nutrional study, I have a hard time to decide what my hypothesis for the data analysis is, and can't decide my outcome accordingly. 
+* What is the outcome, predictors that you need
+
+* Does the data property that favors your method
+  
+  I was originally want to use some microbiome data to use as my real data. However, my advisor reminded my that the zero inflation in microbiome data could be less easy to handle in the spline model, let along the compositional nature of microbiome. Another example is that NHANES is survey seighted data, however, the current version of my work does not support survey weighting yet. It could be a limitation of the work if reviewers what to target.
+
