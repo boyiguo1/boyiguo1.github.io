@@ -1,0 +1,52 @@
+---
+title: "Untitled"
+author: "Boyi Guo"
+date: "5/10/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r eval = F}
+# Analysis of Splines
+# Focus on Bsplines
+
+library(tidyverse)
+library(BhGLM)
+
+dat <- sim_Bai_logistic(n = 100, p = 4)$dat %>% data.frame()
+
+#### Spline package ####
+library(splines)
+# tmp <- bs(dat$x1, knots = 3, degree = 3, intercept = T)
+tmp <- bs(dat$x1, degree = 1, intercept = F)
+tmp2 <- bs(dat$x1, df = 6, degree = 3, intercept = T)
+
+plot(range(dat$x1), c(0,1), type = "n", xlab = "x", ylab = "",
+    main =  "B-splines - sum to 1 inside inner knots")
+matlines(dat$x1, tmp,  lty = 1)
+# Conclustion
+# * BS creates BSplines that are processed (identifiability constraints applied, see example degree=1)
+# * BS knots has to be a vector of numeric values, i.e. the position of knots, instead of the number of knots
+# * The sum of inside inner knots is 1, i.e. identifiability constraint
+# * Intercept could be add using the argument intercept = TRUE
+
+#### HWR package ####
+library(HRW)
+
+x <- dat$x1
+a <- 1.01*min(x) - 0.01*max(x)
+b <- 1.01*max(x) - 0.01*min(x) ; numIntKnots <- 23
+intKnots <- quantile(unique(x),seq(0,1,length = (numIntKnots + 2))[-c(1,(numIntKnots + 2))])
+Zg <- ZOSull(x,range.x = c(a,b),intKnots = intKnots)
+
+# Conclusion
+# * Should have been processed (no first or second order terms)
+
+
+#### mgcv Package ####
+library(mgcv)
+  smooth <- gam(y~s(x1, bs = "ps"), data = dat, fit = F, drop.intercept = T)
+```
