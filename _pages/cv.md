@@ -14,7 +14,7 @@ Education
 * B.S. in Statistics, [University of Illinois at Urbana-Champaign](http://illinois.edu/), 2014
 * B.S. in Computer Science, [University of Illinois at Urbana-Champaign](http://illinois.edu/), 2014
 * M.S. in Statistics, [University of Illinois at Urbana-Champaign](http://illinois.edu/), 2017
-* Ph.D in Biostatistics, [University of Alabama at Birmingham](http://www.uab.edu/), 2022 (expected)
+* Ph.D. in Biostatistics, [University of Alabama at Birmingham](http://www.uab.edu/), 2022 (expected)
 
 Work experience
 ======
@@ -23,13 +23,6 @@ Work experience
   + August 2016 to May 2017
   + Performed statistics analysis on proteomics data; Developed an R Shiny program for data analysis and interactive visualization
 
-
-
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
   
 Talks
 ======

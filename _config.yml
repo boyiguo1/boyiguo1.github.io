@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Boyi Guo"
   avatar           : "Boyi_Guo_20190924.jpg"
-  bio              : "A Biostatistics Ph.D. Student Struggling with Dissertation"
+  bio              : "Biostatistics Doctorial Candidate @ UAB interested in computational and collaborative statistics"
   location         : "Birmingham, Alabama"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=guo+boyi"
@@ -146,6 +146,9 @@ exclude:
   - package.json
   - tmp
   - vendor
+  - _publications
+  - _portfolio
+  - _pages/publications.md
 keep_files:
   - .git
   - .svn
@@ -219,23 +222,23 @@ defaults:
       share: true
       comments: true
   # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+  # - scope:
+  #     path: ""
+  #     type: publications
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comments: true
   # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
+  # - scope:
+  #     path: ""
+  #     type: portfolio
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comment: true
   # _talks
   - scope:
       path: ""
