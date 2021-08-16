@@ -38,14 +38,38 @@ The rest of this blog is arranged in the order of preparation for conference and
 
 -   Spend some money
 
+    Money is a scarce resourse for graduate student. Hence, normally we would make every penny worth it, or worse, even when we have the money, we would wait until necessary. This thinking could probably hinder you from success in the future. If you could afford, consider registering short courses or some other workshops.
+
+    Meanwhile, book a good flight or good hotel, find a good restaurant to try out. Conference is not the best time to work hard, instead of enjoy your life. Don't have to think about making PBJ every of your meal during your conference unless you have to or enjoy it every much. Try to indulge yourself a little bit.
+
+    A anecdote. I was attending ENAR couple years ago with limited funding, \\\$400 from a travel grant. I talked to the department for help, but not explicitly. Since the conference was in another city (Philly) . The 400 dollars barly can cover the travel and lodging. The first thing I arrived Philly was going to the local grocery store and buy grocery. I was making sandwich for meals. Even when the conference ends, I had couple apples and half box of spinnich. I was using them as a meal at the airport. When I got back and got to the financial staff in the department, they asked me the receipts for meals. I told them I was making sandwich the whole time, they laughed at me and told me I had another 400 dollars to spend in addition to the travel grant. I could have enjoy my "free" meals. So ask your department for help and be explicit how much support you got. At least enjoy your meal and save your receipts.
+
 -   Prepare you CV
+
+    As previously discussed, most professional conference have professional development component. It could be either some form of training or recruiting events. So prepare your professional packet and attend the recruiting events. The benefit of the recruiting events is they will provide on-site interviews, and its much easier to find a inter/job than applying online.
 
 # Attending the conference
 
 -   Mental preparation
+
+    There are couple perspective to prepare the conference mentally. First of all, depending on the size of the conference, there could be overwhelming amount of people in the conference venue. The venue would be crowded and people having conversation everywhere. If you don't enjoy crowd like me, you may need to prepare that mentally.
+
+    Secondly, prepare that there are great people whose work seems awesome than you. Using JSM as an example, there are many theoretical statistician participating JSM and will deliver talks about cutting edge theory in statistics. I as a methodologists do notunderstand most of what they are talking about. personally, I feel frustrated about it. and Be prepared about the feeling of frustration and use it positively. Also, if you think you are a good presenter, there are a lot of people out there, looks similar age as you are, but doing much job then you are. Don't be discouraged, use it as motivation.
+
+    Sometimes, it could be the other way around, you think you can totally understand somebody's work and even think it is too easy to present. This is the time you should adjust yourself. Do you really understand the talk? Can you actually improve on it? At the time I would suggest you to drop you ego and have a conversation with the person. Sicnerely and politely provide critics. It may develop to a collaboration in the future. And this is also how you can network with others, make friend and build you external reputation.
+
 -   No shame, be brave
+
+    As a junior researcher, I always have deep shame burried in my hurt. Is my question too stupid? Is my research too easy? Is my question worth asking? This imposter symdrom questions is really harmful to one's career development? If you didn't ask a question because of you are doubting youself, you are essitially losing a great oppurtunity to network with somebody. A counter intuitive question, would you rather answer a easy quesiton or hard question during a presentation? I think most people will prefer the prior. Same thing to the expert. Secondly, answer a question can reflect the level of professional of a person. If a person think you question too simple to answer, the person is just not professional, which is rare in a professional environment. Hence regardless what you heart tell you, if you have a question, just ask in public or private. You can always wait until the end of the meeting and talk the presentor in private, or send a DM in virtual format. The least you can do is send an Email to ask for an answer. However, it is not as efficient as asking the quesion in person.
+
 -   Ask, ask, ask
+
+    What I mean by "ask" is to initiate with another part of your interest. It could be the presenter of a talk, or a senior professor in a mentoring program, or your own advisor. Ask is the easiest step to initiate a process that you think will be beneficial to you. We have already talk about why and how to ask question to speakers in the last section. But you could also ask senior professions in external institutions to chat with you. I think the tricky part is that how you would like to implement the initiation. The better your implementation is, the more likely you will have postivie reply or positive impression in the other party. Hence, try to ask substaintial and relavent questions. When asking questions, try to think of th questions that more likely she/he is the only person who can answer it. However, I don't want this to be a discouragement of asking the question. I simply suggest that it would be better to ask thoughtful questions.
+
 -   More than statistics (or whatever the discipline you are in)
+
+    Theory is indeed very import part of a professional conference, but it is only one part of the conference. There are many components that you can start to take advantages early. Besides the mentoring and professional development programs, you can also participate in the talks that emphasize on how to develop other perspective of you profession, for example how to successful implement education, how to guard equality or how to engage that . These are normally easier understandable than complete thoery talks, but also can benefit your career in the long run. At least, it is a great oppurtunity that you can use to broaden you career choices after graduation.
+
 -   Be flexible and HAVE FUN!
 
 # Be a better presenter
