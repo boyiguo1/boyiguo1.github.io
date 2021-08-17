@@ -72,11 +72,20 @@ The rest of this blog is arranged in the order of preparation for conference and
 
 -   Be flexible and HAVE FUN!
 
+    A conference could be a good oppurnity to have fun. If you have to take a trip to another city, why don't use the oppurnity to explore the city a little bit. Here I just want to suggest that, you don't have to have a full schedule during the days of the conference. Be flexible, and leave some time to yourself to meet with friends and explore the city.
+
 # Be a better presenter
 
 -   Whats your problem?
+
+    As a junior researcher, the best opputnity to present research projects is probably by a 15-min talk oral presentation. Sometime, you could end up with a 3-min speed talk or a poster. In this case, it is definitely not possible to give a thorough introduction to your project. I see many junior researchers tend to use the couple minutes to go throught the technicality of the projects, while ignoring why your projects are impact. Compared to more senior researchers, who tend to spend more time to introduce the problem. I prefer to spending more time on introducing the significance of the probem instead how the problems are solved and how simulartions shows the result is good. My reasoning is as follows: 1) if you are not familiar with the sub-area, no body can understand the techinicalilties in short times. Use a movie metaphor, nobody try to put the whole story plot in a trailer, you need to go see the movie to understand the full story. 2) No body is interested in the simulation results, since we know that you are going to show that your the proposed method works better than previous methods. I remembered that Dr. Michael Wu from Fred Hutchinson talked about people are interested in the story. For people who cares about the project, if they are intrigued about the story, they will hunt it down. For people who are expert, they can image how the solution would look if you give a big picture description about the technicality.
+
 -   Practice
+
 -   Set time-stamp timer
+
+    This is inspired by Dr. Aaron Scheffler from UCSF. I was attending his talk and heard this weired reminder sound on the background, which i realized that it is a pacer for his presentation, where he knows if he is at the right pace to finish the talk. To implement this you can use a interval timer, or a stop watch for. However, I think a sensitional queue is better than checking the stop watch, as you are super nervous when giving the talk and you might forget to check the timer.
+
 -   Know your answers
 
 These are my personal experience that I think you could do to optimize your national conference experience. However, consider how heterogeneous the word "junior graduate" could mean, you could skip some of these advices.
