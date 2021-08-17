@@ -82,10 +82,14 @@ The rest of this blog is arranged in the order of preparation for conference and
 
 -   Practice
 
+    Only practice can be your presentation perfect. Here I would like to offer something reminder that can potentially help you with your presenting. The most important thing among all is to practice to speak slow. The benefit of speaking slow is to make your speaking more clear and the audience can listen clear. Secondly, by speaking slow, you can only focus on your presentation rather than rushing though your talk. If you are luck to have friends who knows about your research, let them give you some suggestion on your presentation, either as a safe-gard for conceptual mistakes, or clarifying the point that you didn't eliberate well. If you don't have that resource, you can record yourself and go over that to you. Another suggestion here is never to prepare a word-to-word scription that you would like to read during the presentation, you can easily fall when something uncertain happened during your discussion.
+
 -   Set time-stamp timer
 
     This is inspired by Dr. Aaron Scheffler from UCSF. I was attending his talk and heard this weired reminder sound on the background, which i realized that it is a pacer for his presentation, where he knows if he is at the right pace to finish the talk. To implement this you can use a interval timer, or a stop watch for. However, I think a sensitional queue is better than checking the stop watch, as you are super nervous when giving the talk and you might forget to check the timer.
 
 -   Know your answers
+
+    It is good to have your answers prepared before your presentation, and hence, when the questions come up, you can answer them confidently and shows you professionality. Here, I am not necessary suggesting your answers have to be theoretical, since you could never know what questions could be. You should be preparing generalized answers, for example, "I don't quiet get your question, can you elaborate it again." "This is a very good questions. However, I didn't consider it when I was doing the work. Do you mind if I will think about it more carefully and get back to you." FOr this one, it could be a tricky, epecailly when you are talking to a senior person. You would like to diverge the problem curerntly, but not running away for it. The suggestion I got is that after the question and answer, try to have a conversation with the person who asks the question and ask a contact. Later, you want to prepare an answer and get back to the person. By that time, the person may not care at all, but he will develop a good impression about your professionalism.
 
 These are my personal experience that I think you could do to optimize your national conference experience. However, consider how heterogeneous the word "junior graduate" could mean, you could skip some of these advices.
