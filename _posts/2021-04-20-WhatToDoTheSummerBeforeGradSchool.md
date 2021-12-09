@@ -47,3 +47,5 @@ e.	(Optional) Read papers that interests you (Brainstorm ideas for your disserta
 
 
 
+Very Useful Readings:
+- [https://stearnslab.yale.edu/modest-advice](https://stearnslab.yale.edu/modest-advice)
