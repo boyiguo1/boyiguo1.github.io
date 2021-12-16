@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Boyi Guo / Dissertation Struggles with Me"
+title                    : "Boyi Guo"
 title_separator          : "-"
 name                     : &name "Boyi"
 description              : &description "personal description"
