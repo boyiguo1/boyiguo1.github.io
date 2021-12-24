@@ -1,0 +1,26 @@
+---
+title: 'Oversight as An Intervention to Improve Quantative Analysis? A Discussion'
+date: 2021-12-23
+permalink: /posts/2021/12/OversightQuantativeAnalysis
+tags:
+  - Statistics
+---
+
+[TODO: To introduce why I want to write this post, motivated with Collins' Tweets.]
+
+# Oversight as An Intervention?
+I am in full support of increasing stat collab, but in what form? The eligibility criteria seem to have strong assumptions, 1) all people who have these credentials are cable to do the analysis they are asked to do. 2) all people with these credentials are engaging enough to actually contributes to the quality of the research. 3). I don’t know how much faith I have with the first two assumptions. Overall, I don’t think this “door guarding” types of interventions optimal and sustaining. At this wakening moment of reproducible research, will we eventually ask to have people with reproducible research credentials to be on every paper?
+Can we intervene earlier in the collaboration pathway? For example, promoting collaboration culture in the education stage? Protected analytic efforts in the current funding mechanisms?
+
+
+# Endgoal of the Statistical Oversight
+[TODO: add a DAG for research quality improvement]
+
+# Other Interventions
+In the statistical education (particularly for non-quantatitive professionals), we normally teach people how to do things, basic analysis or P.S.S.. But we don’t teach how to know where their limits are, and at that point, they should turn to the professionals. They learn their limits during there manuscript got reviewed, and sometimes (maybe most of time) they don’t get taught. On the other hand, methodologists sometime doesn’t invest enough to their collaboration skills, and could easily scare off the junior investigators who don’t have enough experience face quantativie challenges.
+
+Increasing the quantitive workforce in the field could help. However, where does this money come from? Most likely from a  funding agent via grants, where when the grants proposal was written and reviewed, there should be deliberate efforts on making sure enough quantitative efforts are, where the efforts could be in the form of quantitive training of the PI, or hiring people who have good quantitive efforts. With this level of intervention, it is more possible too have the university to hire applied methodologists. https://twitter.com/robertwplatt/status/1473981455621664769?s=20
+
+----
+
+I think the end goal for increasing stat collab is to improve the integraty of the quantitive analysis component of research, and  stat collaboration is one form to improve, along many other interventions that branch out or share the same strategy. Some of these intervention seems a bit of passive, and if a more active/upstream intervention (or combinations of interventions) would help better?  
