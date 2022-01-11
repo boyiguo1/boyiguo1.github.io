@@ -1,22 +1,22 @@
 # main links links
 main:
-  # - title: "Publications"
-  #   url: /publications/
+  - title: "CV"
+    url: https://www.overleaf.com/read/npnnsrdfqfqf
+
+  - title: "Teaching"
+    url: /teaching/   
 
   - title: "Talks"
     url: /talks/    
+       
+  - title: "Blog Posts"
+    url: /year-archive/
 
-  - title: "Teaching"
-    url: /teaching/    
+ - title: "Publications"
+   url: https://scholar.google.com/citations?user=gzkXHEIAAAAJ&hl=en
     
   # - title: "Portfolio"
   #   url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  - title: "CV"
-    url: https://www.overleaf.com/read/npnnsrdfqfqf
     # 
   # - title: "Guide"
   #   url: /markdown/
