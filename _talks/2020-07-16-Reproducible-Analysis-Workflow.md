@@ -1,5 +1,5 @@
 ---
-title: "Reproducible Analysis Workflow"
+title: "Reproducible Analysis Workflow (3 Levels)"
 collection: talks
 type: "Class Presentation"
 permalink: /talks/2020-07-16-Reproducible-Analysis-Workflow.pdf
