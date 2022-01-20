@@ -12,8 +12,8 @@ main:
   - title: "Blog Posts"
     url: /year-archive/
 
- - title: "Publications"
-   url: https://scholar.google.com/citations?user=gzkXHEIAAAAJ&hl=en
+ # - title: "Publications"
+ #   url: https://scholar.google.com/citations?user=gzkXHEIAAAAJ&hl=en
     
   # - title: "Portfolio"
   #   url: /portfolio/
