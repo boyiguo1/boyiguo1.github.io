@@ -14,7 +14,7 @@ Education
 * B.S. in Statistics, [University of Illinois at Urbana-Champaign](http://illinois.edu/), 2014
 * B.S. in Computer Science, [University of Illinois at Urbana-Champaign](http://illinois.edu/), 2014
 * M.S. in Statistics, [University of Illinois at Urbana-Champaign](http://illinois.edu/), 2017
-* Ph.D. in Biostatistics, [University of Alabama at Birmingham](http://www.uab.edu/), 2022 (expected)
+* Ph.D. in Biostatistics, [University of Alabama at Birmingham](http://www.uab.edu/), 2022
 
 Work experience
 ======
@@ -40,7 +40,7 @@ Service and leadership
 ======
 * University of Alabama at Birmingham
   + Chair, Professional Development and Leadership Committee (2019 - 2021)
-  + Student Senator, Graduate Student Government (2018 - Present)
+  + Student Senator, Graduate Student Government (2018 - 2022)
   + Student Representative, Graduate Program Committee (2018 - 2019)
   + Biostatistics Senator, Public Health Student Association (2017 - 2019)
 
