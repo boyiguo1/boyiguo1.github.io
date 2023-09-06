@@ -1,8 +1,9 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "GitHub_website"
+  title: "Boyi Guo (郭博逸), PhD"
   navbar:
     left:
       - href: index.qmd
