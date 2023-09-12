@@ -1,10 +1,17 @@
 [
   {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Under construction. 🛠️"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Boyi’s Website (Currently in renovation)",
+    "title": "Boyi Guo, PhD",
     "section": "",
-    "text": "We are working on it. 👨‍🔧"
+    "text": "I am a biomedical data scientist working at the intersection of machine learning, computational omics, and population health."
   },
   {
     "objectID": "about.html",
