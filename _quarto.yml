@@ -4,10 +4,12 @@ project:
 
 website:
   title: "Boyi Guo (郭博逸), PhD"
+  favicon: "img/Boyi_Guo_20190924.jpg"
   navbar:
     left:
       - href: index.qmd
         text: Home
+      - projects.qmd
       - about.qmd
 
 format:
