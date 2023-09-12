@@ -1,5 +1,23 @@
 ---
-title: "Boyi's Website (Currently in renovation)"
+title: "Boyi Guo, PhD"
+image: img/Boyi_Guo_20190924.jpg
+about:
+  template: jolla
+  image-width: 20em
+  image-shape: round
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/boyiguo
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/boyiguo/
+    - icon: github
+      text: Github
+      href: https://github.com/boyiguo1
+    - icon: envelope
+      text: Contact me
+      href: mailto:boyi.guo.work@gmail.com
 ---
 
-We are working on it. 👨‍🔧
+I am a biomedical data scientist working at the intersection of machine learning, computational omics, and population health.
