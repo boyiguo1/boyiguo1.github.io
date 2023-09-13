@@ -9,14 +9,17 @@ about:
     - icon: twitter
       text: Twitter
       href: https://twitter.com/boyiguo
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/boyiguo/
+    # - icon: linkedin
+    #   text: LinkedIn
+    #   href: https://www.linkedin.com/in/boyiguo/
     - icon: github
       text: Github
       href: https://github.com/boyiguo1
+    - icon: google
+      text: Scholar
+      href: https://scholar.google.com/citations?user=gzkXHEIAAAAJ&hl=en&authuser=1
     - icon: envelope
-      text: Contact me
+      text: Email
       href: mailto:boyi.guo.work@gmail.com
 ---
 
