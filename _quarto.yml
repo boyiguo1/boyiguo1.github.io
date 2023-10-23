@@ -10,7 +10,7 @@ website:
       - href: index.qmd
         text: Home
       - projects.qmd
-      - href: https://www.overleaf.com/read/npnnsrdfqfqf
+      - href: https://www.overleaf.com/read/gdttrkmmwncb
         text: CV
       # - about.qmd
 
