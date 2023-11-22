@@ -7,12 +7,14 @@ website:
   favicon: "img/Boyi_Guo_20190924.jpeg"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
+      - icon: house-door-fill
+        href: https://boyi-guo.com
+        aria-label: Home
+      # - about.qmd
       - projects.qmd
       - href: https://www.overleaf.com/read/gdttrkmmwncb#4463ee
         text: CV
-      # - about.qmd
+
 
 format:
   html:

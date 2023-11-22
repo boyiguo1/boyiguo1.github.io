@@ -1,6 +1,7 @@
 ---
 title: "Boyi Guo, PhD"
 image: img/Boyi_Guo_20190924.jpeg
+toc: false
 about:
   template: jolla
   image-width: 20em
@@ -9,9 +10,6 @@ about:
     - icon: twitter
       text: Twitter
       href: https://twitter.com/boyiguo
-    # - icon: linkedin
-    #   text: LinkedIn
-    #   href: https://www.linkedin.com/in/boyiguo/
     - icon: github
       text: Github
       href: https://github.com/boyiguo1
@@ -23,4 +21,8 @@ about:
       href: mailto:boyi.guo.work@gmail.com
 ---
 
-I am an applied statistician and biomedical data scientist working at the intersection of machine learning, computational omics, and population health.
+I am an applied statistician and biomedical data scientist working at the intersection of machine learning, computational omics, and population health. My research concentrates on developing statistically rigorous and computationally scalable machine-learning methods, as well as open-source software, that integrates population-scale multi-omics data to uncover functional mechanisms that explain disease heterogeneity.
+
+```{=html}
+<center><img src="http://ghchart.rshah.org/boyiguo1" alt="Boyi Guo's Github chart" /, width = "100%", height = "100%"></a></center>
+```
