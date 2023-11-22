@@ -1,6 +1,6 @@
 ---
 title: "Boyi Guo, PhD"
-image: img/Boyi_Guo_20190924.jpg
+image: img/Boyi_Guo_20190924.jpeg
 about:
   template: jolla
   image-width: 20em
@@ -23,4 +23,4 @@ about:
       href: mailto:boyi.guo.work@gmail.com
 ---
 
-I am a biomedical data scientist working at the intersection of machine learning, computational omics, and population health.
+I am an applied statistician and biomedical data scientist working at the intersection of machine learning, computational omics, and population health.

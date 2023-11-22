@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Boyi Guo (郭博逸), PhD"
-  favicon: "img/Boyi_Guo_20190924.jpg"
+  favicon: "img/Boyi_Guo_20190924.jpeg"
   navbar:
     left:
       - href: index.qmd
