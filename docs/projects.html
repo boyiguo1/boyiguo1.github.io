@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./img/Boyi_Guo_20190924.jpg" rel="icon" type="image/jpeg">
+<link href="./img/Boyi_Guo_20190924.jpeg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -56,7 +56,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -81,16 +82,17 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://boyi-guo.com" rel="" target=""><i class="bi bi-house-door-fill" role="img" aria-label="Home">
+</i> 
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./projects.html" rel="" target="" aria-current="page">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://www.overleaf.com/read/gdttrkmmwncb" rel="" target="">
+    <a class="nav-link" href="https://www.overleaf.com/read/gdttrkmmwncb#4463ee" rel="" target="">
  <span class="menu-text">CV</span></a>
   </li>  
 </ul>
@@ -109,9 +111,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#machine-learning-models-for-high-dimensional-data-analysis" id="toc-machine-learning-models-for-high-dimensional-data-analysis" class="nav-link active" data-scroll-target="#machine-learning-models-for-high-dimensional-data-analysis">Machine learning models for high-dimensional data analysis</a></li>
-  <li><a href="#computational-omics" id="toc-computational-omics" class="nav-link" data-scroll-target="#computational-omics">Computational Omics</a></li>
-  <li><a href="#population-health" id="toc-population-health" class="nav-link" data-scroll-target="#population-health">Population Health</a></li>
+  <li><a href="#scalable-machine-learning-models-for-precision-medicine" id="toc-scalable-machine-learning-models-for-precision-medicine" class="nav-link active" data-scroll-target="#scalable-machine-learning-models-for-precision-medicine">Scalable machine learning models for precision medicine</a>
+  <ul class="collapse">
+  <li><a href="#variable-and-functional-selection-using-spike-and-slab-lasso" id="toc-variable-and-functional-selection-using-spike-and-slab-lasso" class="nav-link" data-scroll-target="#variable-and-functional-selection-using-spike-and-slab-lasso">Variable and functional selection using spike-and-slab LASSO</a></li>
+  <li><a href="#multivariate-random-forests-to-estimating-heterogeneous-treatment-effects" id="toc-multivariate-random-forests-to-estimating-heterogeneous-treatment-effects" class="nav-link" data-scroll-target="#multivariate-random-forests-to-estimating-heterogeneous-treatment-effects">Multivariate random forests to estimating heterogeneous treatment effects</a></li>
+  </ul></li>
+  <li><a href="#computational-omics" id="toc-computational-omics" class="nav-link" data-scroll-target="#computational-omics">Computational Omics</a>
+  <ul class="collapse">
+  <li><a href="#spatially-resolved-genomics" id="toc-spatially-resolved-genomics" class="nav-link" data-scroll-target="#spatially-resolved-genomics">Spatially-resolved genomics</a></li>
+  <li><a href="#microbiome" id="toc-microbiome" class="nav-link" data-scroll-target="#microbiome">Microbiome</a></li>
+  </ul></li>
+  <li><a href="#population-health" id="toc-population-health" class="nav-link" data-scroll-target="#population-health">Population Health</a>
+  <ul class="collapse">
+  <li><a href="#the-reasons-for-geographic-and-racial-differences-in-stroke" id="toc-the-reasons-for-geographic-and-racial-differences-in-stroke" class="nav-link" data-scroll-target="#the-reasons-for-geographic-and-racial-differences-in-stroke">The Reasons for Geographic and Racial Differences in Stroke</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -135,13 +148,40 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="machine-learning-models-for-high-dimensional-data-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="machine-learning-models-for-high-dimensional-data-analysis">Machine learning models for high-dimensional data analysis</h2>
-<section id="variable-and-functional-selection-using-spike-and-slab-lasso" class="level4">
-<h4 class="anchored" data-anchor-id="variable-and-functional-selection-using-spike-and-slab-lasso">Variable and functional selection using spike-and-slab LASSO</h4>
+<p><img src="img/researchBanner.png" class="img-fluid" data-fig-align="center"> My research concentrates on developing statistically rigorous and computationally scalable machine-learning methods, as well as open-source software, that integrates population-scale multi-omics data to uncover functional mechanisms that explain disease heterogeneity.</p>
+<hr>
+<section id="scalable-machine-learning-models-for-precision-medicine" class="level1">
+<h1>Scalable machine learning models for precision medicine</h1>
+<p>Heterogeneous reaction to treatment or disease progression requires individualized medical decisions informed by data-driven evidence. Deeply embedded in the the biomedical data, the key to successful precision medicine requires timely advances in machine learning and artificial intellgent models that extracts insights from the complex and high-dimensional biomedical data.</p>
+<section id="variable-and-functional-selection-using-spike-and-slab-lasso" class="level2">
+<h2 class="anchored" data-anchor-id="variable-and-functional-selection-using-spike-and-slab-lasso">Variable and functional selection using spike-and-slab LASSO</h2>
+<div>
+<div style="float: left; position: relative; top: 0px; padding: -10px;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/SSL_GAM.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Two-part spike-and-slab LASSO prior for smooth functions. (Guo et al., 2022)</figcaption>
+</figure>
+</div>
+</div>
+<p>I develop Bayesian statistical learning methods and scalable algorithms for high-dimensional data analysis, with the application to biomedical data that includes, but not limited to, population-level omics and clinical data. Specifically, I introduced new Bayesian hierarchical models, following the spike-and-slab LASSO framework, to select important nonlinear signals for high-dimensional data and predict disease risk of continuous, binary, count and survival outcomes. To overcome computational burden of training Bayesian models, I develop novel optimization-based model-fitting algorithms to improve computational scalability, and open-source software to make the analysis accessible to everyone.</p>
+</div>
+<ul>
+<li><strong>Guo B</strong>, Jaeger BC, Rahman AKMF, Long DL, Yi N. (2022). <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/sim.9483">Spike-and-slab LASSO generalized additive models and scalable algorithms for high-dimensional data analysis</a>. <em>Statistics in Medicine</em>.</li>
+<li><strong>Guo B</strong>, Yi N. (2022). <a href="https://doi.org/10.48550/arXiv.2205.11600">A scalable and flexible Cox proportional hazard model for high-dimensional survival prediction and functional selection</a>. <em>arXiv</em>.</li>
+<li><strong>Guo B</strong>, Yi N. (2022). <a href="https://doi.org/10.48550/arXiv.2207.02348">The R Package BHAM: Fast and scalable Bayesian hierarchical additive model for high-dimensional data</a>. <em>arXiv</em>.</li>
+<li>Tang Z, Lei S, Zhang X, Yi Z, <strong>Guo B</strong>, Chen JY, Shen Y, Yi N. (2019). Gsslasso Cox: a Bayesian hierarchical model for predicting survival and detecting associated genes by incorporating pathway information. <em>BMC bioinformatics</em>.</li>
+<li>Yi N, Tang Z, Zhang X, <strong>Guo B</strong>. (2019). BhGLM: Bayesian hierarchical GLMs and survival models, with applications to genomics and epidemiology. <em>Bioinformatics</em>.</li>
+</ul>
 </section>
-<section id="predictive-models-for-individualize-risk-and-treatment-effect" class="level4">
-<h4 class="anchored" data-anchor-id="predictive-models-for-individualize-risk-and-treatment-effect">Predictive models for individualize risk and treatment effect</h4>
+<section id="multivariate-random-forests-to-estimating-heterogeneous-treatment-effects" class="level2">
+<h2 class="anchored" data-anchor-id="multivariate-random-forests-to-estimating-heterogeneous-treatment-effects">Multivariate random forests to estimating heterogeneous treatment effects</h2>
+<ul>
+<li><strong>Guo B</strong>, Holscher H, Auvil L, Welge M, Bushell C, Novotny J, Baer D, Burd N, Khan N, Zhu R. (2021). <a href="https://doi.org/10.1007/s12561-021-09310-w">Estimating Heterogeneous Treatment Effect on Multivariate Responses Using Random Forests</a>. <em>Statistics in Biosciences.</em></li>
+</ul>
+<!-- , including unsupervised learning models to estimate heterogeneous treatment effect\cite{guo2021estimating}, count-based models to select differentiable features \cite{zhang2018negative, pendegraft2019bayesian, zhang2020zero} and high-dimensional predictive models to quantify risk \cite{guo2022spike, guo2022scalable, tang2019gsslasso}.  -->
+
+<!--  Leveraging the complex omics data, e.g. microbiome or gene expression, we develop high-dimensional nonparametric models, including multivariate random forest and generalized additive models, to estimate individualized treatment effects and predict disease risks. These novel machine-learning models substantially reduce the analytic bias due to the parametric assumptions of existing methods and deliver easily interpretable evidence to inform decision-making and improve the understanding of disease etiology. -->
 <!-- ### Bayesian spike-and-slab LASSO models for high-dimensional data analysis -->
 <!-- ### Treatmeng Effect Prediction -->
 
@@ -164,19 +204,24 @@ ul.task-list li input[type="checkbox"] {
 <!-- ## Molecular and Cellular via Spatially resolved transcriptomics -->
 </section>
 </section>
-<section id="computational-omics" class="level2">
-<h2 class="anchored" data-anchor-id="computational-omics">Computational Omics</h2>
-<section id="spatially-resolved-genomics" class="level4">
-<h4 class="anchored" data-anchor-id="spatially-resolved-genomics">Spatially-resolved genomics</h4>
+<section id="computational-omics" class="level1">
+<h1>Computational Omics</h1>
+<section id="spatially-resolved-genomics" class="level2">
+<h2 class="anchored" data-anchor-id="spatially-resolved-genomics">Spatially-resolved genomics</h2>
+<p>The cortical layers of the human neocortex were classically defined by histological distinction of cell types according to size and shape. However, emerging single-cell and spatially-resolved transcriptomic technologies have facilitated the identification of molecularly defined cell populations and spatial domains that move beyond classic cell type definitions and cytoarchitectural boundaries. Assigning gene expression to distinct anatomical subdivisions and cell populations within the human brain improves the understanding of brain regions and how they contribute to brain disorders. I led the quantitative investigation of 30 Visium Samples and single-nucleus RNA seq collected from 19 brain samples, where integrative cell-cell communication identified FYN-EFNA5-EPHA5 signaling pathway associated with schizophrenia. I also developed a novel visualization framework that simultaneous display disparage variables following Gestalt principles, allowing to in situ visualize of differential expression across various spatial domains.</p>
+<ul>
+<li><p>Guo B, Huuki-Myers LA, Grant-Peters M, Collado-Torres L, Hicks SC. escheR: Unified multi-dimensional visualizations with Gestalt principles. bioRxiv. 2023 Jun 8; PubMed Central PMCID: PMC10055209.</p></li>
+<li><p>Huuki-Myers L, Spangler A, Eagles N, Montgomery KD, Kwon SH, Guo B, Grant-Peters M, Divecha HR, Tippani M, Sriworarat C, Nguyen AB, Ravichandran P, Tran MN, Seyedian A, Hyde TM, Kleinman JE, Battle A, Page SC, Ryten M, Hicks SC, Martinowich K, Collado-Torres L, Maynard KR. Integrated single cell and unsupervised spatial transcriptomic analysis defines molecular anatomy of the human dorsolateral prefrontal cortex. bioRxiv. 2023 Feb 15; PubMed Central PMCID: PMC9949126.</p></li>
+</ul>
 </section>
-<section id="microbiome" class="level4">
-<h4 class="anchored" data-anchor-id="microbiome">Microbiome</h4>
+<section id="microbiome" class="level2">
+<h2 class="anchored" data-anchor-id="microbiome">Microbiome</h2>
 </section>
 </section>
-<section id="population-health" class="level2">
-<h2 class="anchored" data-anchor-id="population-health">Population Health</h2>
-<section id="the-reasons-for-geographic-and-racial-differences-in-stroke" class="level4">
-<h4 class="anchored" data-anchor-id="the-reasons-for-geographic-and-racial-differences-in-stroke">The Reasons for Geographic and Racial Differences in Stroke</h4>
+<section id="population-health" class="level1">
+<h1>Population Health</h1>
+<section id="the-reasons-for-geographic-and-racial-differences-in-stroke" class="level2">
+<h2 class="anchored" data-anchor-id="the-reasons-for-geographic-and-racial-differences-in-stroke">The Reasons for Geographic and Racial Differences in Stroke</h2>
 <!-- Collaborative research studying health disparity in stroke and co-morbidities among racial groups and geographic locations: Black Americans under age 75 were more than twice as likely to die from stroke than were non-Hispanic white Americans, while people who lived in the South had a 40 percent higher risk of dying from stroke than their counterparts in other parts of the United States. Understanding the cause of the disparity is imperative to effective interventions and policy change. We analyzed data collected in the national cohort study, the Reasons for Geographic and Racial Differences in Stroke (REGARDS), to examine possible causal pathways and identify novel biomarkers to inform disease risk. I provided critical analytic support to medical doctors, epidemiologists and biologists. In the multi-center research group, I delivered talks and tutorials on reproducible analytic standards. -->
 <!-- a. Kamin Mukaz D, Guo B, Long D, Judd S, Plante T, McClure L, Wolberg A, Zakai N, Howard G, Cushman M. D-dimer and the risk of hypertension: The REasons for Geographic And Racial Differences in Stroke Cohort Study. Research and Practice in Thrombosis and Haemostasis. 2023 January; 7(1):100016-. DOI: 10.1016/j.rpth.2022.100016 -->
 <!-- b. Peper KM, Guo B, Leann Long D, Howard G, Carson AP, Howard VJ, Judd SE, Zakai NA, Cherrington A, Cushman M, Plante TB. C-reactive Protein and Racial Differences in Type 2 Diabetes Incidence: The REGARDS Study. J Clin Endocrinol Metab. 2022 May 17;107(6):e2523-e2531. PubMed Central PMCID: PMC9113826.  -->

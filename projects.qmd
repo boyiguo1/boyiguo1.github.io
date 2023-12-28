@@ -5,54 +5,107 @@ format:
         toc: true
         toc-depth: 3
 ---
-## Machine learning models for high-dimensional data analysis
 
-#### Variable and functional selection using spike-and-slab LASSO
+![](img/researchBanner.png){fig-align="center"} My research concentrates on developing statistically rigorous and computationally scalable machine-learning methods, as well as open-source software, that integrates population-scale multi-omics data to uncover functional mechanisms that explain disease heterogeneity.
+
+------------------------------------------------------------------------
+
+# Scalable machine learning models for precision medicine
+
+Heterogeneous reaction to treatment or disease progression requires individualized medical decisions informed by data-driven evidence. Deeply embedded in the the biomedical data, the key to successful precision medicine requires timely advances in machine learning and artificial intellgent models that extracts insights from the complex and high-dimensional biomedical data.
+
+## Variable and functional selection using spike-and-slab LASSO  
+<div>
+<div style="float: left; position: relative; top: 0px; padding: -10px;">
+![Two-part spike-and-slab LASSO prior for smooth functions. (Guo et al., 2022)](img/SSL_GAM.png){width=80%}
+</div>
+
+I develop Bayesian statistical learning methods and scalable algorithms for high-dimensional data analysis, with the application to biomedical data that includes, but not limited to, population-level omics and clinical data. Specifically,
+I introduced new Bayesian hierarchical models, following the spike-and-slab LASSO framework, to select important nonlinear signals for high-dimensional data and predict disease risk of continuous, binary, count and survival outcomes. To overcome computational burden of training Bayesian models, I develop novel optimization-based model-fitting algorithms to improve computational scalability, and open-source software to make the analysis accessible to everyone.
+</div>
+
+* __Guo B__, Jaeger BC, Rahman AKMF, Long DL, Yi N. (2022). [Spike-and-slab LASSO generalized additive models and scalable algorithms for high-dimensional data analysis](https://onlinelibrary.wiley.com/doi/full/10.1002/sim.9483). _Statistics in Medicine_.
+* __Guo B__, Yi N. (2022). [A scalable and flexible Cox proportional hazard model for high-dimensional survival prediction and functional selection](https://doi.org/10.48550/arXiv.2205.11600). _arXiv_.
+* __Guo B__, Yi N. (2022). [The R Package BHAM: Fast and scalable Bayesian hierarchical additive model for high-dimensional data](https://doi.org/10.48550/arXiv.2207.02348). _arXiv_.
+* Tang Z, Lei S, Zhang X, Yi Z, __Guo B__, Chen JY, Shen Y, Yi N. (2019). Gsslasso Cox: a Bayesian hierarchical model for predicting survival and detecting associated genes by incorporating pathway information. _BMC bioinformatics_.
+* Yi N, Tang Z, Zhang X, __Guo B__. (2019). BhGLM: Bayesian hierarchical GLMs and survival models, with applications to genomics and epidemiology. _Bioinformatics_.
 
 
-#### Predictive models for individualize risk and treatment effect
+## Multivariate random forests to estimating heterogeneous treatment effects 
+
+
+* **Guo B**, Holscher H, Auvil L, Welge M, Bushell C, Novotny J, Baer D, Burd N, Khan N, Zhu R. (2021). [Estimating Heterogeneous Treatment Effect on Multivariate Responses Using Random Forests](https://doi.org/10.1007/s12561-021-09310-w).  _Statistics in Biosciences._
+
+<!-- , including unsupervised learning models to estimate heterogeneous treatment effect\cite{guo2021estimating}, count-based models to select differentiable features \cite{zhang2018negative, pendegraft2019bayesian, zhang2020zero} and high-dimensional predictive models to quantify risk \cite{guo2022spike, guo2022scalable, tang2019gsslasso}.  -->
+
+
+
+<!--  Leveraging the complex omics data, e.g. microbiome or gene expression, we develop high-dimensional nonparametric models, including multivariate random forest and generalized additive models, to estimate individualized treatment effects and predict disease risks. These novel machine-learning models substantially reduce the analytic bias due to the parametric assumptions of existing methods and deliver easily interpretable evidence to inform decision-making and improve the understanding of disease etiology. -->
+
+
+
+
 
 <!-- ### Bayesian spike-and-slab LASSO models for high-dimensional data analysis -->
+
 <!-- ### Treatmeng Effect Prediction -->
 
+<!-- 1. Novel nonparametric models to estimate individualized treatment effects and disease risk using high-dimensional omics data: Heterogeneous reaction to treatment or disease progression requires individualized medical decisions informed by data-driven evidence, improving the outlook of precision medicine. Leveraging the complex omics data, e.g. microbiome or gene expression, we develop high-dimensional nonparametric models, including multivariate random forest and generalized additive models, to estimate individualized treatment effects and predict disease risks. These novel machine-learning models substantially reduce the analytic bias due to the parametric assumptions of existing methods and deliver easily interpretable evidence to inform decision-making and improve the understanding of disease etiology. I led the design and development of these novel methods, benchmarked the proposed methods against the state-of-the-art methods and worked with interdisciplinary research teams to translate analytic results into novel findings. -->
 
-<!-- 1.	Novel nonparametric models to estimate individualized treatment effects and disease risk using high-dimensional omics data: Heterogeneous reaction to treatment or disease progression requires individualized medical decisions informed by data-driven evidence, improving the outlook of precision medicine. Leveraging the complex omics data, e.g. microbiome or gene expression, we develop high-dimensional nonparametric models, including multivariate random forest and generalized additive models, to estimate individualized treatment effects and predict disease risks. These novel machine-learning models substantially reduce the analytic bias due to the parametric assumptions of existing methods and deliver easily interpretable evidence to inform decision-making and improve the understanding of disease etiology. I led the design and development of these novel methods, benchmarked the proposed methods against the state-of-the-art methods and worked with interdisciplinary research teams to translate analytic results into novel findings. -->
-<!-- a.	Guo B, Yi N. A scalable and flexible Cox proportional hazards model for high-dimensional survival prediction and functional selection. arXiv. 2022 May. [Preprint.] DOI: 10.48550/ARXIV.2205.11600 -->
-<!-- b.	Guo B, Yi N. The R Package BHAM: Fast and Scalable Bayesian Hierarchical Additive Model for High-dimensional Data. arXiv. 2022 Jul. [Preprint.] DOI: 10.48550/ARXIV.2207.02348 -->
-<!-- c.	Guo B, Jaeger BC, Rahman AKMF, Long DL, Yi N. Spike-and-slab least absolute shrinkage and selection operator generalized additive models and scalable algorithms for high-dimensional data analysis. Stat Med. 2022 Sep 10;41(20):3899-3914. PubMed PMID: 35665524.  -->
-<!-- d.	Guo B, Holscher H, Auvil L, Welge M, Bushell C, Novotny J, Baer D, Burd N, Khan N, Zhu R. Estimating Heterogeneous Treatment Effect on Multivariate Responses Using Random Forests. Statistics in Biosciences. 2021 May 15; :-. Available from: https://link.springer.com/10.1007/s12561-021-09310-w DOI: 10.1007/s12561-021-09310-w -->
+<!-- a. Guo B, Yi N. A scalable and flexible Cox proportional hazards model for high-dimensional survival prediction and functional selection. arXiv. 2022 May. [Preprint.] DOI: 10.48550/ARXIV.2205.11600 -->
 
+<!-- b. Guo B, Yi N. The R Package BHAM: Fast and Scalable Bayesian Hierarchical Additive Model for High-dimensional Data. arXiv. 2022 Jul. [Preprint.] DOI: 10.48550/ARXIV.2207.02348 -->
+
+<!-- c. Guo B, Jaeger BC, Rahman AKMF, Long DL, Yi N. Spike-and-slab least absolute shrinkage and selection operator generalized additive models and scalable algorithms for high-dimensional data analysis. Stat Med. 2022 Sep 10;41(20):3899-3914. PubMed PMID: 35665524.  -->
+
+<!-- d. Guo B, Holscher H, Auvil L, Welge M, Bushell C, Novotny J, Baer D, Burd N, Khan N, Zhu R. Estimating Heterogeneous Treatment Effect on Multivariate Responses Using Random Forests. Statistics in Biosciences. 2021 May 15; :-. Available from: https://link.springer.com/10.1007/s12561-021-09310-w DOI: 10.1007/s12561-021-09310-w -->
 
 <!-- Scalable Bayesian hierarchical models to analyze high-dimensional microbiome data: Though enlightening human physiology, microbiome data poses significant analytic challenges, due to its sparse and high-dimensional nature. To analyze the complex microbiome data, we developed Bayesian hierarchical models to simultaneously investigate hundreds and thousands of microbes while rigorously controlling error rates and maintaining statistical power. To expedite the model fitting, we proposed computationally efficient optimization-based algorithms for the Bayesian models to improve scalability. During the methodology development, I led the benchmarking of the proposed methods against the state-of-the-art methods, designing and implementing numeric studies using synthetic data. -->
 
-<!-- a.	Pendegraft AH, Guo B, Yi N. Bayesian hierarchical negative binomial models for multivariable analyses with applications to human microbiome count data. PLoS One. 2019;14(8):e0220961. PubMed Central PMCID: PMC6706006.  -->
-<!-- b.	Zhang X, Guo B, Yi N. Zero-Inflated gaussian mixed models for analyzing longitudinal microbiome data. PLoS One. 2020;15(11):e0242073. PubMed Central PMCID: PMC7652264.  -->
-<!-- c.	Zhang X, Pei Y, Zhang L, Guo B, Pendegraft A, Zhuang W, Yi N. Negative Binomial Mixed Models for Analyzing Longitudinal Microbiome Data. Frontiers in Microbiology. 2018 DOI: 10.3389/fmicb.2018.01683 -->
+<!-- a. Pendegraft AH, Guo B, Yi N. Bayesian hierarchical negative binomial models for multivariable analyses with applications to human microbiome count data. PLoS One. 2019;14(8):e0220961. PubMed Central PMCID: PMC6706006.  -->
+
+<!-- b. Zhang X, Guo B, Yi N. Zero-Inflated gaussian mixed models for analyzing longitudinal microbiome data. PLoS One. 2020;15(11):e0242073. PubMed Central PMCID: PMC7652264.  -->
+
+<!-- c. Zhang X, Pei Y, Zhang L, Guo B, Pendegraft A, Zhuang W, Yi N. Negative Binomial Mixed Models for Analyzing Longitudinal Microbiome Data. Frontiers in Microbiology. 2018 DOI: 10.3389/fmicb.2018.01683 -->
 
 <!-- ### Open-source software -->
+
 <!-- Scientific software development translating cutting-edge statistical models to open-access interfaces: High-quality open-access software is indispensable for quantitative analysis, providing data-driven evidence to scientific hypotheses. Furthermore, with growing concerns about reproducibility, scientific software improves the standard by providing a well-documented well-designed interface, greatly reducing the technical burdens of conducting complex analysis. Leveraging my previous training in software engineering, I designed and implemented cutting-edge high-dimensional models in the R programming platform, translating theoretical statistical frameworks to open-access software. The software were validated and tested using both synthetic and real-world data. The developed software has been maintained. -->
 
-<!--   a.	Guo B. A Reproducible Framework to Calculating Residential Segregation Indices With Decennial US Census Data. Zenodo, 2023 Jan. [Software.] DOI: 10.5281/ZENODO.7561874 -->
-<!--   b.	Guo B, Zhu R. The R Package MOTE.RF: Estimating Heterogeneous Treatment Effect on Multivariate Responses Using Random Forests. Zenodo, 2023 Jan. [Software.] DOI: 10.5281/ZENODO.7561850 -->
-<!--   c.	Guo B, Yi N. The R Package BHAM: Fast and Scalable Bayesian Hierarchical Additive Model for High-dimensional Data. arXiv. 2022 Jul. [Preprint.] DOI: 10.48550/ARXIV.2207.02348 -->
-<!--   d.	Yi N, Tang Z, Zhang X, Guo B. BhGLM: Bayesian hierarchical GLMs and survival models, with applications to genomics and epidemiology. Bioinformatics. 2019 April 15; 35(8):1419-1421. DOI: 10.1093/bioinformatics/bty803 -->
+<!--   a.   Guo B. A Reproducible Framework to Calculating Residential Segregation Indices With Decennial US Census Data. Zenodo, 2023 Jan. [Software.] DOI: 10.5281/ZENODO.7561874 -->
 
+<!--   b.   Guo B, Zhu R. The R Package MOTE.RF: Estimating Heterogeneous Treatment Effect on Multivariate Responses Using Random Forests. Zenodo, 2023 Jan. [Software.] DOI: 10.5281/ZENODO.7561850 -->
+
+<!--   c.   Guo B, Yi N. The R Package BHAM: Fast and Scalable Bayesian Hierarchical Additive Model for High-dimensional Data. arXiv. 2022 Jul. [Preprint.] DOI: 10.48550/ARXIV.2207.02348 -->
+
+<!--   d.   Yi N, Tang Z, Zhang X, Guo B. BhGLM: Bayesian hierarchical GLMs and survival models, with applications to genomics and epidemiology. Bioinformatics. 2019 April 15; 35(8):1419-1421. DOI: 10.1093/bioinformatics/bty803 -->
 
 <!-- ## Multiscale Data Analysis -->
+
 <!-- ## Molecular and Cellular via Spatially resolved transcriptomics -->
 
-## Computational Omics
+# Computational Omics
 
-#### Spatially-resolved genomics
+## Spatially-resolved genomics
 
-#### Microbiome
+The cortical layers of the human neocortex were classically defined by histological distinction of cell types according to size and shape. However, emerging single-cell and spatially-resolved transcriptomic technologies have facilitated the identification of molecularly defined cell populations and spatial domains that move beyond classic cell type definitions and cytoarchitectural boundaries. Assigning gene expression to distinct anatomical subdivisions and cell populations within the human brain improves the understanding of brain regions and how they contribute to brain disorders. I led the quantitative investigation of 30 Visium Samples and single-nucleus RNA seq collected from 19 brain samples, where integrative cell-cell communication identified FYN-EFNA5-EPHA5 signaling pathway associated with schizophrenia. I also developed a novel visualization framework that simultaneous display disparage variables following Gestalt principles, allowing to in situ visualize of differential expression across various spatial domains.
 
+-   Guo B, Huuki-Myers LA, Grant-Peters M, Collado-Torres L, Hicks SC. escheR: Unified multi-dimensional visualizations with Gestalt principles. bioRxiv. 2023 Jun 8; PubMed Central PMCID: PMC10055209.
 
-## Population Health
+-   Huuki-Myers L, Spangler A, Eagles N, Montgomery KD, Kwon SH, Guo B, Grant-Peters M, Divecha HR, Tippani M, Sriworarat C, Nguyen AB, Ravichandran P, Tran MN, Seyedian A, Hyde TM, Kleinman JE, Battle A, Page SC, Ryten M, Hicks SC, Martinowich K, Collado-Torres L, Maynard KR. Integrated single cell and unsupervised spatial transcriptomic analysis defines molecular anatomy of the human dorsolateral prefrontal cortex. bioRxiv. 2023 Feb 15; PubMed Central PMCID: PMC9949126.
 
-#### The Reasons for Geographic and Racial Differences in Stroke
+## Microbiome
+
+# Population Health
+
+## The Reasons for Geographic and Racial Differences in Stroke
+
 <!-- Collaborative research studying health disparity in stroke and co-morbidities among racial groups and geographic locations: Black Americans under age 75 were more than twice as likely to die from stroke than were non-Hispanic white Americans, while people who lived in the South had a 40 percent higher risk of dying from stroke than their counterparts in other parts of the United States. Understanding the cause of the disparity is imperative to effective interventions and policy change. We analyzed data collected in the national cohort study, the Reasons for Geographic and Racial Differences in Stroke (REGARDS), to examine possible causal pathways and identify novel biomarkers to inform disease risk. I provided critical analytic support to medical doctors, epidemiologists and biologists. In the multi-center research group, I delivered talks and tutorials on reproducible analytic standards. -->
-<!-- a.	Kamin Mukaz D, Guo B, Long D, Judd S, Plante T, McClure L, Wolberg A, Zakai N, Howard G, Cushman M. D-dimer and the risk of hypertension: The REasons for Geographic And Racial Differences in Stroke Cohort Study. Research and Practice in Thrombosis and Haemostasis. 2023 January; 7(1):100016-. DOI: 10.1016/j.rpth.2022.100016 -->
-<!-- b.	Peper KM, Guo B, Leann Long D, Howard G, Carson AP, Howard VJ, Judd SE, Zakai NA, Cherrington A, Cushman M, Plante TB. C-reactive Protein and Racial Differences in Type 2 Diabetes Incidence: The REGARDS Study. J Clin Endocrinol Metab. 2022 May 17;107(6):e2523-e2531. PubMed Central PMCID: PMC9113826.  -->
-<!-- c.	Long DL, Guo B, McClure LA, Jaeger BC, Tison SE, Howard G, Judd SE, Howard VJ, Plante TB, Zakai NA, Koh I, Cheung KL, Cushman M. Biomarkers as MEDiators of racial disparities in risk factors (BioMedioR): Rationale, study design, and statistical considerations. Ann Epidemiol. 2022 Feb;66:13-19. PubMed Central PMCID: PMC8920757.  -->
-<!-- d.	Plante T, Long D, Guo B, Howard G, Carson A, Howard V, Judd S, Jenny N, Zakai N, Cushman M. C-Reactive Protein and Incident Hypertension in Black and White Americans in the REasons for Geographic And Racial Differences in Stroke (REGARDS) Cohort Study. American Journal of Hypertension. 2021 July 01; 34(7):698-706. DOI: 10.1093/ajh/hpaa215 -->
+
+<!-- a. Kamin Mukaz D, Guo B, Long D, Judd S, Plante T, McClure L, Wolberg A, Zakai N, Howard G, Cushman M. D-dimer and the risk of hypertension: The REasons for Geographic And Racial Differences in Stroke Cohort Study. Research and Practice in Thrombosis and Haemostasis. 2023 January; 7(1):100016-. DOI: 10.1016/j.rpth.2022.100016 -->
+
+<!-- b. Peper KM, Guo B, Leann Long D, Howard G, Carson AP, Howard VJ, Judd SE, Zakai NA, Cherrington A, Cushman M, Plante TB. C-reactive Protein and Racial Differences in Type 2 Diabetes Incidence: The REGARDS Study. J Clin Endocrinol Metab. 2022 May 17;107(6):e2523-e2531. PubMed Central PMCID: PMC9113826.  -->
+
+<!-- c. Long DL, Guo B, McClure LA, Jaeger BC, Tison SE, Howard G, Judd SE, Howard VJ, Plante TB, Zakai NA, Koh I, Cheung KL, Cushman M. Biomarkers as MEDiators of racial disparities in risk factors (BioMedioR): Rationale, study design, and statistical considerations. Ann Epidemiol. 2022 Feb;66:13-19. PubMed Central PMCID: PMC8920757.  -->
+
+<!-- d. Plante T, Long D, Guo B, Howard G, Carson A, Howard V, Judd S, Jenny N, Zakai N, Cushman M. C-Reactive Protein and Incident Hypertension in Black and White Americans in the REasons for Geographic And Racial Differences in Stroke (REGARDS) Cohort Study. American Journal of Hypertension. 2021 July 01; 34(7):698-706. DOI: 10.1093/ajh/hpaa215 -->
