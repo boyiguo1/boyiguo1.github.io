@@ -21,7 +21,11 @@ about:
       href: mailto:boyi.guo.work@gmail.com
 ---
 
-I am an applied statistician and biomedical data scientist working at the intersection of machine learning, computational omics, and population health. My research concentrates on developing statistically rigorous and computationally scalable machine-learning methods, as well as open-source software, that integrates population-scale multi-omics data to uncover functional mechanisms that explain disease heterogeneity.
+I am an applied statistician and biomedical data scientist working at the intersection of *machine learning*, *computational omics*, and *population health*. My [research](https://boyi-guo.com/projects.html) concentrates on developing statistically rigorous and computationally scalable machine-learning methods, as well as open-source software, that integrates population-scale multi-omics data to uncover functional mechanisms that explain disease heterogeneity.
+
+------------------------------------------------------------------------
+
+Currently, I am a postdoctoral fellow in Biostatistics at Johns Hopkins Bloomberg of School of Public Health, mentored by Dr. [Stephanie Hicks](https://www.stephaniehicks.com/). I am open to opportunities to advance my scientific career that tentatively starts 2025 Summer.
 
 ```{=html}
 <center><img src="http://ghchart.rshah.org/boyiguo1" alt="Boyi Guo's Github chart" /, width = "100%", height = "100%"></a></center>
