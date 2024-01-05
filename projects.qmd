@@ -12,7 +12,7 @@ format:
 
 # Scalable machine learning models for precision medicine
 
-Heterogeneous reaction to treatment or disease progression requires individualized medical decisions informed by data-driven evidence. Deeply embedded in the the biomedical data, the key to successful precision medicine requires timely advances in machine learning and artificial intellgent models that extracts insights from the complex and high-dimensional biomedical data.
+Heterogeneity in treatment response and disease progression requires individualized health care informed by data-driven evidence. Deeply embedded in biomedical data, the key to successful precision medicine requires timely advances in statistically sounding machine learning models and AI tools that extract insights from the complex and high-dimensional biomedical data.
 
 ## Variable and functional selection using spike-and-slab LASSO  
 <div>
@@ -20,7 +20,7 @@ Heterogeneous reaction to treatment or disease progression requires individualiz
 ![Two-part spike-and-slab LASSO prior for smooth functions. (Guo et al., 2022)](img/SSL_GAM.png){width=80%}
 </div>
 
-I develop Bayesian statistical learning methods and scalable algorithms for high-dimensional data analysis, with the application to biomedical data that includes, but not limited to, population-level omics and clinical data. Specifically,
+I develop Bayesian statistical learning methods and scalable algorithms for high-dimensional data analysis, with the application to biomedical data that includes, but not limited to, population-level clinical abd -omics data. Specifically,
 I introduced new Bayesian hierarchical models, following the spike-and-slab LASSO framework, to select important nonlinear signals for high-dimensional data and predict disease risk of continuous, binary, count and survival outcomes. To overcome computational burden of training Bayesian models, I develop novel optimization-based model-fitting algorithms to improve computational scalability, and open-source software to make the analysis accessible to everyone.
 </div>
 
@@ -90,9 +90,13 @@ I introduced new Bayesian hierarchical models, following the spike-and-slab LASS
 
 The cortical layers of the human neocortex were classically defined by histological distinction of cell types according to size and shape. However, emerging single-cell and spatially-resolved transcriptomic technologies have facilitated the identification of molecularly defined cell populations and spatial domains that move beyond classic cell type definitions and cytoarchitectural boundaries. Assigning gene expression to distinct anatomical subdivisions and cell populations within the human brain improves the understanding of brain regions and how they contribute to brain disorders. I led the quantitative investigation of 30 Visium Samples and single-nucleus RNA seq collected from 19 brain samples, where integrative cell-cell communication identified FYN-EFNA5-EPHA5 signaling pathway associated with schizophrenia. I also developed a novel visualization framework that simultaneous display disparage variables following Gestalt principles, allowing to in situ visualize of differential expression across various spatial domains.
 
--   Guo B, Huuki-Myers LA, Grant-Peters M, Collado-Torres L, Hicks SC. escheR: Unified multi-dimensional visualizations with Gestalt principles. bioRxiv. 2023 Jun 8; PubMed Central PMCID: PMC10055209.
 
--   Huuki-Myers L, Spangler A, Eagles N, Montgomery KD, Kwon SH, Guo B, Grant-Peters M, Divecha HR, Tippani M, Sriworarat C, Nguyen AB, Ravichandran P, Tran MN, Seyedian A, Hyde TM, Kleinman JE, Battle A, Page SC, Ryten M, Hicks SC, Martinowich K, Collado-Torres L, Maynard KR. Integrated single cell and unsupervised spatial transcriptomic analysis defines molecular anatomy of the human dorsolateral prefrontal cortex. bioRxiv. 2023 Feb 15; PubMed Central PMCID: PMC9949126.
+
+-   Huuki-Myers L, Spangler A, Eagles N, Montgomery KD, Kwon SH, **Guo B**, Grant-Peters M, Divecha HR, Tippani M, Sriworarat C, Nguyen AB, Ravichandran P, Tran MN, Seyedian A, Hyde TM, Kleinman JE, Battle A, Page SC, Ryten M, Hicks SC, Martinowich K, Collado-Torres L, Maynard KR. [Integrated single cell and unsupervised spatial transcriptomic analysis defines molecular anatomy of the human dorsolateral prefrontal cortex](https://www.biorxiv.org/content/10.1101/2023.02.15.528722v1). _Science_.
+
+### Methods processing, integrating and analyzing spaital genomics data
+
+-   **Guo B**, Huuki-Myers LA, Grant-Peters M, Collado-Torres L, Hicks SC. [escheR: Unified multi-dimensional visualizations with Gestalt principles](https://academic.oup.com/bioinformaticsadvances/article/3/1/vbad179/7459905). _Bioinformatics Advances_. []()
 
 ## Microbiome
 
