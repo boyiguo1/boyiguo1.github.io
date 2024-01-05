@@ -103,13 +103,18 @@ The cortical layers of the human neocortex were classically defined by histologi
 # Population Health
 
 ## The Reasons for Geographic and Racial Differences in Stroke
+<!-- <div> -->
+<!-- <div style="float: left; position: relative; top: 0px; padding: -10px;"> -->
+![](img/REGARDS-logo.jpg){width=35%}
+<!-- </div> -->
+<!-- </div> -->
 
 <!-- Collaborative research studying health disparity in stroke and co-morbidities among racial groups and geographic locations: Black Americans under age 75 were more than twice as likely to die from stroke than were non-Hispanic white Americans, while people who lived in the South had a 40 percent higher risk of dying from stroke than their counterparts in other parts of the United States. Understanding the cause of the disparity is imperative to effective interventions and policy change. We analyzed data collected in the national cohort study, the Reasons for Geographic and Racial Differences in Stroke (REGARDS), to examine possible causal pathways and identify novel biomarkers to inform disease risk. I provided critical analytic support to medical doctors, epidemiologists and biologists. In the multi-center research group, I delivered talks and tutorials on reproducible analytic standards. -->
 
-<!-- a. Kamin Mukaz D, Guo B, Long D, Judd S, Plante T, McClure L, Wolberg A, Zakai N, Howard G, Cushman M. D-dimer and the risk of hypertension: The REasons for Geographic And Racial Differences in Stroke Cohort Study. Research and Practice in Thrombosis and Haemostasis. 2023 January; 7(1):100016-. DOI: 10.1016/j.rpth.2022.100016 -->
+* Kamin Mukaz D, **Guo B**, Long D, Judd S, Plante T, McClure L, Wolberg A, Zakai N, Howard G, Cushman M. D-dimer and the risk of hypertension: The REasons for Geographic And Racial Differences in Stroke Cohort Study. _Research and Practice in Thrombosis and Haemostasis_.
 
-<!-- b. Peper KM, Guo B, Leann Long D, Howard G, Carson AP, Howard VJ, Judd SE, Zakai NA, Cherrington A, Cushman M, Plante TB. C-reactive Protein and Racial Differences in Type 2 Diabetes Incidence: The REGARDS Study. J Clin Endocrinol Metab. 2022 May 17;107(6):e2523-e2531. PubMed Central PMCID: PMC9113826.  -->
+* Peper KM, **Guo B**, Leann Long D, Howard G, Carson AP, Howard VJ, Judd SE, Zakai NA, Cherrington A, Cushman M, Plante TB. C-reactive Protein and Racial Differences in Type 2 Diabetes Incidence: The REGARDS Study. _J Clin Endocrinol Metab_.
 
-<!-- c. Long DL, Guo B, McClure LA, Jaeger BC, Tison SE, Howard G, Judd SE, Howard VJ, Plante TB, Zakai NA, Koh I, Cheung KL, Cushman M. Biomarkers as MEDiators of racial disparities in risk factors (BioMedioR): Rationale, study design, and statistical considerations. Ann Epidemiol. 2022 Feb;66:13-19. PubMed Central PMCID: PMC8920757.  -->
+* Long DL, **Guo B**, McClure LA, Jaeger BC, Tison SE, Howard G, Judd SE, Howard VJ, Plante TB, Zakai NA, Koh I, Cheung KL, Cushman M. Biomarkers as MEDiators of racial disparities in risk factors (BioMedioR): Rationale, study design, and statistical considerations. _Ann Epidemiol_.
 
-<!-- d. Plante T, Long D, Guo B, Howard G, Carson A, Howard V, Judd S, Jenny N, Zakai N, Cushman M. C-Reactive Protein and Incident Hypertension in Black and White Americans in the REasons for Geographic And Racial Differences in Stroke (REGARDS) Cohort Study. American Journal of Hypertension. 2021 July 01; 34(7):698-706. DOI: 10.1093/ajh/hpaa215 -->
+* Plante T, Long D, **Guo B**, Howard G, Carson A, Howard V, Judd S, Jenny N, Zakai N, Cushman M. C-Reactive Protein and Incident Hypertension in Black and White Americans in the REasons for Geographic And Racial Differences in Stroke (REGARDS) Cohort Study. _American Journal of Hypertension_.
