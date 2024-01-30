@@ -94,9 +94,16 @@ The cortical layers of the human neocortex were classically defined by histologi
 
 -   Huuki-Myers L, Spangler A, Eagles N, Montgomery KD, Kwon SH, **Guo B**, Grant-Peters M, Divecha HR, Tippani M, Sriworarat C, Nguyen AB, Ravichandran P, Tran MN, Seyedian A, Hyde TM, Kleinman JE, Battle A, Page SC, Ryten M, Hicks SC, Martinowich K, Collado-Torres L, Maynard KR. [Integrated single cell and unsupervised spatial transcriptomic analysis defines molecular anatomy of the human dorsolateral prefrontal cortex](https://www.biorxiv.org/content/10.1101/2023.02.15.528722v1). _Science_.
 
-### Methods processing, integrating and analyzing spaital genomics data
+### Computational methods processing, integrating analyzing and visualizing spatial genomics data
+<div>
+<div style="float: left; position: relative; top: 0px; padding: -10px;">
+![Multi-dimensional *in situ* visualization (Guo et al., 2023)](img/insitu.jpg){width=60%}
+</div>
 
--   **Guo B**, Huuki-Myers LA, Grant-Peters M, Collado-Torres L, Hicks SC. [escheR: Unified multi-dimensional visualizations with Gestalt principles](https://academic.oup.com/bioinformaticsadvances/article/3/1/vbad179/7459905). _Bioinformatics Advances_. []()
+The development of computational methods for processing, integrating, analyzing, and visualizing spatial genomics data is crucial in advancing our understanding of complex biological systems. Spatial genomics provides valuable insights into the spatial organization of cells and their interactions within tissues. Computational methods enable the extraction of meaningful patterns, unveiling the spatial relationships between genes and cells.
+</div>
+
+-   **Guo B**, Huuki-Myers LA, Grant-Peters M, Collado-Torres L, Hicks SC. [escheR: Unified multi-dimensional visualizations with Gestalt principles](https://academic.oup.com/bioinformaticsadvances/article/3/1/vbad179/7459905). _Bioinformatics Advances_.
 
 ## Microbiome
 
