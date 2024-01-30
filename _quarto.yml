@@ -14,6 +14,8 @@ website:
       - projects.qmd
       - href: https://www.overleaf.com/read/gdttrkmmwncb#4463ee
         text: CV
+      - growth.qmd
+
 
 
 format:
