@@ -1,0 +1,28 @@
+---
+title: "Index measuring nestedness of clusterings"
+---
+
+There are many indexes measure the internal validity and external validity of clustering results, including FastH+ and adjusted rand index for example. However, it is not specifically designed to study the nestedness of clustering results for example bumping the apripri number of clusters from k=2 to k=3. 
+
+
+TODO: why measureing nestedness is important.
+I believe measuring the nestedness of clustering results is important in multiple use cases.
+
+I think measureing the nestnedness is very important in *multi-sample* integration, specifically [horizontal integration](https://www.nature.com/articles/s41587-021-00895-7). 
+
+![](img/motivation_nested_index.jpg)
+
+
+For example, if you have increased the K=2 to K=3, having such an index measuering the nestedness of clusters could be informative of 
+
+* Sample-level QC: If one sample may be different from the rest of the samples and requires special attention.   
+* Violating the assumption about cell composition are the same across all samples.    
+* Clustering stability: Indicator that the algorithms lack of stability
+
+
+The toy example is when I studying PNN-SCZ project, I see that some individual samples cluster doesn't emerge until k bump to extremely large number. And also, when bumping K from small number to large number, increasing K doesn't necessarily bringing more meaningful spatial domains.
+
+
+**How to implement this**
+Among the larger cluster (K=2) for example, finding all the paired data points within the clusters, The number of pairs that are no outside of the clusters. Mathematically, among $\sum\limits^k_{i=1}C^{n_{k=2,i}}_{2}$ pairs, how many pairs such that the pair in $K=3$ cluster results stays the same K=2 clusters. However, this implementation doesn't considers the size of the clustering.....
+
