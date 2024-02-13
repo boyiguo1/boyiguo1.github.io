@@ -1,0 +1,31 @@
+---
+title: "Supervised Surragate Variable Analaysis"
+---
+
+Motivation:
+
+* A case-control study
+* Nuanced signal is larger than the intereste signal which is by nature small
+* Weak Signal
+
+
+## Statistics Model
+For the $i$th individual, we collect $n_i$ cells where we can observe the spatial arrangement of the cells measured with a 2-D spatial coordinates $\vec{S^x_{i}}, \vec{S^y_i}$. In addition, the two normalized gene expression of the $n_i$ cells for $p$ genes can be quantified in a data matrix $\vec{X_i} \in R^{n_i \times p}$.
+
+Collectively, we have the data $\{\vec X_i, T_i\vec{1}, (\vec{S^x_{i}}, \vec{S^y_i})\}_i^{n}$ from $n = |T_i=1| + |T_i=-1|$ individuals and total of $n_{cell} = \sum\limits_i^{n_{ind}} n_i$.
+
+We assume that the underlying data generating mechanism is that 
+
+$$
+\vec{X}_i = \vec{Y}_i + T_i\vec{Z}_i + \vec{\epsilon},
+$$
+where $\vec{Y}_i$ is the latent factors shared by both exposure groups, and $\vec{Z}_i$ is exposure group specific latent factors.
+
+**Objective Function**
+\begin{align*}
+\text{minimize} ||X - U \Sigma V - T U^\prime \Sigma^\prime V^\prime||_F^2,
+\end{align*}
+
+where the constrain that $mean(\vec{X}_{T=1}V\prime) - mean(\vec{X}_{T=-1}V\prime)$ is maximized.
+
+Where are actually just interested in $U\prime$ and $V\prime$
