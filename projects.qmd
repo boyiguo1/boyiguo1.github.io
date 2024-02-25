@@ -32,7 +32,13 @@ I introduced new Bayesian hierarchical models, following the spike-and-slab LASS
 
 
 ## Multivariate random forests to estimating heterogeneous treatment effects 
+<div>
+<div style="float: right; <!-- position: relative; text-align: center; top: 0px; padding-left: -100px; padding-right: -10px;-->"> 
+![Multiple Outcome Treatment Effect Forests.](https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs12561-021-09310-w/MediaObjects/12561_2021_9310_Figa_HTML.png){width=350 fig-align="right"}
+</div>
 
+Precision healthcare motivates tailored treatments that take individual heterogeneity, environment, and lifestyles into consideration. The estimation of individualized treatment effect poses significant methodological and computational challenges, especially jointly for multiple health outcomes of interest. We propose a random forest model, *MOTEF*, that estimates individualized treatment effects of multivariate outcomes simultaneously, accounting for pre- and post-treatment covariates.
+</div>
 
 * **Guo B**, Holscher H, Auvil L, Welge M, Bushell C, Novotny J, Baer D, Burd N, Khan N, Zhu R. (2021). [Estimating Heterogeneous Treatment Effect on Multivariate Responses Using Random Forests](https://doi.org/10.1007/s12561-021-09310-w).  _Statistics in Biosciences._
 
@@ -92,36 +98,48 @@ The cortical layers of the human neocortex were classically defined by histologi
 
 
 
--   Huuki-Myers L, Spangler A, Eagles N, Montgomery KD, Kwon SH, **Guo B**, Grant-Peters M, Divecha HR, Tippani M, Sriworarat C, Nguyen AB, Ravichandran P, Tran MN, Seyedian A, Hyde TM, Kleinman JE, Battle A, Page SC, Ryten M, Hicks SC, Martinowich K, Collado-Torres L, Maynard KR. [Integrated single cell and unsupervised spatial transcriptomic analysis defines molecular anatomy of the human dorsolateral prefrontal cortex](https://www.biorxiv.org/content/10.1101/2023.02.15.528722v1). _Science_.
+-   Huuki-Myers L, Spangler A, Eagles N, Montgomery KD, Kwon SH, **Guo B**, Grant-Peters M, Divecha HR, Tippani M, Sriworarat C, Nguyen AB, Ravichandran P, Tran MN, Seyedian A, Hyde TM, Kleinman JE, Battle A, Page SC, Ryten M, Hicks SC, Martinowich K, Collado-Torres L, Maynard KR. (2023). [Integrated single cell and unsupervised spatial transcriptomic analysis defines molecular anatomy of the human dorsolateral prefrontal cortex](https://www.biorxiv.org/content/10.1101/2023.02.15.528722v1). _Science_.
 
-### Computational methods processing, integrating analyzing and visualizing spatial genomics data
+### Computational methods for spatial genomics data
+
 <div>
-<div style="float: left; position: relative; top: 0px; padding: -10px;">
-![Multi-dimensional *in situ* visualization (Guo et al., 2023)](img/insitu.jpg){width=60%}
+
+<div style="float: left;  position: relative; ">
+![Multi-dimensional visualization](img/insitu.jpg){width=350  fig-align=left}
 </div>
 
 The development of computational methods for processing, integrating, analyzing, and visualizing spatial genomics data is crucial in advancing our understanding of complex biological systems. Spatial genomics provides valuable insights into the spatial organization of cells and their interactions within tissues. Computational methods enable the extraction of meaningful patterns, unveiling the spatial relationships between genes and cells.
 </div>
 
--   **Guo B**, Huuki-Myers LA, Grant-Peters M, Collado-Torres L, Hicks SC. [escheR: Unified multi-dimensional visualizations with Gestalt principles](https://academic.oup.com/bioinformaticsadvances/article/3/1/vbad179/7459905). _Bioinformatics Advances_.
+* **Guo B**, Huuki-Myers LA, Grant-Peters M, Collado-Torres L, Hicks SC. (2023). [escheR: Unified multi-dimensional visualizations with Gestalt principles](https://academic.oup.com/bioinformaticsadvances/article/3/1/vbad179/7459905). _Bioinformatics Advances_.
 
 ## Microbiome
+
+- Pendegraft AH, **Guo B**, Yi N. (2019). Bayesian hierarchical negative binomial models for multivariable analyses with applications to human microbiome count data. _PloS one_.
+
+- Zhang X, **Guo B**, Yi N. (2020). Zero-Inflated gaussian mixed models for analyzing longitudinal microbiome data. _Plos one_.
 
 # Population Health
 
 ## The Reasons for Geographic and Racial Differences in Stroke
-<!-- <div> -->
-<!-- <div style="float: left; position: relative; top: 0px; padding: -10px;"> -->
-![](img/REGARDS-logo.jpg){width=35%}
-<!-- </div> -->
-<!-- </div> -->
+<div>
+<div style="float: left; position: relative; top: 0px; padding: -10px;">
+![](img/REGARDS-logo.jpg){width=200}
+</div>
+Black Americans under age 75 were more than twice as likely to die from stroke than were non-Hispanic white Americans, while people who lived in the South had a 40 percent higher risk of dying from stroke than their counterparts in other parts of the United States. Understanding the cause of the disparity is imperative to effective interventions and policy change. To understand the health disparity, The Reasons for Geographic and Racial Differences in Stroke (REGARDS) project recruited 30,239 participants who are 45 years or older between January 2003 and October 2007 and continues following up with them. I led the quantitative investigation of multiple possible causal pathways mediating the health disparity in cardiovascular disease and its comorbidity.
+</div>
 
-<!-- Collaborative research studying health disparity in stroke and co-morbidities among racial groups and geographic locations: Black Americans under age 75 were more than twice as likely to die from stroke than were non-Hispanic white Americans, while people who lived in the South had a 40 percent higher risk of dying from stroke than their counterparts in other parts of the United States. Understanding the cause of the disparity is imperative to effective interventions and policy change. We analyzed data collected in the national cohort study, the Reasons for Geographic and Racial Differences in Stroke (REGARDS), to examine possible causal pathways and identify novel biomarkers to inform disease risk. I provided critical analytic support to medical doctors, epidemiologists and biologists. In the multi-center research group, I delivered talks and tutorials on reproducible analytic standards. -->
 
 * Kamin Mukaz D, **Guo B**, Long D, Judd S, Plante T, McClure L, Wolberg A, Zakai N, Howard G, Cushman M. D-dimer and the risk of hypertension: The REasons for Geographic And Racial Differences in Stroke Cohort Study. _Research and Practice in Thrombosis and Haemostasis_.
 
 * Peper KM, **Guo B**, Leann Long D, Howard G, Carson AP, Howard VJ, Judd SE, Zakai NA, Cherrington A, Cushman M, Plante TB. C-reactive Protein and Racial Differences in Type 2 Diabetes Incidence: The REGARDS Study. _J Clin Endocrinol Metab_.
 
-* Long DL, **Guo B**, McClure LA, Jaeger BC, Tison SE, Howard G, Judd SE, Howard VJ, Plante TB, Zakai NA, Koh I, Cheung KL, Cushman M. Biomarkers as MEDiators of racial disparities in risk factors (BioMedioR): Rationale, study design, and statistical considerations. _Ann Epidemiol_.
 
 * Plante T, Long D, **Guo B**, Howard G, Carson A, Howard V, Judd S, Jenny N, Zakai N, Cushman M. C-Reactive Protein and Incident Hypertension in Black and White Americans in the REasons for Geographic And Racial Differences in Stroke (REGARDS) Cohort Study. _American Journal of Hypertension_.
+
+
+### Study design & mediation analysis
+
+* Long DL, **Guo B**, McClure LA, Jaeger BC, Tison SE, Howard G, Judd SE, Howard VJ, Plante TB, Zakai NA, Koh I, Cheung KL, Cushman M. Biomarkers as MEDiators of racial disparities in risk factors (BioMedioR): Rationale, study design, and statistical considerations. _Ann Epidemiol_.
+
+* Cui J, **Guo B**, Tiwari H, Rahman AKMF, Sims AM, Long DL. Comparison of three mediation methods with survival outcomes via simulation study. _In review._

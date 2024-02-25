@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "SupervisedMatrixFactorization.html",
+    "href": "SupervisedMatrixFactorization.html",
+    "title": "Supervised Surragate Variable Analaysis",
+    "section": "",
+    "text": "Motivation:"
+  },
+  {
+    "objectID": "SupervisedMatrixFactorization.html#statistics-model",
+    "href": "SupervisedMatrixFactorization.html#statistics-model",
+    "title": "Supervised Surragate Variable Analaysis",
+    "section": "Statistics Model",
+    "text": "Statistics Model\nFor the \\(i\\)th individual, we collect \\(n_i\\) cells where we can observe the spatial arrangement of the cells measured with a 2-D spatial coordinates \\(\\vec{S^x_{i}}, \\vec{S^y_i}\\). In addition, the two normalized gene expression of the \\(n_i\\) cells for \\(p\\) genes can be quantified in a data matrix \\(\\vec{X_i} \\in R^{n_i \\times p}\\).\nCollectively, we have the data \\(\\{\\vec X_i, T_i\\vec{1}, (\\vec{S^x_{i}}, \\vec{S^y_i})\\}_i^{n}\\) from \\(n = |T_i=1| + |T_i=-1|\\) individuals and total of \\(n_{cell} = \\sum\\limits_i^{n_{ind}} n_i\\).\nWe assume that the underlying data generating mechanism is that\n\\[\n\\vec{X}_i = \\vec{Y}_i + T_i\\vec{Z}_i + \\vec{\\epsilon},\n\\] where \\(\\vec{Y}_i\\) is the latent factors shared by both exposure groups, and \\(\\vec{Z}_i\\) is exposure group specific latent factors.\nObjective Function \\[\\begin{align*}\n\\text{minimize} ||X - U \\Sigma V - T U^\\prime \\Sigma^\\prime V^\\prime||_F^2,\n\\end{align*}\\]\nwhere the constrain that \\(mean(\\vec{X}_{T=1}V\\prime) - mean(\\vec{X}_{T=-1}V\\prime)\\) is maximized.\nWhere are actually just interested in \\(U\\prime\\) and \\(V\\prime\\)"
+  },
+  {
+    "objectID": "nestedness_index.html",
+    "href": "nestedness_index.html",
+    "title": "Index measuring nestedness of clusterings",
+    "section": "",
+    "text": "There are many indexes measure the internal validity and external validity of clustering results, including FastH+ and adjusted rand index for example. However, it is not specifically designed to study the nestedness of clustering results for example bumping the apripri number of clusters from k=2 to k=3.\nTODO: why measureing nestedness is important. I believe measuring the nestedness of clustering results is important in multiple use cases.\nI think measureing the nestnedness is very important in multi-sample integration, specifically horizontal integration.\n\nFor example, if you have increased the K=2 to K=3, having such an index measuering the nestedness of clusters could be informative of\n\nSample-level QC: If one sample may be different from the rest of the samples and requires special attention.\n\nViolating the assumption about cell composition are the same across all samples.\n\nClustering stability: Indicator that the algorithms lack of stability\n\nThe toy example is when I studying PNN-SCZ project, I see that some individual samples cluster doesn’t emerge until k bump to extremely large number. And also, when bumping K from small number to large number, increasing K doesn’t necessarily bringing more meaningful spatial domains.\nHow to implement this Among the larger cluster (K=2) for example, finding all the paired data points within the clusters, The number of pairs that are no outside of the clusters. Mathematically, among \\(\\sum\\limits^k_{i=1}C^{n_{k=2,i}}_{2}\\) pairs, how many pairs such that the pair in \\(K=3\\) cluster results stays the same K=2 clusters. However, this implementation doesn’t considers the size of the clustering….."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -25,34 +46,55 @@
     "href": "projects.html#multivariate-random-forests-to-estimating-heterogeneous-treatment-effects",
     "title": "Projects",
     "section": "Multivariate random forests to estimating heterogeneous treatment effects",
-    "text": "Multivariate random forests to estimating heterogeneous treatment effects\n\nGuo B, Holscher H, Auvil L, Welge M, Bushell C, Novotny J, Baer D, Burd N, Khan N, Zhu R. (2021). Estimating Heterogeneous Treatment Effect on Multivariate Responses Using Random Forests. Statistics in Biosciences."
+    "text": "Multivariate random forests to estimating heterogeneous treatment effects\n\n\n\n\n\nMultiple Outcome Treatment Effect Forests.\n\n\n\nPrecision healthcare motivates tailored treatments that take individual heterogeneity, environment, and lifestyles into consideration. The estimation of individualized treatment effect poses significant methodological and computational challenges, especially jointly for multiple health outcomes of interest. We propose a random forest model, MOTEF, that estimates individualized treatment effects of multivariate outcomes simultaneously, accounting for pre- and post-treatment covariates.\n\n\nGuo B, Holscher H, Auvil L, Welge M, Bushell C, Novotny J, Baer D, Burd N, Khan N, Zhu R. (2021). Estimating Heterogeneous Treatment Effect on Multivariate Responses Using Random Forests. Statistics in Biosciences."
   },
   {
     "objectID": "projects.html#spatially-resolved-genomics",
     "href": "projects.html#spatially-resolved-genomics",
     "title": "Projects",
     "section": "Spatially-resolved genomics",
-    "text": "Spatially-resolved genomics\nThe cortical layers of the human neocortex were classically defined by histological distinction of cell types according to size and shape. However, emerging single-cell and spatially-resolved transcriptomic technologies have facilitated the identification of molecularly defined cell populations and spatial domains that move beyond classic cell type definitions and cytoarchitectural boundaries. Assigning gene expression to distinct anatomical subdivisions and cell populations within the human brain improves the understanding of brain regions and how they contribute to brain disorders. I led the quantitative investigation of 30 Visium Samples and single-nucleus RNA seq collected from 19 brain samples, where integrative cell-cell communication identified FYN-EFNA5-EPHA5 signaling pathway associated with schizophrenia. I also developed a novel visualization framework that simultaneous display disparage variables following Gestalt principles, allowing to in situ visualize of differential expression across various spatial domains.\n\nHuuki-Myers L, Spangler A, Eagles N, Montgomery KD, Kwon SH, Guo B, Grant-Peters M, Divecha HR, Tippani M, Sriworarat C, Nguyen AB, Ravichandran P, Tran MN, Seyedian A, Hyde TM, Kleinman JE, Battle A, Page SC, Ryten M, Hicks SC, Martinowich K, Collado-Torres L, Maynard KR. Integrated single cell and unsupervised spatial transcriptomic analysis defines molecular anatomy of the human dorsolateral prefrontal cortex. Science.\n\n\nMethods processing, integrating and analyzing spaital genomics data\n\nGuo B, Huuki-Myers LA, Grant-Peters M, Collado-Torres L, Hicks SC. escheR: Unified multi-dimensional visualizations with Gestalt principles. Bioinformatics Advances."
+    "text": "Spatially-resolved genomics\nThe cortical layers of the human neocortex were classically defined by histological distinction of cell types according to size and shape. However, emerging single-cell and spatially-resolved transcriptomic technologies have facilitated the identification of molecularly defined cell populations and spatial domains that move beyond classic cell type definitions and cytoarchitectural boundaries. Assigning gene expression to distinct anatomical subdivisions and cell populations within the human brain improves the understanding of brain regions and how they contribute to brain disorders. I led the quantitative investigation of 30 Visium Samples and single-nucleus RNA seq collected from 19 brain samples, where integrative cell-cell communication identified FYN-EFNA5-EPHA5 signaling pathway associated with schizophrenia. I also developed a novel visualization framework that simultaneous display disparage variables following Gestalt principles, allowing to in situ visualize of differential expression across various spatial domains.\n\nHuuki-Myers L, Spangler A, Eagles N, Montgomery KD, Kwon SH, Guo B, Grant-Peters M, Divecha HR, Tippani M, Sriworarat C, Nguyen AB, Ravichandran P, Tran MN, Seyedian A, Hyde TM, Kleinman JE, Battle A, Page SC, Ryten M, Hicks SC, Martinowich K, Collado-Torres L, Maynard KR. (2023). Integrated single cell and unsupervised spatial transcriptomic analysis defines molecular anatomy of the human dorsolateral prefrontal cortex. Science.\n\n\nComputational methods for spatial genomics data\n\n\n\n\n\nMulti-dimensional visualization\n\n\n\nThe development of computational methods for processing, integrating, analyzing, and visualizing spatial genomics data is crucial in advancing our understanding of complex biological systems. Spatial genomics provides valuable insights into the spatial organization of cells and their interactions within tissues. Computational methods enable the extraction of meaningful patterns, unveiling the spatial relationships between genes and cells.\n\n\nGuo B, Huuki-Myers LA, Grant-Peters M, Collado-Torres L, Hicks SC. (2023). escheR: Unified multi-dimensional visualizations with Gestalt principles. Bioinformatics Advances."
   },
   {
     "objectID": "projects.html#microbiome",
     "href": "projects.html#microbiome",
     "title": "Projects",
     "section": "Microbiome",
-    "text": "Microbiome"
+    "text": "Microbiome\n\nPendegraft AH, Guo B, Yi N. (2019). Bayesian hierarchical negative binomial models for multivariable analyses with applications to human microbiome count data. PloS one.\nZhang X, Guo B, Yi N. (2020). Zero-Inflated gaussian mixed models for analyzing longitudinal microbiome data. Plos one."
   },
   {
     "objectID": "projects.html#the-reasons-for-geographic-and-racial-differences-in-stroke",
     "href": "projects.html#the-reasons-for-geographic-and-racial-differences-in-stroke",
     "title": "Projects",
     "section": "The Reasons for Geographic and Racial Differences in Stroke",
-    "text": "The Reasons for Geographic and Racial Differences in Stroke\n\n\n  \n\n\nKamin Mukaz D, Guo B, Long D, Judd S, Plante T, McClure L, Wolberg A, Zakai N, Howard G, Cushman M. D-dimer and the risk of hypertension: The REasons for Geographic And Racial Differences in Stroke Cohort Study. Research and Practice in Thrombosis and Haemostasis.\nPeper KM, Guo B, Leann Long D, Howard G, Carson AP, Howard VJ, Judd SE, Zakai NA, Cherrington A, Cushman M, Plante TB. C-reactive Protein and Racial Differences in Type 2 Diabetes Incidence: The REGARDS Study. J Clin Endocrinol Metab.\nLong DL, Guo B, McClure LA, Jaeger BC, Tison SE, Howard G, Judd SE, Howard VJ, Plante TB, Zakai NA, Koh I, Cheung KL, Cushman M. Biomarkers as MEDiators of racial disparities in risk factors (BioMedioR): Rationale, study design, and statistical considerations. Ann Epidemiol.\nPlante T, Long D, Guo B, Howard G, Carson A, Howard V, Judd S, Jenny N, Zakai N, Cushman M. C-Reactive Protein and Incident Hypertension in Black and White Americans in the REasons for Geographic And Racial Differences in Stroke (REGARDS) Cohort Study. American Journal of Hypertension."
+    "text": "The Reasons for Geographic and Racial Differences in Stroke\n\n\n\n\nBlack Americans under age 75 were more than twice as likely to die from stroke than were non-Hispanic white Americans, while people who lived in the South had a 40 percent higher risk of dying from stroke than their counterparts in other parts of the United States. Understanding the cause of the disparity is imperative to effective interventions and policy change. To understand the health disparity, The Reasons for Geographic and Racial Differences in Stroke (REGARDS) project recruited 30,239 participants who are 45 years or older between January 2003 and October 2007 and continues following up with them. I led the quantitative investigation of multiple possible causal pathways mediating the health disparity in cardiovascular disease and its comorbidity.\n\n\nKamin Mukaz D, Guo B, Long D, Judd S, Plante T, McClure L, Wolberg A, Zakai N, Howard G, Cushman M. D-dimer and the risk of hypertension: The REasons for Geographic And Racial Differences in Stroke Cohort Study. Research and Practice in Thrombosis and Haemostasis.\nPeper KM, Guo B, Leann Long D, Howard G, Carson AP, Howard VJ, Judd SE, Zakai NA, Cherrington A, Cushman M, Plante TB. C-reactive Protein and Racial Differences in Type 2 Diabetes Incidence: The REGARDS Study. J Clin Endocrinol Metab.\nPlante T, Long D, Guo B, Howard G, Carson A, Howard V, Judd S, Jenny N, Zakai N, Cushman M. C-Reactive Protein and Incident Hypertension in Black and White Americans in the REasons for Geographic And Racial Differences in Stroke (REGARDS) Cohort Study. American Journal of Hypertension.\n\n\nStudy design & mediation analysis\n\nLong DL, Guo B, McClure LA, Jaeger BC, Tison SE, Howard G, Judd SE, Howard VJ, Plante TB, Zakai NA, Koh I, Cheung KL, Cushman M. Biomarkers as MEDiators of racial disparities in risk factors (BioMedioR): Rationale, study design, and statistical considerations. Ann Epidemiol.\nCui J, Guo B, Tiwari H, Rahman AKMF, Sims AM, Long DL. Comparison of three mediation methods with survival outcomes via simulation study. In review."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Boyi Guo, PhD",
     "section": "",
-    "text": "I am an applied statistician and biomedical data scientist working at the intersection of machine learning, computational omics, and population health. My research concentrates on developing statistically rigorous and computationally scalable machine-learning methods, as well as open-source software, that integrates population-scale multi-omics data to uncover functional mechanisms that explain disease heterogeneity.\n\nCurrently, I am a postdoctoral fellow in Biostatistics at Johns Hopkins Bloomberg of School of Public Health, mentored by Dr. Stephanie Hicks. I am open to opportunities that advance my scientific career, tentatively starting date in 2025 Summer."
+    "text": "I am an applied statistician and biomedical data scientist working at the intersection of machine learning, computational omics, and population health. My research concentrates on developing statistically rigorous and computationally scalable machine-learning methods, as well as open-source software, that integrates population-scale multi-omics data to uncover functional mechanisms that explain disease heterogeneity.\n\nCurrently, I am a postdoctoral fellow in Biostatistics at Johns Hopkins Bloomberg of School of Public Health, mentored by Dr. Stephanie Hicks. I am open to opportunities that advance my scientific career."
+  },
+  {
+    "objectID": "Problems.html",
+    "href": "Problems.html",
+    "title": "Problems",
+    "section": "",
+    "text": "This page enlists all the computational problems that I’m currently exploring and working on.\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "growth.html",
+    "href": "growth.html",
+    "title": "Growth",
+    "section": "",
+    "text": "https://podcasts.apple.com/us/podcast/life-kit/id1461493560?i=1000643138469"
+  },
+  {
+    "objectID": "growth.html#favourite-quote",
+    "href": "growth.html#favourite-quote",
+    "title": "Growth",
+    "section": "Favourite Quote",
+    "text": "Favourite Quote"
   }
 ]
