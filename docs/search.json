@@ -1,31 +1,73 @@
 [
   {
-    "objectID": "SupervisedMatrixFactorization.html",
-    "href": "SupervisedMatrixFactorization.html",
-    "title": "Supervised Surragate Variable Analaysis",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
-    "text": "Motivation:"
+    "text": "Pseudocounts distorts fold change\n\n\n\n\n\n\nSRT\n\n\n\n\n\n\n\n\n\nMar 13, 2024\n\n\nBoyi Guo\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "SupervisedMatrixFactorization.html#statistics-model",
-    "href": "SupervisedMatrixFactorization.html#statistics-model",
-    "title": "Supervised Surragate Variable Analaysis",
-    "section": "Statistics Model",
-    "text": "Statistics Model\nFor the \\(i\\)th individual, we collect \\(n_i\\) cells where we can observe the spatial arrangement of the cells measured with a 2-D spatial coordinates \\(\\vec{S^x_{i}}, \\vec{S^y_i}\\). In addition, the two normalized gene expression of the \\(n_i\\) cells for \\(p\\) genes can be quantified in a data matrix \\(\\vec{X_i} \\in R^{n_i \\times p}\\).\nCollectively, we have the data \\(\\{\\vec X_i, T_i\\vec{1}, (\\vec{S^x_{i}}, \\vec{S^y_i})\\}_i^{n}\\) from \\(n = |T_i=1| + |T_i=-1|\\) individuals and total of \\(n_{cell} = \\sum\\limits_i^{n_{ind}} n_i\\).\nWe assume that the underlying data generating mechanism is that\n\\[\n\\vec{X}_i = \\vec{Y}_i + T_i\\vec{Z}_i + \\vec{\\epsilon},\n\\] where \\(\\vec{Y}_i\\) is the latent factors shared by both exposure groups, and \\(\\vec{Z}_i\\) is exposure group specific latent factors.\nObjective Function \\[\\begin{align*}\n\\text{minimize} ||X - U \\Sigma V - T U^\\prime \\Sigma^\\prime V^\\prime||_F^2,\n\\end{align*}\\]\nwhere the constrain that \\(mean(\\vec{X}_{T=1}V\\prime) - mean(\\vec{X}_{T=-1}V\\prime)\\) is maximized.\nWhere are actually just interested in \\(U\\prime\\) and \\(V\\prime\\)"
+    "objectID": "growth.html",
+    "href": "growth.html",
+    "title": "Growth",
+    "section": "",
+    "text": "https://podcasts.apple.com/us/podcast/life-kit/id1461493560?i=1000643138469"
   },
   {
-    "objectID": "nestedness_index.html",
-    "href": "nestedness_index.html",
-    "title": "Index measuring nestedness of clusterings",
-    "section": "",
-    "text": "There are many indexes measure the internal validity and external validity of clustering results, including FastH+ and adjusted rand index for example. However, it is not specifically designed to study the nestedness of clustering results for example bumping the apripri number of clusters from k=2 to k=3.\nTODO: why measureing nestedness is important. I believe measuring the nestedness of clustering results is important in multiple use cases.\nI think measureing the nestnedness is very important in multi-sample integration, specifically horizontal integration.\n\nFor example, if you have increased the K=2 to K=3, having such an index measuering the nestedness of clusters could be informative of\n\nSample-level QC: If one sample may be different from the rest of the samples and requires special attention.\n\nViolating the assumption about cell composition are the same across all samples.\n\nClustering stability: Indicator that the algorithms lack of stability\n\nThe toy example is when I studying PNN-SCZ project, I see that some individual samples cluster doesn’t emerge until k bump to extremely large number. And also, when bumping K from small number to large number, increasing K doesn’t necessarily bringing more meaningful spatial domains.\nHow to implement this Among the larger cluster (K=2) for example, finding all the paired data points within the clusters, The number of pairs that are no outside of the clusters. Mathematically, among \\(\\sum\\limits^k_{i=1}C^{n_{k=2,i}}_{2}\\) pairs, how many pairs such that the pair in \\(K=3\\) cluster results stays the same K=2 clusters. However, this implementation doesn’t considers the size of the clustering….."
+    "objectID": "growth.html#favourite-quote",
+    "href": "growth.html#favourite-quote",
+    "title": "Growth",
+    "section": "Favourite Quote",
+    "text": "Favourite Quote"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "Problems.html",
+    "href": "Problems.html",
+    "title": "Problems",
     "section": "",
-    "text": "Under construction. 🛠️"
+    "text": "This page enlists all the computational problems that I’m currently exploring and working on.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAbout\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBoyi Guo, PhD\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGrowth\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIndex measuring nestedness of clusterings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNew year, new blog\n\n\n\n\n\n\nannouncement\n\n\n\n\n\n\n\n\n\nJan 2, 2019\n\n\nStephanie C. Hicks\n\n\n\n\n\n\n\n\n\n\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPseudocounts distorts fold change\n\n\n\n\n\n\nSRT\n\n\n\n\n\n\n\n\n\nMar 13, 2024\n\n\nBoyi Guo\n\n\n\n\n\n\n\n\n\n\n\n\nSupervised Surragate Variable Analaysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/log1p-distorts-fc/index.html",
+    "href": "blog/log1p-distorts-fc/index.html",
+    "title": "Pseudocounts distorts fold change",
+    "section": "",
+    "text": "Log transformation has been one of the commonly, if not the most popular, used transformations in analyzing gene expression data. While zero counts is fairly prevalent in many gene expression data, e.g. scRNA-seq data, log transforming zero counts encounters a numeric issue, providing negative infinity as a result. To address it, pseudocounts, a small, arbitrary positive number \\(p\\) (e.g. \\(p=1\\)), is added to the gene expression data before taking the log transformation. There are many literature documenting the practice of log-transformation with pseudocounts (for simplicity, we’ll refer it to as log-transformation unless noted otherwise) could distort the estimation marginal mean (Booeshaghi and Pachter 2021; Lun 2018; Townes et al. 2019). Few has explored how the pseudocounts would mathematically distorts the fold change even with accurate estimation of marginal mean."
+  },
+  {
+    "objectID": "blog/log1p-distorts-fc/index.html#what-is-fold-change",
+    "href": "blog/log1p-distorts-fc/index.html#what-is-fold-change",
+    "title": "Pseudocounts distorts fold change",
+    "section": "What is fold change?",
+    "text": "What is fold change?\nIt is well believed that the gene expression data we measure represents relative abundance of gene. Hence, comparing to modeling the absolute differences (the subtraction between to number), most people argues it would be more appropriate to measure the changes of gene expression as an ratio, commonly referred to as fold change or equivalently the log fold change. For example, if you have two numbers representing the relative abundances of a gene in two samples \\(A\\) and \\(B\\), \\(\\mu_A\\) and \\(\\mu_B\\), the fold change between the two samples is the division of the two number \\(\\mu_A/\\mu_B\\) and the log fold change \\(\\log(\\mu_A/\\mu_B) = \\log(\\mu_A) - \\log(\\mu_B)\\). It is very common to report log fold change instead of log fold changes, because log fold change converts the statistics on the multiplicative scale to the additive scale, and providing a convenient modeling choice, general linear models.\nWhile the author want to emphasizing log transformation is extremely confusing due to the ambiguous nomenclature and notation of logarithms with different bases, the confusion doesn’t change the assessment in this article up to a constant scaling factor \\(c\\), \\[\n\\log_a(x) = \\ln(x)/c \\quad \\text{where } c=\\ln(a)\n\\]"
+  },
+  {
+    "objectID": "blog/log1p-distorts-fc/index.html#fixed-reference",
+    "href": "blog/log1p-distorts-fc/index.html#fixed-reference",
+    "title": "Pseudocounts distorts fold change",
+    "section": "Fixed Reference",
+    "text": "Fixed Reference\nWe first consider the distortion that pseudocounts causes in the simpliest setting, fixing a reference level, i.e. the denominator. A real-world appication is similar to a Student’s t-test with the hypothesis \\(\\mu_A = \\mu\\), where \\(\\mu\\) is an known constant.\n\n\n\n\n\n\n\n\n\nWithout Pseudocounts\nWith Pseudocounts\n\n\n\n\ndata\n\\(\\log(\\mu_A)\\)\n\\(\\log(\\mu_A+p)\\)\n\n\nlog fold change\n\\(\\log(\\mu_A) - log(\\mu)\\)\n\\(\\log(\\mu_A+p) - log(\\mu)\\)\n\n\n\nThe discrepency between the two quantities is the bias that pseudocounts introduces. \\[\\begin{align*}\n\\delta &=  (\\log(\\mu_A+p) - log(\\mu)) - (\\log(\\mu_A) - log(\\mu))\\\\\n& = \\log(\\mu_A+p) - \\log(\\mu_A)  =  (\\log 1+\\frac{p}{\\mu_A}).\n\\end{align*}\\]\n\nfix_fun &lt;- function(x, p){\n  function(x) log2(1+p/x)\n}\n\nlibrary(latex2exp)\nlibrary(ggplot2)\n\nggplot(data.frame(x = c(0.1, 0.5, 1:10)), aes(x)) +\n  geom_function(fun = fix_fun(x, 1), aes(colour = \"p = 1\")) +\n  geom_function(fun = fix_fun(x, 0.5), aes(colour = \"p = 0.5\")) +\n  geom_function(fun = fix_fun(x, 0.1), aes(colour = \"p = 0.1\")) +\n  geom_function(fun = fix_fun(x, 0.01), aes(colour = \"p = 0.01\")) +\n  scale_x_log10() +\n  labs(\n    y = TeX(\"Bias in Log FC ($\\\\delta$)\"),\n    x = TeX(\"Normalized Count ($\\\\mu_A$)\")\n  )"
+  },
+  {
+    "objectID": "blog/log1p-distorts-fc/index.html#two-group-setting",
+    "href": "blog/log1p-distorts-fc/index.html#two-group-setting",
+    "title": "Pseudocounts distorts fold change",
+    "section": "Two-group Setting",
+    "text": "Two-group Setting\nSimilar, we can consider a more challenging setting where we don’t have a fixed reference level, which mimics the two-sample t-test setting.\n\n\n\n\n\n\n\n\n\nWithout Pseudocounts\nWith Pseudocounts\n\n\n\n\ndata\n\\(\\log(\\mu_A), \\log(\\mu_B)\\)\n\\(\\log(\\mu_A+p), \\log(\\mu_B+p)\\)\n\n\nlog fold change\n\\(\\log(\\mu_A) - log(\\mu_B)\\)\n\\(\\log(\\mu_A+p) - log(\\mu_B+p)\\)\n\n\n\nThe discrepency between the two quantities is the bias that pseudocounts introduces. \\[\\begin{align*}\n\\delta &=  (\\log(\\mu_A+p) - log(\\mu_B+p)) - (\\log(\\mu_A) - log(\\mu_B))\\\\\n& = \\log\\frac{\\mu_B(\\mu_A+p)}{\\mu_A(\\mu_B+p)} = \\log\\frac{\\mu_A\\mu_B+p\\mu_B}{\\mu_A\\mu_B+p\\mu_A}\\\\\n& = \\log\\frac{1+p/\\mu_A}{1+p/\\mu_B} = \\log (1+\\frac{p\\mu_B - p\\mu_A}{\\mu_A\\mu_B + p\\mu_A}).\n\\end{align*}\\]\n\nlibrary(plotly)\n\nx &lt;- y &lt;- seq(0.1, 10, by = 0.1)\n\ntwo_fun &lt;- function(x, y, p)\n  function(x,y) outer(x, y, FUN = function(x, y) log2((1+p/x)/(1+p/y)))\n\n\nz_1 &lt;- two_fun(x, y, p=1)\nz_0.1 &lt;- two_fun(x, y, p=0.1)\n\nplot_ly(x = ~x, y = ~y) |&gt; \n  add_surface(z = ~z_1(x,y)) |&gt; \n  # add_surface(z = ~z_0.1(x,y), opacity = 0.5)\n  layout(\n    title = \"p=1\",\n    scene = list(\n      xaxis = list(title = \"Normalized Count \\\\mu_A\"),\n      yaxis = list(title = \"Normalized Count \\\\mu_B\"),\n      zaxis = list(title = \"Bias in Log FC (\\\\delta)\")\n    )\n  )\n\n\n\n\n\nNote: The one-group setting is different from the two group_setting, in the sense if you add 1 to the reference level…"
+  },
+  {
+    "objectID": "blog/log1p-distorts-fc/index.html#regression-setting",
+    "href": "blog/log1p-distorts-fc/index.html#regression-setting",
+    "title": "Pseudocounts distorts fold change",
+    "section": "Regression Setting",
+    "text": "Regression Setting\nIn the previous two examples, the reference level, i.e. the dividend in the division, is (fairly) clear. However, if we extend the problem to the regression setting, including the two-group testing scenario as an example, the reference level is less obvious.\nFor example, if we think the pseudotime analysis as an example of the regression setting, we are interested in regressing the gene expression, \\(X\\), as a function of time, \\(T \\in \\{t_0, t_1, \\dots, t_n\\}\\). To simplify, we assume the function of time is linear with the gene expression \\[\nY = \\beta_0 + \\beta_1T + \\epsilon.\n\\] To naively interpret the model, \\(\\beta_1\\) is the log fold change per one-unit change in time, and \\(\\beta_0\\) is the log-transformed gene expression at some reference time point (\\(t_0\\)), e.g. \\(t_0 = 0\\). Here, we are interested in measuring how the change in \\(\\beta_1\\) with and without adding pseudo-count.\n\n# Sim log_y without error\npseudo_t &lt;- seq(0, 3, by = 0.1)\nbeta_0 &lt;- 0.5; beta_1 &lt;- 1\nlog_y &lt;- beta_0 + beta_1*pseudo_t\n\n# Sim log_y plus 1\ny &lt;- 2^(log_y)\nlog_y1p &lt;- log2(y+1)\n\n# Plt\nggplot() +\n  geom_point(\n    aes(x = pseudo_t, y = log_y,\n        group = \"log_y\", color =  \"log_y\")\n  ) +\n  geom_point(\n    aes(x = pseudo_t, y = log_y1p,\n        group = \"log_y1p\", color =  \"log_y1p\")\n  )\n\n\n\n\n\n\n\n\n\nlog_mdl &lt;- lm(log_y ~ pseudo_t);\nlog1p_mdl &lt;- lm(log_y1p ~ pseudo_t);\n\ndelta &lt;- coef(log1p_mdl)[[\"pseudo_t\"]] - coefficients(log_mdl)[[\"pseudo_t\"]]\ndelta\n\n[1] -0.2106434\n\n\nNOTE: If you decide to investigate how the logFC function changes, know what is your reference level.\n\nlog_y_cnt &lt;- log_y - mean(log_y)\nlog_y1p_cnt &lt;- log_y1p - mean(log_y1p)\n\n\n\nggplot() +\n  geom_point(\n    aes(x = pseudo_t, y = log_y_cnt,\n        group = \"log_y\", color =  \"log_y\")\n  ) +\n  geom_point(\n    aes(x = pseudo_t, y = log_y1p_cnt,\n        group = \"log_y1p\", color =  \"log_y1p\")\n  )\n\n\n\n\n\n\n\n# lm(log_y_cnt ~ pseudo_t)\n# lm(log_y1p_cnt ~ pseudo_t)"
+  },
+  {
+    "objectID": "blog/log1p-distorts-fc/index.html#spatial-modeling",
+    "href": "blog/log1p-distorts-fc/index.html#spatial-modeling",
+    "title": "Pseudocounts distorts fold change",
+    "section": "Spatial Modeling",
+    "text": "Spatial Modeling\n\ncoord_min &lt;- 0.1\ncoord_max &lt;- 5\n\n\nsteps &lt;- 65\nx &lt;- y &lt;- seq(coord_min, coord_max, length = steps)\nnewdat &lt;- expand.grid(x = x, y = y) |&gt; \n  mutate(z = x+y,\n         log2_z = z,\n         log1p_base2 = log2(2^z+1))\n\n\nlog2_mat &lt;- matrix(data = newdat$log2_z - newdat$log2_z[1], nrow = steps, ncol = steps)\nlog1p_mat &lt;- matrix(data = newdat$log1p_base2 - newdat$log1p_base2[1], nrow = steps, ncol = steps)\n\nlibrary(plotly)\n# plot_ly(x = x, y = y)  %&gt;%\n#   add_surface( z = ~log2_mat)\n# \n# plot_ly(x = x, y = y)  %&gt;%\n#   add_surface( z = ~log1p_mat)\n\nplot_ly(x = x, y = y)  %&gt;%\n  add_surface( z = ~log2_mat) %&gt;%\n  add_surface( z = ~log1p_mat, opacity = 0.5)\n\n\n\n\n\n\nset.seed(1)\nclus_log2_z &lt;- kmeans(newdat$log2_z, centers = 2)\n\nclus_log1p &lt;- kmeans(newdat$log1p_base2, centers =2)\n\nnewdat$clus_log2_z &lt;- clus_log2_z$cluster |&gt; factor()\nnewdat$clus_log1p &lt;- clus_log1p$cluster|&gt; factor()\n\nmclust::adjustedRandIndex(newdat$clus_log2_z, newdat$clus_log1p)\n\n[1] 0.8815707\n\nggpubr::ggarrange(\n  ggplot(newdat) +\n    geom_point(aes(x = x, y=y, color = clus_log2_z)),\n  ggplot(newdat) +\n    geom_point(aes(x = x, y=y, color = clus_log1p)) \n)"
   },
   {
     "objectID": "projects.html",
@@ -70,6 +112,13 @@
     "text": "The Reasons for Geographic and Racial Differences in Stroke\n\n\n\n\nBlack Americans under age 75 were more than twice as likely to die from stroke than were non-Hispanic white Americans, while people who lived in the South had a 40 percent higher risk of dying from stroke than their counterparts in other parts of the United States. Understanding the cause of the disparity is imperative to effective interventions and policy change. To understand the health disparity, The Reasons for Geographic and Racial Differences in Stroke (REGARDS) project recruited 30,239 participants who are 45 years or older between January 2003 and October 2007 and continues following up with them. I led the quantitative investigation of multiple possible causal pathways mediating the health disparity in cardiovascular disease and its comorbidity.\n\n\nKamin Mukaz D, Guo B, Long D, Judd S, Plante T, McClure L, Wolberg A, Zakai N, Howard G, Cushman M. D-dimer and the risk of hypertension: The REasons for Geographic And Racial Differences in Stroke Cohort Study. Research and Practice in Thrombosis and Haemostasis.\nPeper KM, Guo B, Leann Long D, Howard G, Carson AP, Howard VJ, Judd SE, Zakai NA, Cherrington A, Cushman M, Plante TB. C-reactive Protein and Racial Differences in Type 2 Diabetes Incidence: The REGARDS Study. J Clin Endocrinol Metab.\nPlante T, Long D, Guo B, Howard G, Carson A, Howard V, Judd S, Jenny N, Zakai N, Cushman M. C-Reactive Protein and Incident Hypertension in Black and White Americans in the REasons for Geographic And Racial Differences in Stroke (REGARDS) Cohort Study. American Journal of Hypertension.\n\n\nStudy design & mediation analysis\n\nLong DL, Guo B, McClure LA, Jaeger BC, Tison SE, Howard G, Judd SE, Howard VJ, Plante TB, Zakai NA, Koh I, Cheung KL, Cushman M. Biomarkers as MEDiators of racial disparities in risk factors (BioMedioR): Rationale, study design, and statistical considerations. Ann Epidemiol.\nCui J, Guo B, Tiwari H, Rahman AKMF, Sims AM, Long DL. Comparison of three mediation methods with survival outcomes via simulation study. In review."
   },
   {
+    "objectID": "problems/new-year-new-blog/index.html",
+    "href": "problems/new-year-new-blog/index.html",
+    "title": "New year, new blog",
+    "section": "",
+    "text": "It’s 2019 and I decided to revamp my website with Blogdown! So far, I really like it! I fell in love with Shannon Ellis’s template and humbly borrowed her template to create this website.\nFor those that may follow my other blog Statistical [R]ecipes, fear not! There are still plans to keep that updated with cooking recipes that we come across, but I plan to post my scientific / academic related blogs here.\nWishing everyone a Happy New Year!"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Boyi Guo, PhD",
@@ -77,24 +126,31 @@
     "text": "I am an applied statistician and biomedical data scientist working at the intersection of machine learning, computational omics, and population health. My research concentrates on developing statistically rigorous and computationally scalable machine-learning methods, as well as open-source software, that integrates population-scale multi-omics data to uncover functional mechanisms that explain disease heterogeneity.\n\nCurrently, I am a postdoctoral fellow in Biostatistics at Johns Hopkins Bloomberg of School of Public Health, mentored by Dr. Stephanie Hicks. I am open to opportunities that advance my scientific career."
   },
   {
-    "objectID": "Problems.html",
-    "href": "Problems.html",
-    "title": "Problems",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "This page enlists all the computational problems that I’m currently exploring and working on.\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Under construction. 🛠️"
   },
   {
-    "objectID": "growth.html",
-    "href": "growth.html",
-    "title": "Growth",
+    "objectID": "nestedness_index.html",
+    "href": "nestedness_index.html",
+    "title": "Index measuring nestedness of clusterings",
     "section": "",
-    "text": "https://podcasts.apple.com/us/podcast/life-kit/id1461493560?i=1000643138469"
+    "text": "There are many indexes measure the internal validity and external validity of clustering results, including FastH+ and adjusted rand index for example. However, it is not specifically designed to study the nestedness of clustering results for example bumping the apripri number of clusters from k=2 to k=3.\nTODO: why measureing nestedness is important. I believe measuring the nestedness of clustering results is important in multiple use cases.\nI think measureing the nestnedness is very important in multi-sample integration, specifically horizontal integration.\n\nFor example, if you have increased the K=2 to K=3, having such an index measuering the nestedness of clusters could be informative of\n\nSample-level QC: If one sample may be different from the rest of the samples and requires special attention.\n\nViolating the assumption about cell composition are the same across all samples.\n\nClustering stability: Indicator that the algorithms lack of stability\n\nThe toy example is when I studying PNN-SCZ project, I see that some individual samples cluster doesn’t emerge until k bump to extremely large number. And also, when bumping K from small number to large number, increasing K doesn’t necessarily bringing more meaningful spatial domains.\nHow to implement this Among the larger cluster (K=2) for example, finding all the paired data points within the clusters, The number of pairs that are no outside of the clusters. Mathematically, among \\(\\sum\\limits^k_{i=1}C^{n_{k=2,i}}_{2}\\) pairs, how many pairs such that the pair in \\(K=3\\) cluster results stays the same K=2 clusters. However, this implementation doesn’t considers the size of the clustering….."
   },
   {
-    "objectID": "growth.html#favourite-quote",
-    "href": "growth.html#favourite-quote",
-    "title": "Growth",
-    "section": "Favourite Quote",
-    "text": "Favourite Quote"
+    "objectID": "SupervisedMatrixFactorization.html",
+    "href": "SupervisedMatrixFactorization.html",
+    "title": "Supervised Surragate Variable Analaysis",
+    "section": "",
+    "text": "Motivation:"
+  },
+  {
+    "objectID": "SupervisedMatrixFactorization.html#statistics-model",
+    "href": "SupervisedMatrixFactorization.html#statistics-model",
+    "title": "Supervised Surragate Variable Analaysis",
+    "section": "Statistics Model",
+    "text": "Statistics Model\nFor the \\(i\\)th individual, we collect \\(n_i\\) cells where we can observe the spatial arrangement of the cells measured with a 2-D spatial coordinates \\(\\vec{S^x_{i}}, \\vec{S^y_i}\\). In addition, the two normalized gene expression of the \\(n_i\\) cells for \\(p\\) genes can be quantified in a data matrix \\(\\vec{X_i} \\in R^{n_i \\times p}\\).\nCollectively, we have the data \\(\\{\\vec X_i, T_i\\vec{1}, (\\vec{S^x_{i}}, \\vec{S^y_i})\\}_i^{n}\\) from \\(n = |T_i=1| + |T_i=-1|\\) individuals and total of \\(n_{cell} = \\sum\\limits_i^{n_{ind}} n_i\\).\nWe assume that the underlying data generating mechanism is that\n\\[\n\\vec{X}_i = \\vec{Y}_i + T_i\\vec{Z}_i + \\vec{\\epsilon},\n\\] where \\(\\vec{Y}_i\\) is the latent factors shared by both exposure groups, and \\(\\vec{Z}_i\\) is exposure group specific latent factors.\nObjective Function \\[\\begin{align*}\n\\text{minimize} ||X - U \\Sigma V - T U^\\prime \\Sigma^\\prime V^\\prime||_F^2,\n\\end{align*}\\]\nwhere the constrain that \\(mean(\\vec{X}_{T=1}V\\prime) - mean(\\vec{X}_{T=-1}V\\prime)\\) is maximized.\nWhere are actually just interested in \\(U\\prime\\) and \\(V\\prime\\)"
   }
 ]

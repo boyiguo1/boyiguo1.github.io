@@ -1,0 +1,340 @@
+---
+title: "Pseudocounts distorts fold change"
+author: "Boyi Guo"
+date: "2024-03-13"
+bibliography: references.bib
+categories: [SRT]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Log transformation has been one of the commonly, if not the most popular, used transformations in analyzing gene expression data. While zero counts is fairly prevalent in many gene expression data, e.g. scRNA-seq data, log transforming zero counts encounters a numeric issue, providing negative infinity as a result. To address it, *pseudocounts*, a small, arbitrary positive number $p$ (e.g. $p=1$), is added to the gene expression data before taking the log transformation. There are many literature documenting the practice of log-transformation with pseudocounts (for simplicity, we'll refer it to as log-transformation unless noted otherwise) could distort the estimation marginal mean [@booeshaghi2021; @lun2018; @townes2019]. Few has explored how the pseudocounts would mathematically distorts the fold change even with accurate estimation of marginal mean. 
+
+## What is fold change?
+It is well believed that the gene expression data we measure represents relative abundance of gene. Hence, comparing to modeling the absolute differences (the subtraction between to number), most people argues it would be more appropriate to measure the changes of gene expression as an ratio, commonly referred to as *fold change* or equivalently the log fold change. For example, if you have two numbers representing the relative abundances of a gene in two samples $A$ and $B$, $\mu_A$ and $\mu_B$, the fold change between the two samples is the division of the two number $\mu_A/\mu_B$ and the log fold change $\log(\mu_A/\mu_B) = \log(\mu_A) - \log(\mu_B)$. It is very common to report log fold change instead of log fold changes, because log fold change converts the statistics on the multiplicative scale to the additive scale, and providing a convenient modeling choice, general linear models.
+
+
+
+While the author want to emphasizing log transformation is extremely confusing due to the ambiguous nomenclature and notation of logarithms with different bases, the confusion doesn't change the assessment in this article up to a constant scaling factor $c$, 
+$$
+\log_a(x) = \ln(x)/c \quad \text{where } c=\ln(a)
+$$
+
+## Fixed Reference
+
+We first consider the distortion that pseudocounts causes in the simpliest setting, fixing a reference level, i.e. the denominator. A real-world appication is similar to a Student's t-test with the hypothesis $\mu_A = \mu$, where $\mu$ is an known constant.
+
+|          | Without Pseudocounts     | With Pseudocounts |
+|--------------|-----------|------------|
+| data | $\log(\mu_A)$      | $\log(\mu_A+p)$        |
+| log fold change      | $\log(\mu_A) - log(\mu)$  | $\log(\mu_A+p) - log(\mu)$        |
+
+
+The discrepency between the two quantities is the bias that pseudocounts introduces.
+\begin{align*}
+\delta &=  (\log(\mu_A+p) - log(\mu)) - (\log(\mu_A) - log(\mu))\\
+& = \log(\mu_A+p) - \log(\mu_A)  =  (\log 1+\frac{p}{\mu_A}).
+\end{align*}
+
+```{r}
+
+fix_fun <- function(x, p){
+  function(x) log2(1+p/x)
+}
+
+library(latex2exp)
+library(ggplot2)
+
+ggplot(data.frame(x = c(0.1, 0.5, 1:10)), aes(x)) +
+  geom_function(fun = fix_fun(x, 1), aes(colour = "p = 1")) +
+  geom_function(fun = fix_fun(x, 0.5), aes(colour = "p = 0.5")) +
+  geom_function(fun = fix_fun(x, 0.1), aes(colour = "p = 0.1")) +
+  geom_function(fun = fix_fun(x, 0.01), aes(colour = "p = 0.01")) +
+  scale_x_log10() +
+  labs(
+    y = TeX("Bias in Log FC ($\\delta$)"),
+    x = TeX("Normalized Count ($\\mu_A$)")
+  )
+
+```
+
+
+## Two-group Setting
+Similar, we can consider a more challenging setting where we don't have a fixed reference level, which mimics the two-sample t-test setting.
+
+
+|          | Without Pseudocounts     | With Pseudocounts |
+|--------------|-----------|------------|
+| data | $\log(\mu_A), \log(\mu_B)$      | $\log(\mu_A+p), \log(\mu_B+p)$        |
+| log fold change | $\log(\mu_A) - log(\mu_B)$  | $\log(\mu_A+p) - log(\mu_B+p)$        |
+
+
+The discrepency between the two quantities is the bias that pseudocounts introduces.
+\begin{align*}
+\delta &=  (\log(\mu_A+p) - log(\mu_B+p)) - (\log(\mu_A) - log(\mu_B))\\
+& = \log\frac{\mu_B(\mu_A+p)}{\mu_A(\mu_B+p)} = \log\frac{\mu_A\mu_B+p\mu_B}{\mu_A\mu_B+p\mu_A}\\
+& = \log\frac{1+p/\mu_A}{1+p/\mu_B} = \log (1+\frac{p\mu_B - p\mu_A}{\mu_A\mu_B + p\mu_A}).
+\end{align*}
+
+```{r message = FALSE}
+library(plotly)
+
+x <- y <- seq(0.1, 10, by = 0.1)
+
+two_fun <- function(x, y, p)
+  function(x,y) outer(x, y, FUN = function(x, y) log2((1+p/x)/(1+p/y)))
+
+
+z_1 <- two_fun(x, y, p=1)
+z_0.1 <- two_fun(x, y, p=0.1)
+
+plot_ly(x = ~x, y = ~y) |> 
+  add_surface(z = ~z_1(x,y)) |> 
+  # add_surface(z = ~z_0.1(x,y), opacity = 0.5)
+  layout(
+    title = "p=1",
+    scene = list(
+      xaxis = list(title = "Normalized Count \\mu_A"),
+      yaxis = list(title = "Normalized Count \\mu_B"),
+      zaxis = list(title = "Bias in Log FC (\\delta)")
+    )
+  )
+```
+
+Note: The one-group setting is different from the two group_setting, in the sense if you add 1 to the reference level...
+
+## Regression Setting
+In the previous two examples, the reference level, i.e. the dividend in the division, is (fairly) clear. However, if we extend the problem to the regression setting, including the two-group testing scenario as an example, the reference level is less obvious. 
+
+For example, if we think the pseudotime analysis as an example of the regression setting, we are interested in regressing the gene expression, $X$, as a function of time, $T \in \{t_0, t_1, \dots, t_n\}$. To simplify, we assume the function of time is linear with the gene expression
+$$
+Y = \beta_0 + \beta_1T + \epsilon.
+$$
+To naively interpret the model, $\beta_1$ is the log fold change per one-unit change in time, and $\beta_0$ is the log-transformed gene expression at some reference time point ($t_0$), e.g. $t_0 = 0$. Here, we are interested in measuring how the change in $\beta_1$ with and without adding pseudo-count. 
+
+```{r}
+# Sim log_y without error
+pseudo_t <- seq(0, 3, by = 0.1)
+beta_0 <- 0.5; beta_1 <- 1
+log_y <- beta_0 + beta_1*pseudo_t
+
+# Sim log_y plus 1
+y <- 2^(log_y)
+log_y1p <- log2(y+1)
+
+# Plt
+ggplot() +
+  geom_point(
+    aes(x = pseudo_t, y = log_y,
+        group = "log_y", color =  "log_y")
+  ) +
+  geom_point(
+    aes(x = pseudo_t, y = log_y1p,
+        group = "log_y1p", color =  "log_y1p")
+  )
+```
+
+```{r}
+log_mdl <- lm(log_y ~ pseudo_t);
+log1p_mdl <- lm(log_y1p ~ pseudo_t);
+
+delta <- coef(log1p_mdl)[["pseudo_t"]] - coefficients(log_mdl)[["pseudo_t"]]
+delta
+```
+
+
+
+**NOTE**: If you decide to investigate how the logFC function changes, know what is your reference level.
+
+```{r}
+log_y_cnt <- log_y - mean(log_y)
+log_y1p_cnt <- log_y1p - mean(log_y1p)
+
+
+
+ggplot() +
+  geom_point(
+    aes(x = pseudo_t, y = log_y_cnt,
+        group = "log_y", color =  "log_y")
+  ) +
+  geom_point(
+    aes(x = pseudo_t, y = log_y1p_cnt,
+        group = "log_y1p", color =  "log_y1p")
+  )
+
+
+
+# lm(log_y_cnt ~ pseudo_t)
+# lm(log_y1p_cnt ~ pseudo_t)
+```
+
+
+<!-- In this case, $\beta_0$ is considered the mean value of the reference level of the model, and $\beta_1$ is change in mean associated with one unit change in $X$ from the reerence level. Normally, the reference is the sample mean of X, $\bar{X}$. -->
+
+<!-- The problem in this case is that the sample mean of $log(X)$ and the pseudocount version $log(X+p)$ is different. -->
+
+<!-- ```{r} -->
+<!-- y <- seq(0.1, 10, by = 0.1) -->
+<!-- mean(log2(y)) == mean(log2(y+1)) -->
+
+<!-- median(log2(y)) == median(log2(y+1)) -->
+<!-- ``` -->
+
+
+
+
+<!-- Because the reference level is different, the fitted slop will be different. -->
+
+<!-- ```{r} -->
+<!-- x <- seq(-2, 2, by = 0.1) -->
+
+<!-- mu <- 2; fc <- 0.5 -->
+
+<!-- log_y <- mu + x*fc -->
+
+<!-- y <- 2^(log_y) -->
+
+<!-- log_y1p <- log2(y+1) -->
+
+<!-- log_mdl <- lm(log_y ~ x); -->
+<!-- log1p_mdl <- lm(log_y1p ~ x); -->
+
+<!-- delta <- coef(log1p_mdl)[["x"]] - coefficients(log_mdl)[["x"]] -->
+<!-- delta -->
+<!-- ``` -->
+
+<!-- This is going back to the fixed reference equation. This function will be more complicated in the actual pseudotime analysis where the underlying function of time is 0. To minimize the confounding effect, it would be better to explicitly defined the reference level, instead of using the mean estimation across multiple models. -->
+
+## Spatial Modeling
+
+```{r}
+coord_min <- 0.1
+coord_max <- 5
+
+
+steps <- 65
+x <- y <- seq(coord_min, coord_max, length = steps)
+newdat <- expand.grid(x = x, y = y) |> 
+  mutate(z = x+y,
+         log2_z = z,
+         log1p_base2 = log2(2^z+1))
+
+
+log2_mat <- matrix(data = newdat$log2_z - newdat$log2_z[1], nrow = steps, ncol = steps)
+log1p_mat <- matrix(data = newdat$log1p_base2 - newdat$log1p_base2[1], nrow = steps, ncol = steps)
+
+library(plotly)
+# plot_ly(x = x, y = y)  %>%
+#   add_surface( z = ~log2_mat)
+# 
+# plot_ly(x = x, y = y)  %>%
+#   add_surface( z = ~log1p_mat)
+
+plot_ly(x = x, y = y)  %>%
+  add_surface( z = ~log2_mat) %>%
+  add_surface( z = ~log1p_mat, opacity = 0.5)
+
+```
+
+
+```{r}
+set.seed(1)
+clus_log2_z <- kmeans(newdat$log2_z, centers = 2)
+
+clus_log1p <- kmeans(newdat$log1p_base2, centers =2)
+
+newdat$clus_log2_z <- clus_log2_z$cluster |> factor()
+newdat$clus_log1p <- clus_log1p$cluster|> factor()
+
+mclust::adjustedRandIndex(newdat$clus_log2_z, newdat$clus_log1p)
+
+ggpubr::ggarrange(
+  ggplot(newdat) +
+    geom_point(aes(x = x, y=y, color = clus_log2_z)),
+  ggplot(newdat) +
+    geom_point(aes(x = x, y=y, color = clus_log1p)) 
+)
+```
+
+
+
+# Why this is important?
+
+```{r message = FALSE, eval = FALSE, echo = FALSE}
+suppressPackageStartupMessages({
+  library(tidyverse)
+  library(SpatialExperiment)
+  library(SingleCellExperiment)
+  library(spatialLIBD)
+  library(scuttle)
+})
+
+
+
+# Distribution of the marginal mean of genes -----------------------------------------
+spe <- fetch_data("spatialDLPFC_Visium")
+sce_path_zip <- fetch_data("spatialDLPFC_snRNAseq", eh = ExperimentHub::ExperimentHub())
+sce_path <- unzip(sce_path_zip, exdir = tempdir())
+sce <- HDF5Array::loadHDF5SummarizedExperiment(
+  file.path(tempdir(), "sce_DLPFC_annotated")
+)
+
+spe_sub <- spe[, spe$sample_id == "Br6432_ant"]
+sce_sub <- sce[, sce$Sample == "Br6432_ant"]
+
+
+spe_sub <- spe_sub |> logNormCounts(log = FALSE)
+sce_sub <- sce_sub |> logNormCounts(log = FALSE)
+
+# spe_sub |> assayNames()
+# sce_sub |> assayNames()
+
+# rowData(sce) |> head()
+
+spe_means <- assay(spe_sub, "normcounts") |> rowMeans()
+sce_means <- assay(sce_sub, "normcounts") |> rowMeans() 
+
+# names(sce_means) <- rowData(sce)$gene_id[match(names(sce_means), rowData(sce)$gene_name)]
+
+mutual_genes <- intersect(names(spe_means), names(sce_means))
+# length(mutual_genes)
+
+# Sections from the same tissue blocks going through different technologies
+data.frame(
+  `Visium` = spe_means[mutual_genes],
+  `snRNA-seq` = sce_means[mutual_genes]) |> 
+  pivot_longer(
+    cols = everything(),
+    names_to = "Tech"
+  ) |> 
+  ggplot() +
+  geom_density(
+    aes(x = value, color = Tech)
+  ) +
+  scale_x_log10() +
+  theme_bw() +
+  labs(
+    x = "Mean of lib. size normalized counts",
+    y = "Density",
+    title = "Tissue sections (spatialDLPFC::Br6432_ant) from the same tissue blocks"
+  )
+```
+
+
+# Limitation of this report
+
+* Does the bias $\delta$ matter much? I didn't look at the percentage of bias to the true effect size, i.e. $\delta/\log\text{FC}$ where $\log \text{FC} = \log(\mu_A) - \log(\mu_B)$.
+  * This problem is not scientifically interesting if the percentage of bias is small.
+
+* The simulation study of spatial modeling lacks of repetition to account for randomness in clustering results, i.e. the initial data points.
+    * The spatial effect might be too aggressive in the example.
+
+* For nonlinear effect estimation, the model fitting is slightly more complicated, and could behave differently. (probably not much).
+
+
+
+
+
+# References
