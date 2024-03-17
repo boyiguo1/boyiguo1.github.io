@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Boyi Guo">
+<meta name="dcterms.date" content="2024-03-13">
 
-<title>Boyi Guo (郭博逸), PhD - Blog</title>
+<title>Boyi Guo (郭博逸), PhD - Review Quality Control Standards for sc-/sn-RNA data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,28 +22,46 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./img/Boyi_Guo_20190924.jpeg" rel="icon" type="image/jpeg">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../img/Boyi_Guo_20190924.jpeg" rel="icon" type="image/jpeg">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,67 +89,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -139,7 +101,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Boyi Guo (郭博逸), PhD</span>
     </a>
   </div>
@@ -155,7 +117,7 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -163,7 +125,7 @@ window.Quarto = {
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -176,110 +138,113 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Blog</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Review Quality Control Standards for sc-/sn-RNA data</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">technical report</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Boyi Guo </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">March 13, 2024</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="technical report">technical report <span class="quarto-category-count">(2)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#references" id="toc-references" class="nav-link active" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<p>We will limit our review to only UMI-based technologies.</p>
+<p><strong>Quality control steps for</strong></p>
+<ul>
+<li><p>Detection of empty droplets and doublets</p></li>
+<li><p>Detecting Damaged cells</p></li>
+</ul>
+<p><strong>What are some commonly used metrics to be used in QCs?</strong></p>
+<ul>
+<li>Mitochondria proportion. however this is complicated by the type of tissue it uses.
+<ul>
+<li><span class="citation" data-cites="galow2021">(<a href="#ref-galow2021" role="doc-biblioref">Galow et al. 2021</a>)</span> “recommend omitting this parameter for scRNA-seq in cardiovascular applications whenever possible” on the basis of xxx</li>
+</ul></li>
+</ul>
+<p>What are some basic strategies to do QC?</p>
+<ul>
+<li><p>Thresholding</p></li>
+<li><p>Data-driven</p>
+<ul>
+<li>miQC <span class="citation" data-cites="hippen2021">(<a href="#ref-hippen2021" role="doc-biblioref">Hippen et al. 2021</a>)</span></li>
+<li>data-driven quality control (ddqc) <span class="citation" data-cites="subramanian2022biology">(<a href="#ref-subramanian2022biology" role="doc-biblioref">Subramanian et al. 2022</a>)</span></li>
+<li>SamgpleQC: <span class="citation" data-cites="macnair2023sampleqc">(<a href="#ref-macnair2023sampleqc" role="doc-biblioref">Macnair and Robinson 2023</a>)</span></li>
+<li>Validrops <span class="citation" data-cites="kavaliauskaite2023automatic">(<a href="#ref-kavaliauskaite2023automatic" role="doc-biblioref">Kavaliauskaite and Madsen 2023</a>)</span></li>
+<li>? <span class="citation" data-cites="bishara2022machine">(<a href="#ref-bishara2022machine" role="doc-biblioref">Bishara et al. 2022</a>)</span></li>
+<li>singleCellTK <span class="citation" data-cites="hong2022comprehensive">(<a href="#ref-hong2022comprehensive" role="doc-biblioref">Hong et al. 2022</a>)</span></li>
+</ul></li>
+</ul>
+<p><strong>What are some downstream impacts of removing the low quality cells or not?</strong></p>
+<p><strong>Does quality controlling snRNA data following the same standard as scRNA data?</strong></p>
+<p><strong>Processing cells coming and sequenced from different batches.</strong></p>
+<section id="references" class="level1">
 
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="technical report" data-listing-date-sort="1710302400000" data-listing-file-modified-sort="1710462021467" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="134">
-<div class="thumbnail">
-<p><a href="./blog/sc-QC-summary/index.html" class="no-external"></a></p><a href="./blog/sc-QC-summary/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/sc-QC-summary/index.html" class="no-external"></a></p>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bishara2022machine" class="csl-entry" role="listitem">
+Bishara, Isaac, Jinfeng Chen, Jason I Griffiths, Andrea H Bild, and Aritro Nath. 2022. <span>“A Machine Learning Framework for scRNA-Seq UMI Threshold Optimization and Accurate Classification of Cell Types.”</span> <em>Frontiers in Genetics</em> 13: 982019.
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/sc-QC-summary/index.html" class="no-external">Review Quality Control Standards for sc-/sn-RNA data</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/sc-QC-summary/index.html" class="no-external"></a>
+<div id="ref-galow2021" class="csl-entry" role="listitem">
+Galow, Anne-Marie, Sophie Kussauer, Markus Wolfien, Ronald M Brunner, Tom Goldammer, Robert David, and Andreas Hoeflich. 2021. <span>“Quality Control in scRNA-Seq Can Discriminate Pacemaker Cells: The mtRNA Bias.”</span> <em>Cellular and Molecular Life Sciences</em> 78 (19-20): 6585–92.
 </div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('technical report'); return false;">
-technical report
+<div id="ref-hippen2021" class="csl-entry" role="listitem">
+Hippen, Ariel A, Matias M Falco, Lukas M Weber, Erdogan Pekcan Erkan, Kaiyang Zhang, Jennifer Anne Doherty, Anna Vähärautio, Casey S Greene, and Stephanie C Hicks. 2021. <span>“miQC: An Adaptive Probabilistic Framework for Quality Control of Single-Cell RNA-Sequencing Data.”</span> <em>PLoS Computational Biology</em> 17 (8): e1009290.
 </div>
+<div id="ref-hong2022comprehensive" class="csl-entry" role="listitem">
+Hong, Rui, Yusuke Koga, Shruthi Bandyadka, Anastasia Leshchyk, Yichen Wang, Vidya Akavoor, Xinyun Cao, et al. 2022. <span>“Comprehensive Generation, Visualization, and Reporting of Quality Control Metrics for Single-Cell RNA Sequencing Data.”</span> <em>Nature Communications</em> 13 (1): 1688.
 </div>
-<div class="listing-description">
-<a href="./blog/sc-QC-summary/index.html" class="no-external">We will limit our review to only UMI-based technologies.</a>
+<div id="ref-kavaliauskaite2023automatic" class="csl-entry" role="listitem">
+Kavaliauskaite, Gabija, and Jesper Grud Skat Madsen. 2023. <span>“Automatic Quality Control of Single-Cell and Single-Nucleus RNA-Seq Using valiDrops.”</span> <em>NAR Genomics and Bioinformatics</em> 5 (4): lqad101.
 </div>
+<div id="ref-macnair2023sampleqc" class="csl-entry" role="listitem">
+Macnair, Will, and Mark Robinson. 2023. <span>“SampleQC: Robust Multivariate, Multi-Cell Type, Multi-Sample Quality Control for Single-Cell Data.”</span> <em>Genome Biology</em> 24 (1): 23.
 </div>
-<div class="metadata">
-<a href="./blog/sc-QC-summary/index.html" class="no-external">
-<div class="listing-date">
-Mar 13, 2024
+<div id="ref-subramanian2022biology" class="csl-entry" role="listitem">
+Subramanian, Ayshwarya, Mikhail Alperovich, Yiming Yang, and Bo Li. 2022. <span>“Biology-Inspired Data-Driven Quality Control for Scientific Discovery in Single-Cell Transcriptomics.”</span> <em>Genome Biology</em> 23 (1): 267.
 </div>
-<div class="listing-author">
-Boyi Guo
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="technical report" data-listing-date-sort="1710302400000" data-listing-file-modified-sort="1710444061633" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1770">
-<div class="thumbnail">
-<p><a href="./blog/log1p-distorts-fc/index.html" class="no-external"></a></p><a href="./blog/log1p-distorts-fc/index.html" class="no-external">
-<p class="card-img-top"><img src="blog/log1p-distorts-fc/index_files/figure-html/unnamed-chunk-1-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./blog/log1p-distorts-fc/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/log1p-distorts-fc/index.html" class="no-external">Pseudocounts distorts fold change</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/log1p-distorts-fc/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('technical report'); return false;">
-technical report
-</div>
-</div>
-<div class="listing-description">
-<a href="./blog/log1p-distorts-fc/index.html" class="no-external">Log transformation has been one of the commonly, if not the most popular, used transformations in analyzing gene expression data. While zero counts is fairly prevalent in…<em></em><span class="math inline"></span><span class="math inline"></span><span class="citation" data-cites="booeshaghi2021 lun2018 townes2019"></span></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/log1p-distorts-fc/index.html" class="no-external">
-<div class="listing-date">
-Mar 13, 2024
-</div>
-<div class="listing-author">
-Boyi Guo
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
