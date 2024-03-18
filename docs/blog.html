@@ -79,9 +79,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -195,7 +195,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="technical report">technical report <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="academic">academic <span class="quarto-category-count">(1)</span></div><div class="category" data-category="mentoring">mentoring <span class="quarto-category-count">(1)</span></div><div class="category" data-category="technical report">technical report <span class="quarto-category-count">(2)</span></div><div class="category" data-category="work in progress">work in progress <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -209,7 +209,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="technical report" data-listing-date-sort="1710302400000" data-listing-file-modified-sort="1710462021467" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="134">
+<div class="quarto-post image-right" data-index="0" data-categories="technical report,work in progress" data-listing-date-sort="1710734400000" data-listing-file-modified-sort="1710789056824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="143">
 <div class="thumbnail">
 <p><a href="./blog/sc-QC-summary/index.html" class="no-external"></a></p><a href="./blog/sc-QC-summary/index.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -217,7 +217,7 @@ window.Quarto = {
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./blog/sc-QC-summary/index.html" class="no-external">Review Quality Control Standards for sc-/sn-RNA data</a>
+<a href="./blog/sc-QC-summary/index.html" class="no-external">Quality control standards for sc-/sn-RNA data</a>
 </h3>
 <div class="listing-subtitle">
 <a href="./blog/sc-QC-summary/index.html" class="no-external"></a>
@@ -225,6 +225,9 @@ window.Quarto = {
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('technical report'); return false;">
 technical report
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('work in progress'); return false;">
+work in progress
 </div>
 </div>
 <div class="listing-description">
@@ -234,7 +237,7 @@ technical report
 <div class="metadata">
 <a href="./blog/sc-QC-summary/index.html" class="no-external">
 <div class="listing-date">
-Mar 13, 2024
+Mar 18, 2024
 </div>
 <div class="listing-author">
 Boyi Guo
@@ -271,6 +274,42 @@ Mar 13, 2024
 </div>
 <div class="listing-author">
 Boyi Guo
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="mentoring,academic" data-listing-date-sort="1656648000000">
+<div class="thumbnail">
+<p><a href="https://magazine.amstat.org/blog/2022/07/01/early-career-navigate-conferences/" class="no-external"></a></p><a href="https://magazine.amstat.org/blog/2022/07/01/early-career-navigate-conferences/" class="no-external">
+<p><img src="https://magazine.amstat.org/wp-content/themes/arthemia/images/logo.png" class="thumbnail-image"></p>
+</a><p><a href="https://magazine.amstat.org/blog/2022/07/01/early-career-navigate-conferences/" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="https://magazine.amstat.org/blog/2022/07/01/early-career-navigate-conferences/" class="no-external">Keep your receipts</a>
+</h3>
+<div class="listing-subtitle">
+<a href="https://magazine.amstat.org/blog/2022/07/01/early-career-navigate-conferences/" class="no-external"> How early-career statisticians can navigate conferences</a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('mentoring'); return false;">
+mentoring
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('academic'); return false;">
+academic
+</div>
+</div>
+<div class="listing-description">
+<a href="https://magazine.amstat.org/blog/2022/07/01/early-career-navigate-conferences/" class="no-external">For early-career statisticians, attending national conferences can be an overwhelming experience. We offer some transparency on the conferences’ hidden curriculum.Previously Published in AMSTATNEWS</a>
+</div>
+</div>
+<div class="metadata">
+<a href="https://magazine.amstat.org/blog/2022/07/01/early-career-navigate-conferences/" class="no-external">
+<div class="listing-date">
+Jul 1, 2022
+</div>
+<div class="listing-author">
+Boyi Guo, Sarah Samorodnitsky
 </div>
 </a>
 </div>

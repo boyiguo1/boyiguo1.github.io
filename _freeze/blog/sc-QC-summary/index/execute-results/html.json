@@ -1,0 +1,15 @@
+{
+  "hash": "b6181c45dec08919b7ddd4e9c5c3275b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Quality control standards for sc-/sn-RNA data\"\nauthor: \"Boyi Guo\"\ndate: \"2024-03-18\"\nbibliography: references.bib\ncategories:\n  - technical report\n  - work in progress\n---\n\n\n\n\n\nWe will limit our review to only UMI-based technologies.\n\n__Quality control steps for__\n\n* Detection of empty droplets and doublets \n\n* Detecting Damaged cells\n\n__What are some commonly used metrics to be used in QCs?__\n\n* Mitochondria proportion. however this is complicated by the type of tissue it uses.\n  * [@galow2021] \"recommend omitting this parameter for scRNA-seq in cardiovascular applications whenever possible\" on the basis of xxx\n\n\n__What are some basic strategies to do QC?__\n\n* Thresholding\n\n* Data-driven\n\n  * miQC [@hippen2021]\n  * data-driven quality control (ddqc) [@subramanian2022biology]\n  * SamgpleQC: [@macnair2023sampleqc]\n  * Validrops [@kavaliauskaite2023automatic]\n  * ? [@bishara2022machine]\n  * singleCellTK [@hong2022comprehensive]\n\n\n\n__What are some downstream impacts of removing the low quality cells or not?__\n\n__Does quality controlling snRNA data following the same standard as scRNA data?__\n\n__Processing cells coming and sequenced from different batches.__\n\n\n\n__Should people look into gene expression data during QC step?__\n\n\n# References",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

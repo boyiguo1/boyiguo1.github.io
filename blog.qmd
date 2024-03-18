@@ -1,7 +1,18 @@
 ---
 title: "Blog"
 listing:
-  contents: blog
+  contents:
+    - blog
+    - title: "Keep your receipts"
+      subtitle: " How early-career statisticians can navigate conferences"
+      path: https://magazine.amstat.org/blog/2022/07/01/early-career-navigate-conferences/
+      image: https://magazine.amstat.org/wp-content/themes/arthemia/images/logo.png
+      description: "For early-career statisticians, attending national conferences can be an overwhelming experience. We offer some transparency on the conferences’ hidden curriculum.Previously Published in AMSTATNEWS"
+      author: "Boyi Guo, Sarah Samorodnitsky"
+      date: "2022-07-01"
+      categories:
+        - mentoring
+        - academic
   sort: "date desc"
   type: default
   categories: true

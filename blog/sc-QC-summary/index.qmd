@@ -1,0 +1,56 @@
+---
+title: "Quality control standards for sc-/sn-RNA data"
+author: "Boyi Guo"
+date: "2024-03-18"
+bibliography: references.bib
+categories:
+  - technical report
+  - work in progress
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+We will limit our review to only UMI-based technologies.
+
+__Quality control steps for__
+
+* Detection of empty droplets and doublets 
+
+* Detecting Damaged cells
+
+__What are some commonly used metrics to be used in QCs?__
+
+* Mitochondria proportion. however this is complicated by the type of tissue it uses.
+  * [@galow2021] "recommend omitting this parameter for scRNA-seq in cardiovascular applications whenever possible" on the basis of xxx
+
+
+__What are some basic strategies to do QC?__
+
+* Thresholding
+
+* Data-driven
+
+  * miQC [@hippen2021]
+  * data-driven quality control (ddqc) [@subramanian2022biology]
+  * SamgpleQC: [@macnair2023sampleqc]
+  * Validrops [@kavaliauskaite2023automatic]
+  * ? [@bishara2022machine]
+  * singleCellTK [@hong2022comprehensive]
+
+
+
+__What are some downstream impacts of removing the low quality cells or not?__
+
+__Does quality controlling snRNA data following the same standard as scRNA data?__
+
+__Processing cells coming and sequenced from different batches.__
+
+
+
+__Should people look into gene expression data during QC step?__
+
+
+# References
