@@ -1,0 +1,53 @@
+---
+title: "Software"
+listing:
+  contents:
+    - title: "tpSVG"
+      description: "R package to model gene expression of spatially resolved transcriptomics data using generalized geo-additive models."
+      path: https://boyi-guo.com/tpSVG/
+      image: https://boyi-guo.com/tpSVG/logo.png
+      categories:
+        - Bioconductor
+        - SRT
+    - title: "escheR"
+      description: "R package built off of ggplot2 and the Gestalt principles to visualize multi-dimensional data in the 2D space (e.g. embedding or spatial visualizations)."
+      path: https://boyi-guo.com/escheR/
+      image: https://boyi-guo.com/escheR/logo.png
+      categories:
+        - Bioconductor
+        - SRT
+        - Visualization
+    - title: "BHAM"
+      description: "Software R package to build scalable Bayesian hierarchical additive models using spike-and-slab  priors for high-dimensional data analysis."
+      path: /https://boyi-guo.com/BHAM/
+      # image: https://boyi-guo.com/tpSVG/logo.png
+      categories:
+        - High-dimensional
+        - Spike&Slab LASSO
+    - title: "MOTE.RF"
+      description: "Software R package to build random forests algorithm to infer treatment effect for multivariate outcome"
+      path: https://github.com/boyiguo1/MOTE.RF
+      categories:
+        - R/C++
+        - Random Forests
+        - Treatment effect
+        
+    # - title: "Keep your receipts"
+    #   subtitle: " How early-career statisticians can navigate conferences"
+    #   path: https://magazine.amstat.org/blog/2022/07/01/early-career-navigate-conferences/
+    #   image: https://magazine.amstat.org/wp-content/themes/arthemia/images/logo.png
+    #   description: "For early-career statisticians, attending national conferences can be an overwhelming experience. We offer some transparency on the conferences’ hidden curriculum.Previously Published in AMSTATNEWS"
+    #   author: "Boyi Guo, Sarah Samorodnitsky"
+    #   date: "2022-07-01"
+    #   categories:
+    #     - mentoring
+    #     - academic
+  # sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  image-height: 3.5in
+page-layout: full
+title-block-banner: true
+---

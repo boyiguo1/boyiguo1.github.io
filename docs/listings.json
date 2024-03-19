@@ -7,6 +7,10 @@
     ]
   },
   {
+    "listing": "/software.html",
+    "items": []
+  },
+  {
     "listing": "/Problems.html",
     "items": [
       "/about.html",
@@ -17,6 +21,7 @@
       "/projects.html",
       "/blog/log1p-distorts-fc/index.html",
       "/blog/sc-QC-summary/index.html",
+      "/software.html",
       "/SupervisedMatrixFactorization.html"
     ]
   }
