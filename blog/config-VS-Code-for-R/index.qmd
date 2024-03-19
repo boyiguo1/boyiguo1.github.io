@@ -1,0 +1,24 @@
+---
+title: "Configuring VS Code for R"
+author: "Boyi Guo"
+date: "2024-03-18"
+# bibliography: references.bib
+categories: [programming]
+draft: TRUE
+---
+
+
+# From RStudio to VS Code
+## Seamless integration with GitHub Copilot
+
+# Set up
+
+## Send code to R console
+
+## Send code to terminal
+
+## View Plots
+
+## File path autocompletion
+
+## Quarto Website
