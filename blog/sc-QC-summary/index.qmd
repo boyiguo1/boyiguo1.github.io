@@ -44,13 +44,22 @@ __What are some basic strategies to do QC?__
 
 __What are some downstream impacts of removing the low quality cells or not?__
 
+https://elifesciences.org/articles/90214 provides example that different QC threshold results in substantially different DE results in snRNA data analysis when controling the DEG method.
+
 __Does quality controlling snRNA data following the same standard as scRNA data?__
+
+* Would the mito reads indicate cell death still convincing this in this case?
+* What is the theory about mitoreads is because of cell stress during tissue dissassociation?
+
 
 __Processing cells coming and sequenced from different batches.__
 
 
 
 __Should people look into gene expression data during QC step?__
+
+* reiterative steps. so essentially gene expression data is exposed to the QC step.
+
 
 
 # References
