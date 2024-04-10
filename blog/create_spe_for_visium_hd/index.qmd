@@ -1,0 +1,153 @@
+---
+title: "Create R/Bioc Object for Visium HD"
+author: "Boyi Guo"
+date: "2024-04-10"
+# bibliography: references.bib
+categories: [SRT, programming, Visium, Visium HD]
+draft: TRUE
+---
+
+Data is downloaded form 10x website via https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-libraries-of-mouse-brain-he.
+
+
+## File structure
+
+```{r}
+#| eval: false
+fs::dir_tree("~/Visium_HD_Mouse_Brain/",  recurse = FALSE)
+```
+```
+├── Visium_HD_Mouse_Brain_cloupe_008um.cloupe
+├── Visium_HD_Mouse_Brain_feature_slice.h5
+├── Visium_HD_Mouse_Brain_metrics_summary.csv
+├── Visium_HD_Mouse_Brain_molecule_info.h5
+├── Visium_HD_Mouse_Brain_spatial.tar.gz
+├── Visium_HD_Mouse_Brain_square_002um_outputs.tar.gz
+├── Visium_HD_Mouse_Brain_square_008um_outputs.tar.gz
+├── Visium_HD_Mouse_Brain_square_016um_outputs.tar.gz
+└── Visium_HD_Mouse_Brain_web_summary.html
+```
+
+
+Compare to the space ranger output of Visium dataset.
+```{r}
+#| eval: false
+fs::dir_tree("~/GitHub/spatialDLPFC_SCZ/processed-data/spaceranger/V12D07-334_A1/")
+```
+```
+> tree -L 1 .
+.
+├── analysis
+├── cloupe.cloupe
+├── deconvolution
+├── filtered_feature_bc_matrix
+├── filtered_feature_bc_matrix.h5
+├── metrics_summary.csv
+├── molecule_info.h5
+├── possorted_genome_bam.bam
+├── possorted_genome_bam.bam.bai
+├── raw_feature_bc_matrix
+├── raw_feature_bc_matrix.h5
+├── spatial
+└── web_summary.html
+```
+
+Compare to Visium space ranger, the basic files have some change.
+* new h5 file - [*feature_slice.h5](Feature Slice H5)
+
+
+## Create R/Bioc SpatialExperiment object
+
+### Rename files
+To make things easier, the first thing I do is to remove the arbitrary prefix `Visium_HD_Mouse_Brain_` of the downloaded files.
+
+```{r}
+#| eval: FALSE
+
+library(tidyverse)
+setwd("~/Visium_HD_Mouse_Brain/")
+
+file.rename(
+  from = list.files("~/Visium_HD_Mouse_Brain/", pattern = "Visium_HD_Mouse_Brain"),
+  to = str_remove(
+    list.files("~/Visium_HD_Mouse_Brain/", pattern = "Visium_HD_Mouse_Brain"),
+    pattern = "Visium_HD_Mouse_Brain_"
+  )
+)
+
+fs::dir_tree(".")
+```
+```
+.
+├── cloupe_008um.cloupe
+├── feature_slice.h5
+├── metrics_summary.csv
+├── molecule_info.h5
+├── spatial.tar.gz
+├── square_002um_outputs.tar.gz
+├── square_008um_outputs.tar.gz
+├── square_016um_outputs.tar.gz
+└── web_summary.html
+```
+
+## Decompress output
+
+`spatial.tar.gz` and one of `square_0**um_outputs.tar.gz` `(we used 008um_output as an example)` need to be decompressed.
+
+```{r}
+#| eval: FALSE 
+untar("spatial.tar.gz")  
+untar("square_008um_outputs.tar.gz")
+
+fs::dir_tree(".", recurse = 1)
+```
+```
+.
+├── cloupe_008um.cloupe
+├── feature_slice.h5
+├── metrics_summary.csv
+├── molecule_info.h5
+├── spatial
+│   ├── aligned_fiducials.jpg
+│   ├── aligned_tissue_image.jpg
+│   ├── cytassist_image.tiff
+│   ├── detected_tissue_image.jpg
+│   ├── tissue_hires_image.png
+│   └── tissue_lowres_image.png
+├── spatial.tar.gz
+├── square_002um_outputs.tar.gz
+├── square_008um
+│   ├── analysis
+│   ├── cloupe.cloupe
+│   ├── filtered_feature_bc_matrix
+│   ├── filtered_feature_bc_matrix.h5
+│   ├── raw_feature_bc_matrix
+│   ├── raw_feature_bc_matrix.h5
+│   └── spatial
+├── square_008um_outputs.tar.gz
+├── square_016um_outputs.tar.gz
+└── web_summary.html
+```
+
+When looking at the content in the `spatial` folder, there are images because using cytassist.
+In addition, `tissue_positions.parquet` instead of `tissue_position.csv`. However, this seems to be robust in `VisiumIO`.
+
+
+### Create SpatialExperiment object with `VisiumIO`
+
+```{r}
+#| eval: FALSE
+
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+library(VisiumIO)             # VisiumIO doesn't depend on SpatialExperiment
+library(SpatialExperiment)
+
+
+
+spe <- SpatialExperiment::read10xVisium(
+  samples = "~/Visium_HD_Mouse_Brain/",
+  type = "HDF5",
+  data = "filter"
+)
+```
