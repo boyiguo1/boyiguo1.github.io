@@ -6,6 +6,7 @@ bibliography: references.bib
 categories:
   - technical report
   - work in progress
+draft: TRUE
 ---
 
 ```{r setup, include=FALSE}
@@ -39,6 +40,9 @@ __What are some basic strategies to do QC?__
   * Validrops [@kavaliauskaite2023automatic]
   * ? [@bishara2022machine]
   * singleCellTK [@hong2022comprehensive]
+  * scRNABatchQC: multi-samples quality control for single cell RNA-seq data [https://watermark.silverchair.com/bioinformatics_35_24_5306.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA4wwggOIBgkqhkiG9w0BBwagggN5MIIDdQIBADCCA24GCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMnOlmCpoXH6-e0049AgEQgIIDP6PZlal3ytDTgy2yNE-5T3T9zoojmKpaT8Yk6NnGNFMwpsmUfpSEmdUVV52Hvwffz38nNqeh827ruuXOAvIvpd-anSbyW08FXy-sXjNOyGOVgvZmUHeQWI1YGlUJVAI321N8LKOR6EjCwG_uYh7yaQhzxLMDyPbeiMAVBgoU0BtsldxrUb37DVYxGSrvO49FSe2tz5oF3ln_eJQu4X41oi0FLRBrlWzLaR2IbHD56L6TUh5ZIX7GzKY8VuDlIscpta_mDU83v6zVYyl2qFGLMsdGOYOnlfZVlYQ35rvtQ9aJWEIz_EuNhuah22fQ01qPEaXDf7dMAw77raJFsh36PZP_s14TLIQsWMSbFlaaZNuKuVfVcTlmKttptOcU7TmXE09uXZ6sPLHydx2PEGhskBqdNiI_hMBW5E6W8-Ezb5wvsvMLMHJPLXiibYTi5s8H4vrZCvaCfEte8ZJvizwX1zjkfQ1aqq2X7wNRO2VvOjD26i_0U3ob4p_0wLn7-lRtWUztL1zci76HP3cLYimjwe1Qar9UhgVROD_Nw0ONsYjBCjAf2bGDe-Dx50Fx9ED0K1L45tG2FbZ9FXv0YwD9uop6oQBvol8BNbZj5iqOvJ0dUh--tMowVli9noIVqio-mJdNtbJLsq946AXJbIc20lxsPsAHXMDWxtrdhgVamZJFpiF4Ccz88EZqY4gaVt_bMjV3W438l0pkYvDUbeojEmnEOOSyQp-8eExBF2KwXT4DbCwFLdIQmTQFnUQXiKu6-yiz5x5UMKYIM0bT7HR0eAD_1n8kRz2Q-bsao6kC5ruVQTAcAbAmPkM6FKg8FXHY6c7rrcWlEyt_ULHQnHLsuRRC0_psTuU0uMQ8vBy356hnqeXEXeZAsRH7EmtULNcLu6ot762PszUrJHNvC8HLKSrdV_jvW7rzBmDIyd34OTpLtg0VWouQDfgSbD4PIZ3qAW9eM-zs2I5McSrjanLr_u4FlwIfOK7Uc-aIgfi4EOTfMnVIIE7zeRNGZzz-1xENErsRPMV_DibS_DlppbrBOP2KH1yn6Nc2KJUwdx0yg3BEu6D_VvRtXx54pS3-HZbWqdg9CAJIQKP_KLhyi7Ok-A]
+  * Quality Control of scRNAseq data[https://nbisweden.github.io/excelerate-scRNAseq/session-qc/scRNAseq_QC_Asa_Bjorklund_2019.pdf]
+  * 
 
 
 

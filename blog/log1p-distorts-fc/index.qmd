@@ -1,5 +1,5 @@
 ---
-title: "Pseudocounts distorts fold change"
+title: "Pseudocount distorts fold change"
 author: "Boyi Guo"
 date: "2024-03-13"
 bibliography: references.bib

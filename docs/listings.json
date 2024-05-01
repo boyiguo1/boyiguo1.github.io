@@ -2,7 +2,6 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/blog/sc-QC-summary/index.html",
       "/blog/log1p-distorts-fc/index.html"
     ]
   },
@@ -20,7 +19,6 @@
       "/nestedness_index.html",
       "/projects.html",
       "/blog/log1p-distorts-fc/index.html",
-      "/blog/sc-QC-summary/index.html",
       "/software.html",
       "/SupervisedMatrixFactorization.html"
     ]

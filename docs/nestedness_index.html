@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Boyi Guo (郭博逸), PhD - Blog</title>
+<title>Boyi Guo (郭博逸), PhD - Index measuring nestedness of clusterings</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./img/Boyi_Guo_20190924.jpeg" rel="icon" type="image/jpeg">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -135,7 +104,7 @@ window.Quarto = {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -167,7 +136,7 @@ window.Quarto = {
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -178,115 +147,52 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Blog</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="academic">academic <span class="quarto-category-count">(1)</span></div><div class="category" data-category="mentoring">mentoring <span class="quarto-category-count">(1)</span></div><div class="category" data-category="technical report">technical report <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Index measuring nestedness of clusterings</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>There are many indexes measure the internal validity and external validity of clustering results, including FastH+ and adjusted rand index for example. However, it is not specifically designed to study the nestedness of clustering results for example bumping the apripri number of clusters from k=2 to k=3.</p>
+<p>TODO: why measureing nestedness is important. I believe measuring the nestedness of clustering results is important in multiple use cases.</p>
+<p>I think measureing the nestnedness is very important in <em>multi-sample</em> integration, specifically <a href="https://www.nature.com/articles/s41587-021-00895-7">horizontal integration</a>.</p>
+<p><img src="img/motivation_nested_index.jpg" class="img-fluid"></p>
+<p>For example, if you have increased the K=2 to K=3, having such an index measuering the nestedness of clusters could be informative of</p>
+<ul>
+<li>Sample-level QC: If one sample may be different from the rest of the samples and requires special attention.<br>
+</li>
+<li>Violating the assumption about cell composition are the same across all samples.<br>
+</li>
+<li>Clustering stability: Indicator that the algorithms lack of stability</li>
+</ul>
+<p>The toy example is when I studying PNN-SCZ project, I see that some individual samples cluster doesn’t emerge until k bump to extremely large number. And also, when bumping K from small number to large number, increasing K doesn’t necessarily bringing more meaningful spatial domains.</p>
+<p><strong>How to implement this</strong> Among the larger cluster (K=2) for example, finding all the paired data points within the clusters, The number of pairs that are no outside of the clusters. Mathematically, among <span class="math inline">\(\sum\limits^k_{i=1}C^{n_{k=2,i}}_{2}\)</span> pairs, how many pairs such that the pair in <span class="math inline">\(K=3\)</span> cluster results stays the same K=2 clusters. However, this implementation doesn’t considers the size of the clustering…..</p>
 
 
 
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="technical report" data-listing-date-sort="1710302400000" data-listing-file-modified-sort="1714534256119" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1770">
-<div class="thumbnail">
-<p><a href="./blog/log1p-distorts-fc/index.html" class="no-external"></a></p><a href="./blog/log1p-distorts-fc/index.html" class="no-external">
-<p class="card-img-top"><img src="blog/log1p-distorts-fc/index_files/figure-html/unnamed-chunk-1-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./blog/log1p-distorts-fc/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/log1p-distorts-fc/index.html" class="no-external">Pseudocount distorts fold change</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/log1p-distorts-fc/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('technical report'); return false;">
-technical report
-</div>
-</div>
-<div class="listing-description">
-<a href="./blog/log1p-distorts-fc/index.html" class="no-external">Log transformation has been one of the commonly, if not the most popular, used transformations in analyzing gene expression data. While zero counts is fairly prevalent in…<em></em><span class="math inline"></span><span class="math inline"></span><span class="citation" data-cites="booeshaghi2021 lun2018 townes2019"></span></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/log1p-distorts-fc/index.html" class="no-external">
-<div class="listing-date">
-Mar 13, 2024
-</div>
-<div class="listing-author">
-Boyi Guo
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="mentoring,academic" data-listing-date-sort="1656648000000">
-<div class="thumbnail">
-<p><a href="https://magazine.amstat.org/blog/2022/07/01/early-career-navigate-conferences/" class="no-external"></a></p><a href="https://magazine.amstat.org/blog/2022/07/01/early-career-navigate-conferences/" class="no-external">
-<p><img src="https://magazine.amstat.org/wp-content/themes/arthemia/images/logo.png" class="thumbnail-image"></p>
-</a><p><a href="https://magazine.amstat.org/blog/2022/07/01/early-career-navigate-conferences/" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://magazine.amstat.org/blog/2022/07/01/early-career-navigate-conferences/" class="no-external">Keep your receipts</a>
-</h3>
-<div class="listing-subtitle">
-<a href="https://magazine.amstat.org/blog/2022/07/01/early-career-navigate-conferences/" class="no-external"> How early-career statisticians can navigate conferences</a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('mentoring'); return false;">
-mentoring
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('academic'); return false;">
-academic
-</div>
-</div>
-<div class="listing-description">
-<a href="https://magazine.amstat.org/blog/2022/07/01/early-career-navigate-conferences/" class="no-external">For early-career statisticians, attending national conferences can be an overwhelming experience. We offer some transparency on the conferences’ hidden curriculum.Previously Published in AMSTATNEWS</a>
-</div>
-</div>
-<div class="metadata">
-<a href="https://magazine.amstat.org/blog/2022/07/01/early-career-navigate-conferences/" class="no-external">
-<div class="listing-date">
-Jul 1, 2022
-</div>
-<div class="listing-author">
-Boyi Guo, Sarah Samorodnitsky
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
