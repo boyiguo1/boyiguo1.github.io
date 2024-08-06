@@ -2,6 +2,20 @@
 title: "Software"
 listing:
   contents:
+    - title: "spoon"
+      description: "Address the Mean-variance Relationship in Spatial Transcriptomics Data."
+      path: https://www.bioconductor.org/packages/release/bioc/html/spoon.html
+      image: img/spoon_hexgon.png
+      categories:
+        - Bioconductor
+        - SRT
+    - title: "SpotSweeper"
+      description: "Spatially-aware quality control for spatial transcriptomics."
+      path: https://www.bioconductor.org/packages/release/bioc/html/SpotSweeper.html
+      image: img/spotsweeper_hexsticker.png
+      categories:
+        - Bioconductor
+        - SRT
     - title: "tpSVG"
       description: "R package to model gene expression of spatially resolved transcriptomics data using generalized geo-additive models."
       path: https://boyi-guo.com/tpSVG/
