@@ -7,6 +7,11 @@ categories: [SRT, programming, Visium, Visium HD]
 draft: TRUE
 ---
 
+
+TL;DR: The R/Bioc package `VisiumIO` released in Bioc 3.19 provides an convinient way to create one of three default SpaceRanger outputs of Visium HD at 2um, 8um, and 16um respectivelyn. A new SpaceRanger output file `Visium_HD_Mouse_Brain_feature_slice.h5` is provided to allow the user crates new output with custmizable grid resolutions.
+
+
+
 Data is downloaded form 10x website via https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-libraries-of-mouse-brain-he.
 
 
@@ -141,13 +146,41 @@ In addition, `tissue_positions.parquet` instead of `tissue_position.csv`. Howeve
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 library(VisiumIO)             # VisiumIO doesn't depend on SpatialExperiment
-library(SpatialExperiment)
+# library(SpatialExperiment)
+
+# Doesn't work
+spe <- TENxVisium(
+    resources = "Visium_HD_Mouse_Brain_square_008um_outputs.tar.gz"
+    )
 
 
+
+untar("Visium_HD_Mouse_Brain_square_008um_outputs.tar.gz")
+
+# Doesn't work
+# spe <- TENxVisium(
+#   resources = "square_008um",
+#   spatialResource = "square_008um/spatial",
+#   tissuePattern = "tissue_positions.parquet"
+# )
+
+ spe <- TENxVisium(
+  spacerangerOut = "square_008um",
+  # spatialResource = "square_008um/spatial",
+  jsonFile = "scalefactors_json.json",
+  tissuePattern = "tissue_positions.parquet"
+)
+
+
+list.files("~/Visium_HD_Mouse_Brain/square_008um")
+
+spd <- .read_xyz("~/Visium_HD_Mouse_Brain/square_008um/outs/spatial/tissue_positions.parquet") 
 
 spe <- SpatialExperiment::read10xVisium(
-  samples = "~/Visium_HD_Mouse_Brain/",
+  samples = "~/Visium_HD_Mouse_Brain/square_008um",
+  sample_id = "sample_01",
   type = "HDF5",
-  data = "filter"
+  data = "filtered",
+  load = FALSE
 )
 ```
