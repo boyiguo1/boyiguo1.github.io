@@ -23,7 +23,7 @@ about:
 
 **From Molecules to Medicine: Turning Complexity into Clarity with Data Science**
 
-Hi, I’m Boyi Guo, an Assistant Professor in Biostatistics at the University of Utah. I develop computational tools to integrate and analyze massive molecular and clinical datasets—like multi-omics and spatial transcriptomics—to uncover mechanisms behind complex diseases such as schizophrenia and cancer. My **mission** is to transform data into actionable insights for precision medicine.
+Hi, I’m Boyi Guo, an Assistant Professor in Biostatistics at the University of Utah. I develop computational tools to integrate and analyze population-scale molecular and clinical datasets to uncover mechanisms behind complex diseases such as pyschiatric disorders and cancer. My **mission** is to transform data into actionable insights for precision medicine.
 
 Before joining Utah, I earned my PhD in Biostatistics at UAB and completed a postdoc at Johns Hopkins, focusing on atlas-scale spatial omics. My work has been featured in journals including *Nature Methods*, *Bioinformatics*, and *Science*.
 
