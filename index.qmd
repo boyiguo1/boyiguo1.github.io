@@ -21,13 +21,11 @@ about:
       href: mailto:boyi.guo.work@gmail.com
 ---
 
-I am an applied statistician and biomedical data scientist working at the intersection of *machine learning*, *computational omics*, and *population health*. My [research](https://boyi-guo.com/projects.html) concentrates on developing statistically rigorous and computationally scalable machine-learning methods, as well as open-source software, that integrates population-scale multi-omics data to uncover functional mechanisms that explain disease heterogeneity.
+**From Molecules to Medicine: Turning Complexity into Clarity with Data Science**
 
-------------------------------------------------------------------------
+Hi, I’m Boyi Guo, an Assistant Professor in Biostatistics at the University of Utah. I develop computational tools to integrate and analyze massive molecular and clinical datasets—like multi-omics and spatial transcriptomics—to uncover mechanisms behind complex diseases such as schizophrenia and cancer. My **mission** is to transform data into actionable insights for precision medicine.
 
-Currently, I am an Assistnat Professor in the Division of Biostatistics, Department of Population Health Sciences at University of Utah. 
-
-------------------------------------------------------------------------
+Before joining Utah, I earned my PhD in Biostatistics at UAB and completed a postdoc at Johns Hopkins, focusing on atlas-scale spatial omics. My work has been featured in journals including *Nature Methods*, *Bioinformatics*, and *Science*.
 
 ```{=html}
 <center><img src="http://ghchart.rshah.org/boyiguo1" alt="Boyi Guo's Github chart" /, width = "100%", height = "100%"></a></center>
