@@ -10,6 +10,47 @@ format:
 
 ------------------------------------------------------------------------
 
+# Computational Omics
+
+## Spatially-resolved multi-omics in neurobiology
+
+The cortical layers of the human neocortex were classically defined by histological distinction of cell types according to size and shape. However, emerging single-cell and spatially-resolved transcriptomic technologies have facilitated the identification of molecularly defined cell populations and spatial domains that move beyond classic cell type definitions and cytoarchitectural boundaries. Assigning gene expression to distinct anatomical subdivisions and cell populations within the human brain improves the understanding of brain regions and how they contribute to brain disorders. I led the quantitative investigation of 30 Visium Samples and single-nucleus RNA seq collected from 19 brain samples, where integrative cell-cell communication identified FYN-EFNA5-EPHA5 signaling pathway associated with schizophrenia. I also developed a novel visualization framework that simultaneous display disparage variables following Gestalt principles, allowing to in situ visualize of differential expression across various spatial domains.
+
+
+
+-   Huuki-Myers L, Spangler A, Eagles N, Montgomery KD, Kwon SH, **Guo B**, Grant-Peters M, Divecha HR, Tippani M, Sriworarat C, Nguyen AB, Ravichandran P, Tran MN, Seyedian A, Hyde TM, Kleinman JE, Battle A, Page SC, Ryten M, Hicks SC, Martinowich K, Collado-Torres L, Maynard KR. (2024). [A data-driven single-cell and spatial transcriptomic map of the human prefrontal cortex.](https://www.science.org/doi/10.1126/science.adh1938). _Science_.
+
+- **Guo B**$^+$, Ling W$^+$, Kwon SH, Panwar P, Ghazanfar S, Martinowich K, Hicks SC. (2025). [Integrating spatially-resolved transcriptomics data across tissues and individuals: challenges and opportunities](https://onlinelibrary.wiley.com/doi/full/10.1002/smtd.202401194) _Small Methods_ 
+
+
+
+### Computational methods for spatial genomics data
+
+<div>
+
+<div style="float: left;  position: relative; ">
+![Multi-dimensional visualization](img/insitu.jpg){width=350  fig-align=left}
+</div>
+
+The development of computational methods for processing, integrating, analyzing, and visualizing spatial genomics data is crucial in advancing our understanding of complex biological systems. Spatial genomics provides valuable insights into the spatial organization of cells and their interactions within tissues. Computational methods enable the extraction of meaningful patterns, unveiling the spatial relationships between genes and cells.
+</div>
+
+* Totty M$^*$, Hicks SC, **Guo B**. (2025) [SpotSweeper: Spatially aware quality control metrics for spatially resolved transcriptomics data](https://www.nature.com/articles/s41592-025-02713-3). _Nature Methods_. 
+
+* Shah KH$^*$, **Guo B**, Hicks SC. (2025)  [Addressing the mean-variance relationship in spatially resolved transcriptomics data with spoon](https://academic.oup.com/biostatistics/article/26/1/kxaf012/8162634). __Biostatistics__.
+
+* Zhou H$^*$, Panwar P, **Guo B**, Hallinan C, Ghazanfar S, and Hicks SC. (2025) [Spatial mutual nearest neighbors for spatial transcriptomics data.](https://academic.oup.com/bioinformatics/article/41/8/btaf403/8214008) _Bioinformatics_. 
+
+* **Guo B**, Huuki-Myers LA, Grant-Peters M, Collado-Torres L, Hicks SC. (2023). [escheR: Unified multi-dimensional visualizations with Gestalt principles](https://academic.oup.com/bioinformaticsadvances/article/3/1/vbad179/7459905). _Bioinformatics Advances_.
+
+
+## Microbiome
+
+- Pendegraft AH, **Guo B**, Yi N. (2019). Bayesian hierarchical negative binomial models for multivariable analyses with applications to human microbiome count data. _PloS one_.
+
+- Zhang X, **Guo B**, Yi N. (2020). Zero-Inflated gaussian mixed models for analyzing longitudinal microbiome data. _Plos one_.
+
+
 # Scalable machine learning models for precision medicine
 
 Heterogeneity in treatment response and disease progression requires individualized health care informed by data-driven evidence. Deeply embedded in biomedical data, the key to successful precision medicine requires timely advances in statistically sounding machine learning models and AI tools that extract insights from the complex and high-dimensional biomedical data.
@@ -90,34 +131,7 @@ Precision healthcare motivates tailored treatments that take individual heteroge
 
 <!-- ## Molecular and Cellular via Spatially resolved transcriptomics -->
 
-# Computational Omics
 
-## Spatially-resolved genomics
-
-The cortical layers of the human neocortex were classically defined by histological distinction of cell types according to size and shape. However, emerging single-cell and spatially-resolved transcriptomic technologies have facilitated the identification of molecularly defined cell populations and spatial domains that move beyond classic cell type definitions and cytoarchitectural boundaries. Assigning gene expression to distinct anatomical subdivisions and cell populations within the human brain improves the understanding of brain regions and how they contribute to brain disorders. I led the quantitative investigation of 30 Visium Samples and single-nucleus RNA seq collected from 19 brain samples, where integrative cell-cell communication identified FYN-EFNA5-EPHA5 signaling pathway associated with schizophrenia. I also developed a novel visualization framework that simultaneous display disparage variables following Gestalt principles, allowing to in situ visualize of differential expression across various spatial domains.
-
-
-
--   Huuki-Myers L, Spangler A, Eagles N, Montgomery KD, Kwon SH, **Guo B**, Grant-Peters M, Divecha HR, Tippani M, Sriworarat C, Nguyen AB, Ravichandran P, Tran MN, Seyedian A, Hyde TM, Kleinman JE, Battle A, Page SC, Ryten M, Hicks SC, Martinowich K, Collado-Torres L, Maynard KR. (2023). [Integrated single cell and unsupervised spatial transcriptomic analysis defines molecular anatomy of the human dorsolateral prefrontal cortex](https://www.biorxiv.org/content/10.1101/2023.02.15.528722v1). _Science_.
-
-### Computational methods for spatial genomics data
-
-<div>
-
-<div style="float: left;  position: relative; ">
-![Multi-dimensional visualization](img/insitu.jpg){width=350  fig-align=left}
-</div>
-
-The development of computational methods for processing, integrating, analyzing, and visualizing spatial genomics data is crucial in advancing our understanding of complex biological systems. Spatial genomics provides valuable insights into the spatial organization of cells and their interactions within tissues. Computational methods enable the extraction of meaningful patterns, unveiling the spatial relationships between genes and cells.
-</div>
-
-* **Guo B**, Huuki-Myers LA, Grant-Peters M, Collado-Torres L, Hicks SC. (2023). [escheR: Unified multi-dimensional visualizations with Gestalt principles](https://academic.oup.com/bioinformaticsadvances/article/3/1/vbad179/7459905). _Bioinformatics Advances_.
-
-## Microbiome
-
-- Pendegraft AH, **Guo B**, Yi N. (2019). Bayesian hierarchical negative binomial models for multivariable analyses with applications to human microbiome count data. _PloS one_.
-
-- Zhang X, **Guo B**, Yi N. (2020). Zero-Inflated gaussian mixed models for analyzing longitudinal microbiome data. _Plos one_.
 
 # Population Health
 

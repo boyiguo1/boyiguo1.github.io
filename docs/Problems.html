@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – Boyi Guo (郭博逸), PhD</title>
+<title>Problems – Boyi Guo (郭博逸), PhD</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./img/Boyi_Guo_20190924.jpeg" rel="icon" type="image/jpeg">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -69,7 +71,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -77,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -122,39 +182,248 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Problems</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(10)</span></div><div class="category" data-category="dGVjaG5pY2FsJTIwcmVwb3J0">technical report <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">About</h1>
+
+
+
+
+<p>This page enlists all the computational problems that I’m currently exploring and working on.</p>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1759790422581" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="thumbnail"><a href="./ASAPA_org.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./ASAPA_org.html" class="no-external">ASAPA_org</a>
+</h3>
+<div class="delink listing-description"><a href="./ASAPA_org.html" class="no-external">
+redirect
+</a></div>
 </div>
+<div class="metadata">
+<a href="./ASAPA_org.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1759790422595" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
+<div class="thumbnail"><a href="./about.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./about.html" class="no-external">About</a>
+</h3>
+<div class="delink listing-description"><a href="./about.html" class="no-external">
+Under construction. 🛠️
+</a></div>
+</div>
+<div class="metadata">
+<a href="./about.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1759790422595" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="thumbnail"><a href="./blog.html" class="no-external">
+
+<p class="card-img-top"><img src="blog/log1p-distorts-fc/index_files/figure-html/unnamed-chunk-1-1.png"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./blog.html" class="no-external">Blog</a>
+</h3>
+<div class="delink listing-description"><a href="./blog.html" class="no-external">
+For early-career statisticians, attending national conferences can be an overwhelming experience. We offer some transparency on the conferences’ hidden curriculum.Previously…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./blog.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-listing-file-modified-sort="1759791170931" data-listing-reading-time-sort="1" data-listing-word-count-sort="83">
+<div class="thumbnail"><a href="./index.html" class="no-external">
+
+<img loading="lazy" src="./img/Boyi_Guo_20190924.jpeg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./index.html" class="no-external">Boyi Guo, PhD</a>
+</h3>
+<div class="delink listing-description"><a href="./index.html" class="no-external">
+I am an applied statistician and biomedical data scientist working at the intersection of <em>machine learning</em>, <em>computational omics</em>, and <em>population health</em>. My research concentrat…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-listing-file-modified-sort="1759790422621" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="thumbnail"><a href="./growth.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./growth.html" class="no-external">Growth</a>
+</h3>
+<div class="delink listing-description"><a href="./growth.html" class="no-external">
+https://podcasts.apple.com/us/podcast/life-kit/id1461493560?i=1000643138469
+</a></div>
+</div>
+<div class="metadata">
+<a href="./growth.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-listing-file-modified-sort="1759790422630" data-listing-reading-time-sort="2" data-listing-word-count-sort="252">
+<div class="thumbnail"><a href="./nestedness_index.html" class="no-external">
+
+<p class="card-img-top"><img src="img/motivation_nested_index.jpg"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./nestedness_index.html" class="no-external">Index measuring nestedness of clusterings</a>
+</h3>
+<div class="delink listing-description"><a href="./nestedness_index.html" class="no-external">
+There are many indexes measure the internal validity and external validity of clustering results, including FastH+ and adjusted rand index for example. However, it is not…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./nestedness_index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-listing-file-modified-sort="1760461034181" data-listing-reading-time-sort="11" data-listing-word-count-sort="2008">
+<div class="thumbnail"><a href="./projects.html" class="no-external">
+
+<p class="card-img-top"><img src="img/researchBanner.png"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects.html" class="no-external">Projects</a>
+</h3>
+<div class="delink listing-description"><a href="./projects.html" class="no-external">
+ My research concentrates on developing statistically rigorous and computationally scalable machine-learning methods, as well as open-source software, that integrates…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="dGVjaG5pY2FsJTIwcmVwb3J0" data-listing-date-sort="1710309600000" data-listing-file-modified-sort="1759790422596" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1770">
+<div class="thumbnail"><a href="./blog/log1p-distorts-fc/index.html" class="no-external">
+
+<p class="card-img-top"><img src="blog/log1p-distorts-fc/index_files/figure-html/unnamed-chunk-1-1.png"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./blog/log1p-distorts-fc/index.html" class="no-external">Pseudocount distorts fold change</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('dGVjaG5pY2FsJTIwcmVwb3J0'); return false;">technical report</div>
+
+</div>
+<div class="delink listing-description"><a href="./blog/log1p-distorts-fc/index.html" class="no-external">
+Log transformation has been one of the commonly, if not the most popular, used transformations in analyzing gene expression data. While zero counts is fairly prevalent in…<em></em><span class="math inline"></span><span class="math inline"></span><span class="citation" data-cites="booeshaghi2021 lun2018 townes2019"></span>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./blog/log1p-distorts-fc/index.html" class="no-external">
+<div class="listing-date">
+Mar 13, 2024
+</div>
+<div class="listing-author">
+Boyi Guo
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-listing-file-modified-sort="1759790422631" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="thumbnail"><a href="./software.html" class="no-external">
+
+<p class="card-img-top"><img src="img/spoon_hexgon.png"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./software.html" class="no-external">Software</a>
+</h3>
+<div class="delink listing-description"><a href="./software.html" class="no-external">
 
 
 
-<div class="quarto-title-meta">
+</a></div>
+</div>
+<div class="metadata">
+<a href="./software.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="9" data-listing-file-modified-sort="1759790422581" data-listing-reading-time-sort="1" data-listing-word-count-sort="154">
+<div class="thumbnail"><a href="./SupervisedMatrixFactorization.html" class="no-external">
 
-    
-  
-    
-  </div>
-  
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
 
-
-</header>
-
-
-<p>Under construction. 🛠️</p>
-
-
-
-</main> <!-- /main -->
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./SupervisedMatrixFactorization.html" class="no-external">Supervised Surragate Variable Analaysis</a>
+</h3>
+<div class="delink listing-description"><a href="./SupervisedMatrixFactorization.html" class="no-external">
+Motivation:
+</a></div>
+</div>
+<div class="metadata">
+<a href="./SupervisedMatrixFactorization.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

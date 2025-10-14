@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Pseudocount distorts fold change\n\n\n\n\n\n\ntechnical report\n\n\n\n\n\n\n\n\n\nMar 13, 2024\n\n\nBoyi Guo\n\n\n\n\n\n\n\n\n\n\n\n\nKeep your receipts\n\n\n How early-career statisticians can navigate conferences\n\n\n\nmentoring\n\n\nacademic\n\n\n\nFor early-career statisticians, attending national conferences can be an overwhelming experience. We offer some transparency on the conferences’ hidden curriculum.Previously Published in AMSTATNEWS\n\n\n\n\n\nJul 1, 2022\n\n\nBoyi Guo, Sarah Samorodnitsky\n\n\n\n\n\n\nNo matching items"
+    "text": "Pseudocount distorts fold change\n\n\n\n\n\n\ntechnical report\n\n\n\n\n\n\n\n\n\nMar 13, 2024\n\n\nBoyi Guo\n\n\n\n\n\n\n\n\n\n\n\n\nKeep your receipts\n\n\n How early-career statisticians can navigate conferences\n\n\n\nmentoring\n\nacademic\n\n\n\nFor early-career statisticians, attending national conferences can be an overwhelming experience. We offer some transparency on the conferences’ hidden curriculum.Previously Published in AMSTATNEWS\n\n\n\n\n\nJul 1, 2022\n\n\nBoyi Guo, Sarah Samorodnitsky\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "growth.html",
@@ -25,7 +25,7 @@
     "href": "software.html",
     "title": "Software",
     "section": "",
-    "text": "spoon\n\n\n\nBioconductor\n\n\nSRT\n\n\n\nAddress the Mean-variance Relationship in Spatial Transcriptomics Data.\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpotSweeper\n\n\n\nBioconductor\n\n\nSRT\n\n\n\nSpatially-aware quality control for spatial transcriptomics.\n\n\n\n\n\n\n\n\n\n\n\n\n\ntpSVG\n\n\n\nBioconductor\n\n\nSRT\n\n\n\nR package to model gene expression of spatially resolved transcriptomics data using generalized geo-additive models.\n\n\n\n\n\n\n\n\n\n\n\n\n\nescheR\n\n\n\nBioconductor\n\n\nSRT\n\n\nVisualization\n\n\n\nR package built off of ggplot2 and the Gestalt principles to visualize multi-dimensional data in the 2D space (e.g. embedding or spatial visualizations).\n\n\n\n\n\n\n\n\n\n\nBHAM\n\n\n\nHigh-dimensional\n\n\nSpike&Slab LASSO\n\n\n\nSoftware R package to build scalable Bayesian hierarchical additive models using spike-and-slab priors for high-dimensional data analysis.\n\n\n\n\n\n\n\n\n\n\nMOTE.RF\n\n\n\nR/C++\n\n\nRandom Forests\n\n\nTreatment effect\n\n\n\nSoftware R package to build random forests algorithm to infer treatment effect for multivariate outcome\n\n\n\n\n\n\n\nNo matching items"
+    "text": "spoon\n\n\n\nBioconductor\n\nSRT\n\n\n\nAddress the Mean-variance Relationship in Spatial Transcriptomics Data.\n\n\n\n\n\n\n\n\n\n\n\n\nSpotSweeper\n\n\n\nBioconductor\n\nSRT\n\n\n\nSpatially-aware quality control for spatial transcriptomics.\n\n\n\n\n\n\n\n\n\n\n\n\ntpSVG\n\n\n\nBioconductor\n\nSRT\n\n\n\nR package to model gene expression of spatially resolved transcriptomics data using generalized geo-additive models.\n\n\n\n\n\n\n\n\n\n\n\n\nescheR\n\n\n\nBioconductor\n\nSRT\n\nVisualization\n\n\n\nR package built off of ggplot2 and the Gestalt principles to visualize multi-dimensional data in the 2D space (e.g. embedding or spatial visualizations).\n\n\n\n\n\n\n\n\n\n\nBHAM\n\n\n\nHigh-dimensional\n\nSpike&Slab LASSO\n\n\n\nSoftware R package to build scalable Bayesian hierarchical additive models using spike-and-slab priors for high-dimensional data analysis.\n\n\n\n\n\n\n\n\n\n\nMOTE.RF\n\n\n\nR/C++\n\nRandom Forests\n\nTreatment effect\n\n\n\nSoftware R package to build random forests algorithm to infer treatment effect for multivariate outcome\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -84,6 +84,20 @@
     "text": "My research concentrates on developing statistically rigorous and computationally scalable machine-learning methods, as well as open-source software, that integrates population-scale multi-omics data to uncover functional mechanisms that explain disease heterogeneity."
   },
   {
+    "objectID": "projects.html#spatially-resolved-multi-omics-in-neurobiology",
+    "href": "projects.html#spatially-resolved-multi-omics-in-neurobiology",
+    "title": "Projects",
+    "section": "Spatially-resolved multi-omics in neurobiology",
+    "text": "Spatially-resolved multi-omics in neurobiology\nThe cortical layers of the human neocortex were classically defined by histological distinction of cell types according to size and shape. However, emerging single-cell and spatially-resolved transcriptomic technologies have facilitated the identification of molecularly defined cell populations and spatial domains that move beyond classic cell type definitions and cytoarchitectural boundaries. Assigning gene expression to distinct anatomical subdivisions and cell populations within the human brain improves the understanding of brain regions and how they contribute to brain disorders. I led the quantitative investigation of 30 Visium Samples and single-nucleus RNA seq collected from 19 brain samples, where integrative cell-cell communication identified FYN-EFNA5-EPHA5 signaling pathway associated with schizophrenia. I also developed a novel visualization framework that simultaneous display disparage variables following Gestalt principles, allowing to in situ visualize of differential expression across various spatial domains.\n\nHuuki-Myers L, Spangler A, Eagles N, Montgomery KD, Kwon SH, Guo B, Grant-Peters M, Divecha HR, Tippani M, Sriworarat C, Nguyen AB, Ravichandran P, Tran MN, Seyedian A, Hyde TM, Kleinman JE, Battle A, Page SC, Ryten M, Hicks SC, Martinowich K, Collado-Torres L, Maynard KR. (2024). A data-driven single-cell and spatial transcriptomic map of the human prefrontal cortex.. Science.\nGuo B\\(^+\\), Ling W\\(^+\\), Kwon SH, Panwar P, Ghazanfar S, Martinowich K, Hicks SC. (2025). Integrating spatially-resolved transcriptomics data across tissues and individuals: challenges and opportunities Small Methods\n\n\nComputational methods for spatial genomics data\n\n\n\n\n\nMulti-dimensional visualization\n\n\n\nThe development of computational methods for processing, integrating, analyzing, and visualizing spatial genomics data is crucial in advancing our understanding of complex biological systems. Spatial genomics provides valuable insights into the spatial organization of cells and their interactions within tissues. Computational methods enable the extraction of meaningful patterns, unveiling the spatial relationships between genes and cells.\n\n\nTotty M\\(^*\\), Hicks SC, Guo B. (2025) SpotSweeper: Spatially aware quality control metrics for spatially resolved transcriptomics data. Nature Methods.\nShah KH\\(^*\\), Guo B, Hicks SC. (2025) Addressing the mean-variance relationship in spatially resolved transcriptomics data with spoon. Biostatistics.\nZhou H\\(^*\\), Panwar P, Guo B, Hallinan C, Ghazanfar S, and Hicks SC. (2025) Spatial mutual nearest neighbors for spatial transcriptomics data. Bioinformatics.\nGuo B, Huuki-Myers LA, Grant-Peters M, Collado-Torres L, Hicks SC. (2023). escheR: Unified multi-dimensional visualizations with Gestalt principles. Bioinformatics Advances."
+  },
+  {
+    "objectID": "projects.html#microbiome",
+    "href": "projects.html#microbiome",
+    "title": "Projects",
+    "section": "Microbiome",
+    "text": "Microbiome\n\nPendegraft AH, Guo B, Yi N. (2019). Bayesian hierarchical negative binomial models for multivariable analyses with applications to human microbiome count data. PloS one.\nZhang X, Guo B, Yi N. (2020). Zero-Inflated gaussian mixed models for analyzing longitudinal microbiome data. Plos one."
+  },
+  {
     "objectID": "projects.html#variable-and-functional-selection-using-spike-and-slab-lasso",
     "href": "projects.html#variable-and-functional-selection-using-spike-and-slab-lasso",
     "title": "Projects",
@@ -96,20 +110,6 @@
     "title": "Projects",
     "section": "Multivariate random forests to estimating heterogeneous treatment effects",
     "text": "Multivariate random forests to estimating heterogeneous treatment effects\n\n\n\n\n\nMultiple Outcome Treatment Effect Forests.\n\n\n\nPrecision healthcare motivates tailored treatments that take individual heterogeneity, environment, and lifestyles into consideration. The estimation of individualized treatment effect poses significant methodological and computational challenges, especially jointly for multiple health outcomes of interest. We propose a random forest model, MOTEF, that estimates individualized treatment effects of multivariate outcomes simultaneously, accounting for pre- and post-treatment covariates.\n\n\nGuo B, Holscher H, Auvil L, Welge M, Bushell C, Novotny J, Baer D, Burd N, Khan N, Zhu R. (2021). Estimating Heterogeneous Treatment Effect on Multivariate Responses Using Random Forests. Statistics in Biosciences."
-  },
-  {
-    "objectID": "projects.html#spatially-resolved-genomics",
-    "href": "projects.html#spatially-resolved-genomics",
-    "title": "Projects",
-    "section": "Spatially-resolved genomics",
-    "text": "Spatially-resolved genomics\nThe cortical layers of the human neocortex were classically defined by histological distinction of cell types according to size and shape. However, emerging single-cell and spatially-resolved transcriptomic technologies have facilitated the identification of molecularly defined cell populations and spatial domains that move beyond classic cell type definitions and cytoarchitectural boundaries. Assigning gene expression to distinct anatomical subdivisions and cell populations within the human brain improves the understanding of brain regions and how they contribute to brain disorders. I led the quantitative investigation of 30 Visium Samples and single-nucleus RNA seq collected from 19 brain samples, where integrative cell-cell communication identified FYN-EFNA5-EPHA5 signaling pathway associated with schizophrenia. I also developed a novel visualization framework that simultaneous display disparage variables following Gestalt principles, allowing to in situ visualize of differential expression across various spatial domains.\n\nHuuki-Myers L, Spangler A, Eagles N, Montgomery KD, Kwon SH, Guo B, Grant-Peters M, Divecha HR, Tippani M, Sriworarat C, Nguyen AB, Ravichandran P, Tran MN, Seyedian A, Hyde TM, Kleinman JE, Battle A, Page SC, Ryten M, Hicks SC, Martinowich K, Collado-Torres L, Maynard KR. (2023). Integrated single cell and unsupervised spatial transcriptomic analysis defines molecular anatomy of the human dorsolateral prefrontal cortex. Science.\n\n\nComputational methods for spatial genomics data\n\n\n\n\n\nMulti-dimensional visualization\n\n\n\nThe development of computational methods for processing, integrating, analyzing, and visualizing spatial genomics data is crucial in advancing our understanding of complex biological systems. Spatial genomics provides valuable insights into the spatial organization of cells and their interactions within tissues. Computational methods enable the extraction of meaningful patterns, unveiling the spatial relationships between genes and cells.\n\n\nGuo B, Huuki-Myers LA, Grant-Peters M, Collado-Torres L, Hicks SC. (2023). escheR: Unified multi-dimensional visualizations with Gestalt principles. Bioinformatics Advances."
-  },
-  {
-    "objectID": "projects.html#microbiome",
-    "href": "projects.html#microbiome",
-    "title": "Projects",
-    "section": "Microbiome",
-    "text": "Microbiome\n\nPendegraft AH, Guo B, Yi N. (2019). Bayesian hierarchical negative binomial models for multivariable analyses with applications to human microbiome count data. PloS one.\nZhang X, Guo B, Yi N. (2020). Zero-Inflated gaussian mixed models for analyzing longitudinal microbiome data. Plos one."
   },
   {
     "objectID": "projects.html#the-reasons-for-geographic-and-racial-differences-in-stroke",
@@ -130,14 +130,14 @@
     "href": "index.html",
     "title": "Boyi Guo, PhD",
     "section": "",
-    "text": "I am an applied statistician and biomedical data scientist working at the intersection of machine learning, computational omics, and population health. My research concentrates on developing statistically rigorous and computationally scalable machine-learning methods, as well as open-source software, that integrates population-scale multi-omics data to uncover functional mechanisms that explain disease heterogeneity.\n\nCurrently, I am a postdoctoral fellow in Biostatistics at Johns Hopkins Bloomberg of School of Public Health, mentored by Dr. Stephanie Hicks. I am open to opportunities that advance my scientific career."
+    "text": "I am an applied statistician and biomedical data scientist working at the intersection of machine learning, computational omics, and population health. My research concentrates on developing statistically rigorous and computationally scalable machine-learning methods, as well as open-source software, that integrates population-scale multi-omics data to uncover functional mechanisms that explain disease heterogeneity.\n\nCurrently, I am an Assistnat Professor in the Division of Biostatistics, Department of Population Health Sciences at University of Utah."
   },
   {
     "objectID": "Problems.html",
     "href": "Problems.html",
     "title": "Problems",
     "section": "",
-    "text": "This page enlists all the computational problems that I’m currently exploring and working on.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nASAPA_org\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAbout\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBoyi Guo, PhD\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGrowth\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIndex measuring nestedness of clusterings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPseudocount distorts fold change\n\n\n\n\n\n\ntechnical report\n\n\n\n\n\n\n\n\n\nMar 13, 2024\n\n\nBoyi Guo\n\n\n\n\n\n\n\n\n\n\n\n\nSoftware\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSupervised Surragate Variable Analaysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "This page enlists all the computational problems that I’m currently exploring and working on.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nASAPA_org\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAbout\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBoyi Guo, PhD\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGrowth\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIndex measuring nestedness of clusterings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPseudocount distorts fold change\n\n\n\ntechnical report\n\n\n\n\n\n\n\n\n\nMar 13, 2024\n\n\nBoyi Guo\n\n\n\n\n\n\n\n\n\n\n\n\nSoftware\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSupervised Surragate Variable Analaysis\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "nestedness_index.html",

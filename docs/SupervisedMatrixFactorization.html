@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – Boyi Guo (郭博逸), PhD</title>
+<title>Supervised Surragate Variable Analaysis – Boyi Guo (郭博逸), PhD</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -125,15 +154,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#statistics-model" id="toc-statistics-model" class="nav-link active" data-scroll-target="#statistics-model">Statistics Model</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Supervised Surragate Variable Analaysis</h1>
 </div>
 
 
@@ -150,9 +185,28 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Under construction. 🛠️</p>
+<p>Motivation:</p>
+<ul>
+<li>A case-control study</li>
+<li>Nuanced signal is larger than the intereste signal which is by nature small</li>
+<li>Weak Signal</li>
+</ul>
+<section id="statistics-model" class="level2">
+<h2 class="anchored" data-anchor-id="statistics-model">Statistics Model</h2>
+<p>For the <span class="math inline">\(i\)</span>th individual, we collect <span class="math inline">\(n_i\)</span> cells where we can observe the spatial arrangement of the cells measured with a 2-D spatial coordinates <span class="math inline">\(\vec{S^x_{i}}, \vec{S^y_i}\)</span>. In addition, the two normalized gene expression of the <span class="math inline">\(n_i\)</span> cells for <span class="math inline">\(p\)</span> genes can be quantified in a data matrix <span class="math inline">\(\vec{X_i} \in R^{n_i \times p}\)</span>.</p>
+<p>Collectively, we have the data <span class="math inline">\(\{\vec X_i, T_i\vec{1}, (\vec{S^x_{i}}, \vec{S^y_i})\}_i^{n}\)</span> from <span class="math inline">\(n = |T_i=1| + |T_i=-1|\)</span> individuals and total of <span class="math inline">\(n_{cell} = \sum\limits_i^{n_{ind}} n_i\)</span>.</p>
+<p>We assume that the underlying data generating mechanism is that</p>
+<p><span class="math display">\[
+\vec{X}_i = \vec{Y}_i + T_i\vec{Z}_i + \vec{\epsilon},
+\]</span> where <span class="math inline">\(\vec{Y}_i\)</span> is the latent factors shared by both exposure groups, and <span class="math inline">\(\vec{Z}_i\)</span> is exposure group specific latent factors.</p>
+<p><strong>Objective Function</strong> <span class="math display">\[\begin{align*}
+\text{minimize} ||X - U \Sigma V - T U^\prime \Sigma^\prime V^\prime||_F^2,
+\end{align*}\]</span></p>
+<p>where the constrain that <span class="math inline">\(mean(\vec{X}_{T=1}V\prime) - mean(\vec{X}_{T=-1}V\prime)\)</span> is maximized.</p>
+<p>Where are actually just interested in <span class="math inline">\(U\prime\)</span> and <span class="math inline">\(V\prime\)</span></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
