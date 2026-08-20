@@ -35,7 +35,7 @@ Meet the people behind the lab's research.
 ![](img/members/huiqian_hu.jpg){.member-photo}
 
 **Huiqian Hu, PhD**\
-*Visiting Postodctoral Researcher*
+*Visiting Postdoctoral Researcher*
 
 [email](mailto:hhuaq0612@gmail.com)  &middot; [website](https://scholar.google.com/citations?user=_sOXxKgAAAAJ&hl=en)
 :::
@@ -63,6 +63,6 @@ Meet the people behind the lab's research.
 ## Alumni and Friends
 - **Sophia Huebler** — Rotation PhD Student in Biostatistics (2025–2026), T32 ODSi Predoctoral Fellow (2025–2027)
 - **Jax Lubkowitz** — Collaborating PhD Student in Biomedical Informatics (2025–2026)
-- **Li Li** —  Collaborating Staff Scientist(2026–Present) → Huntman Cancer Institute
+- **Li Li, PhD** —  Collaborating Staff Scientist(2026–Present) → Huntman Cancer Institute
 <!-- - **Chris Park** — Research Assistant (2022–2023) → now PhD Student, Example University -->
 <!-- - **Priya Patel** — Rotation Student (2023) → now PhD Student, Another University -->
