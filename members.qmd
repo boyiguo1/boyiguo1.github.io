@@ -1,0 +1,68 @@
+---
+title: "Lab Members"
+format:
+    html:
+        toc: false
+---
+
+::: {.members-intro}
+Meet the people behind the lab's research.
+:::
+
+## Current Members
+
+::: {.member-grid}
+
+::: {.member-card}
+![](img/Boyi_Guo_20240910.jpg){.member-photo}
+
+**Boyi Guo, PhD**\
+*Principal Investigator*
+
+[email](mailto:boyi.guo@hsc.utah.edu) &middot; [website](https://boyi-guo.com)
+:::
+
+::: {.member-card}
+![](img/members/placeholder.svg){.member-photo}
+
+**Tengda Lin**\
+*PhD Student*
+
+[email](mailto:Tengda.Lin@hci.utah.edu) <!-- &middot; [website](https://www.linkedin.com/in/tegnda-lin-1a0b3b1b6/) -->
+:::
+
+::: {.member-card}
+![](img/members/huiqian_hu.jpg){.member-photo}
+
+**Huiqian Hu, PhD**\
+*Visiting Postodctoral Researcher*
+
+[email](mailto:hhuaq0612@gmail.com)  &middot; [website](https://scholar.google.com/citations?user=_sOXxKgAAAAJ&hl=en)
+:::
+
+::: {.member-card}
+![](img/members/shangjie_guo.JPG){.member-photo}
+
+**Shangjie "Leon" Guo, PhD **\
+*Visiting Research Scientist*
+
+[email](mailto:shangjie.guo@gmail.com) &middot; [website](https://www.linkedin.com/in/shangjie-guo/)
+:::
+
+::: {.member-card}
+![](img/members/placeholder.svg){.member-photo}
+
+**Yu Fang**\
+*Visiting PhD Student*
+
+[email](mailto:fangyu2045@gmail.com)  <!--  &middot; [website](https://scholar.google.com/citations?user=_sOXxKgAAAAJ&hl=en) -->
+:::
+
+:::
+
+## Alumni and Friends
+- **Sophia Huebler** — PhD mentee (2025–2026), T32 ODSi Predoctoral Fellow (2025–2027)
+- **Jax Lubkowitz** — Collaborating PhD Student (2025–2026)
+<!-- - **Maria Garcia** — Postdoctoral Fellow (2021–2023) → now Assistant Professor, Example University -->
+<!-- - **Chris Park** — Research Assistant (2022–2023) → now PhD Student, Example University -->
+<!-- - **Priya Patel** — Rotation Student (2023) → now PhD Student, Another University -->

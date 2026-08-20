@@ -1,1 +1,33 @@
 /* css styles */
+
+/* Lab members page */
+.members-intro {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.75rem;
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.member-card {
+  text-align: center;
+}
+
+.member-card img.member-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 0.75rem auto;
+  display: block;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.member-card p {
+  margin: 0.15rem 0;
+}

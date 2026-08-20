@@ -1,6 +1,6 @@
 ---
 title: "Boyi Guo, PhD"
-image: img/Boyi_Guo_20190924.jpeg
+image: img/Boyi_Guo_20240910.jpg
 toc: false
 about:
   template: jolla
