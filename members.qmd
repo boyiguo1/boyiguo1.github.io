@@ -43,7 +43,7 @@ Meet the people behind the lab's research.
 ::: {.member-card}
 ![](img/members/shangjie_guo.JPG){.member-photo}
 
-**Shangjie "Leon" Guo, PhD **\
+**Shangjie Guo, PhD **\
 *Visiting Research Scientist*
 
 [email](mailto:shangjie.guo@gmail.com) &middot; [website](https://www.linkedin.com/in/shangjie-guo/)
