@@ -130,14 +130,14 @@
     "href": "members.html#current-members",
     "title": "Lab Members",
     "section": "Current Members",
-    "text": "Current Members\n\n\n\nBoyi Guo, PhD\nPrincipal Investigator\nemail · website\n\n\n\nTengda Lin\nPhD Student\nemail \n\n\n\nHuiqian Hu, PhD\nVisiting Postodctoral Researcher\nemail · website\n\n\n\nShangjie “Leon” Guo, PhD \nVisiting Research Scientist\nemail · website\n\n\n\nYu Fang\nVisiting PhD Student\nemail"
+    "text": "Current Members\n\n\n\nBoyi Guo, PhD\nPrincipal Investigator\nemail · website\n\n\n\nTengda Lin\nPhD Student\nemail \n\n\n\nHuiqian Hu, PhD\nVisiting Postodctoral Researcher\nemail · website\n\n\n\nShangjie “Leon” Guo, PhD \nVisiting Research Scientist\nemail · website\n\n\n\nYu Fang\nVisiting PhD Student\nemail · website"
   },
   {
     "objectID": "members.html#alumni-and-friends",
     "href": "members.html#alumni-and-friends",
     "title": "Lab Members",
     "section": "Alumni and Friends",
-    "text": "Alumni and Friends\n\nSophia Huebler — PhD mentee (2025–2026), T32 ODSi Predoctoral Fellow (2025–2027)\nJax Lubkowitz — Collaborating PhD Student (2025–2026)"
+    "text": "Alumni and Friends\n\nSophia Huebler — Rotation PhD Student in Biostatistics (2025–2026), T32 ODSi Predoctoral Fellow (2025–2027)\nJax Lubkowitz — Collaborating PhD Student in Biomedical Informatics (2025–2026)\nLi Li — Collaborating Staff Scientist(2026–Present) → Huntman Cancer Institute"
   },
   {
     "objectID": "ASAPA_org.html",
@@ -180,12 +180,5 @@
     "title": "Supervised Surragate Variable Analaysis",
     "section": "Statistics Model",
     "text": "Statistics Model\nFor the \\(i\\)th individual, we collect \\(n_i\\) cells where we can observe the spatial arrangement of the cells measured with a 2-D spatial coordinates \\(\\vec{S^x_{i}}, \\vec{S^y_i}\\). In addition, the two normalized gene expression of the \\(n_i\\) cells for \\(p\\) genes can be quantified in a data matrix \\(\\vec{X_i} \\in R^{n_i \\times p}\\).\nCollectively, we have the data \\(\\{\\vec X_i, T_i\\vec{1}, (\\vec{S^x_{i}}, \\vec{S^y_i})\\}_i^{n}\\) from \\(n = |T_i=1| + |T_i=-1|\\) individuals and total of \\(n_{cell} = \\sum\\limits_i^{n_{ind}} n_i\\).\nWe assume that the underlying data generating mechanism is that\n\\[\n\\vec{X}_i = \\vec{Y}_i + T_i\\vec{Z}_i + \\vec{\\epsilon},\n\\] where \\(\\vec{Y}_i\\) is the latent factors shared by both exposure groups, and \\(\\vec{Z}_i\\) is exposure group specific latent factors.\nObjective Function \\[\\begin{align*}\n\\text{minimize} ||X - U \\Sigma V - T U^\\prime \\Sigma^\\prime V^\\prime||_F^2,\n\\end{align*}\\]\nwhere the constrain that \\(mean(\\vec{X}_{T=1}V\\prime) - mean(\\vec{X}_{T=-1}V\\prime)\\) is maximized.\nWhere are actually just interested in \\(U\\prime\\) and \\(V\\prime\\)"
-  },
-  {
-    "objectID": "members.html#past-members",
-    "href": "members.html#past-members",
-    "title": "Lab Members",
-    "section": "Past Members",
-    "text": "Past Members\n\nSam Lee — PhD Student (2020–2024) → now Data Scientist, Example Corp\nMaria Garcia — Postdoctoral Fellow (2021–2023) → now Assistant Professor, Example University\nChris Park — Research Assistant (2022–2023) → now PhD Student, Example University\nPriya Patel — Rotation Student (2023) → now PhD Student, Another University"
   }
 ]

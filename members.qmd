@@ -23,7 +23,7 @@ Meet the people behind the lab's research.
 :::
 
 ::: {.member-card}
-![](img/members/placeholder.svg){.member-photo}
+![](img/members/tengda_lin.jpg){.member-photo}
 
 **Tengda Lin**\
 *PhD Student*
@@ -50,19 +50,19 @@ Meet the people behind the lab's research.
 :::
 
 ::: {.member-card}
-![](img/members/placeholder.svg){.member-photo}
+![](img/members/yu_fang.png){.member-photo}
 
 **Yu Fang**\
 *Visiting PhD Student*
 
-[email](mailto:fangyu2045@gmail.com)  <!--  &middot; [website](https://scholar.google.com/citations?user=_sOXxKgAAAAJ&hl=en) -->
+[email](mailto:fangyu2045@gmail.com) &middot; [website](https://scholar.google.com/citations?user=YH9fOlsAAAAJ&hl=en)
 :::
 
 :::
 
 ## Alumni and Friends
-- **Sophia Huebler** — PhD mentee (2025–2026), T32 ODSi Predoctoral Fellow (2025–2027)
-- **Jax Lubkowitz** — Collaborating PhD Student (2025–2026)
-<!-- - **Maria Garcia** — Postdoctoral Fellow (2021–2023) → now Assistant Professor, Example University -->
+- **Sophia Huebler** — Rotation PhD Student in Biostatistics (2025–2026), T32 ODSi Predoctoral Fellow (2025–2027)
+- **Jax Lubkowitz** — Collaborating PhD Student in Biomedical Informatics (2025–2026)
+- **Li Li** —  Collaborating Staff Scientist(2026–Present) → Huntman Cancer Institute
 <!-- - **Chris Park** — Research Assistant (2022–2023) → now PhD Student, Example University -->
 <!-- - **Priya Patel** — Rotation Student (2023) → now PhD Student, Another University -->
